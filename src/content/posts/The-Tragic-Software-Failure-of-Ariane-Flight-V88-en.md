@@ -1,6 +1,6 @@
 ---
 title: The Tragic Software Failure of Ariane Flight V88
-published: 2025-06-09
+published: 2025-06-08
 draft: false
 lang: en
 description: The Tragic Software Failure of Ariane Flight V88

@@ -1,6 +1,6 @@
 ---
 title: Hamming Numbers
-published: 2025-06-09
+published: 2025-06-05
 draft: false
 lang: en
 description: Hamming Numbers

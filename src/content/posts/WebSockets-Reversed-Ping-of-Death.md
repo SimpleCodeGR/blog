@@ -139,9 +139,6 @@ Back to browsers, it’s worth noting that there are actually two other ways to 
 > **Backpressure**
 > An important concept in streams is backpressure — this is the process by which a single stream or a pipe chain regulates the speed of reading/writing. When a stream later in the chain is still busy and isn't yet ready to accept more chunks, it sends a signal backwards through the chain to tell earlier transform streams (or the original source) to slow down delivery so that you don't end up with a bottleneck anywhere.
 
-Those two other ways are **WebTransport API** and **Streams API**. Both are great but very fresh, in contrast to the WebSocket API which has been around for more than a decade. They are so fresh that the first is not supported by Safari and the second is not supported by Firefox. And even the browsers that support one or the other do so only in very recent versions (and experimentally, I would guess).
-
----
-
-\[Reference]
 [https://developer.mozilla.org/en-US/docs/Web/API/Streams\_API/Concepts#backpressure](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#backpressure)
+
+Those two other ways are **WebTransport API** and **Streams API**. Both are great but very fresh, in contrast to the WebSocket API which has been around for more than a decade. They are so fresh that the first is not supported by Safari and the second is not supported by Firefox. And even the browsers that support one or the other do so only in very recent versions (and experimentally, I would guess).

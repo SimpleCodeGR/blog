@@ -5,7 +5,7 @@
         <title>Simplecode Blog</title>
         <link>https://blog.simplecode.gr</link>
         <description></description>
-        <lastBuildDate>Tue, 10 Jun 2025 09:50:27 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Jun 2025 16:09:39 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Astro-Theme-Retypeset with Feed for Node.js</generator>
         <language>en</language>
@@ -15,7 +15,7 @@
             <title><![CDATA[“Because I care about you” - Eliza, The First Chat Bot]]></title>
             <link>https://blog.simplecode.gr/posts/because-i-care-about-you-eliza-the-first-chat-bot/</link>
             <guid isPermaLink="false">https://blog.simplecode.gr/posts/because-i-care-about-you-eliza-the-first-chat-bot/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[“Because I care about you” - Eliza, The First Chat Bot]]></description>
             <content:encoded><![CDATA[<p>[...]
 Input : "And why do you ask that?"
@@ -24,109 +24,65 @@ Response : "Because I care about you."</p>
 <p>The program responsible for this exchange was Eliza, developed in 1967 at MIT by Joseph Weizenbaum, as the pioneering chat bot aimed at simulating conversations with a human. Written in MAD-SLIP, Eliza operated with a core component that would then call upon various LISP-like scripts – LISP being one of the precursor languages to modern-day JavaScript. Each script simulated a different persona, with the most renowned being “DOCTOR,” which mimicked interactions with a therapist adhering to the Rogerian psychotherapy approach.</p>
 <p>Eliza operated by utilizing an extensive set of pre-programmed responses. Upon receiving input, it would sift through these responses to find the most relevant and appropriate one, often modifying it slightly, according to the input, before outputting it.</p>
 <p>This early program can be viewed as a rudimentary form of natural language processing, akin to contemporary systems like ChatGPT, but with a much much more simpler data set, since ChatGPT have scrapped the whole today’s internet. A more fitting analogy might be Microsoft Word’s Clippy, which similarly provided predetermined responses based on user input.</p>
-<p>You can chat with Eliza here : https://web.njit.edu/~ronkowit/eliza.html</p>
+<p>You can chat with Eliza here : (https://web.njit.edu/~ronkowit/eliza.html)[https://web.njit.edu/~ronkowit/eliza.html]</p>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Making of the Grand Theft Auto Trilogy]]></title>
-            <link>https://blog.simplecode.gr/posts/making-of-the-grand-theft-auto-trilogy/</link>
-            <guid isPermaLink="false">https://blog.simplecode.gr/posts/making-of-the-grand-theft-auto-trilogy/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Making of the Grand Theft Auto Trilogy]]></description>
-            <content:encoded><![CDATA[<p>I was lucky enough to read all the posts of Obbe Vermeij at the blog "Insider Rockstar North", before he had to take it down.</p>
-<p>Obbe Vermeij was a developer working at Rockstar North game studio, during the GTA Trilogy era (III, Vice City, San Andreas...).</p>
-<p>For computer games, the GTA Trilogy is a reference point, as it was one of the first game series offering such an open-world experience, that you could travel around and do whatever, without limitations.</p>
-<p>Obbe seems to have been one of the key people who contributed to this freedom with his mindset, even while there were considerations of minimizing this freedom to make the game less heavy.</p>
-<blockquote>
-<p>Gta1 had 3 cities and we wanted to do the same.</p>
-<p>There was one particular meeting that I still have nightmares about. In R*N we would usually make the big game decisions with 5 people. We had a meeting where 3 people wanted the cities to be on different maps. This would save memory as the models for the skylines of the cities wouldn't need to be in memory at the same time. Gta1 had 3 cities on different maps. The player would take planes/buses/trains to travel between maps.</p>
-<p>I wanted the cities to be on the same map as it is important to be able to drive between cities. Even if this meant we'd have to find some memory elsewhere. The 5th guy wasn't there that day. I wasn't able to convince the others. It was super frustrating as it seemed we were about to make a massive mistake.</p>
-<p>The following day we had another meeting. The 5th guy agreed with me and was much more persuasive than me. He talked them round and the cities ended up on the same map. Disaster averted.
-Obbe Vermeij</p>
-<p>The 3 cities with the country side in between, almost killed the map artists. gtaIII and Vice had maps of 4x4km and even then there was loads of water. The SA map was 6x6 and densily packed.</p>
-<p>~ Obbe Vermeij</p>
-</blockquote>
-<p>It was precisely this freedom that everyone, including myself, relished in the game.</p>
-<p>Developers and game artists found inspiration in this as well.</p>
-<blockquote>
-<p>We took the code from Vice City as the foundation for SA. Many things were improved but no structural improvements were needed.</p>
-<p>R*NY organized another 'research' trip. They hired a bunch of town cars and we drove between Vegas, LA and San Fransisco. The artists took pictures. It was loads of fun.</p>
-<p>~ Obbe Vermeij</p>
-</blockquote>
-<blockquote>
-<p>The artists gave me a texture for the moon in III. I placed the moon in the sky, made sure it was visible at night and that it was a reasonable size.</p>
-<p>A few days later 4 artists were at my desk asking me to change the size of the moon.</p>
-<p>"No problem" I said.</p>
-<p>It turned out they couldn't decide what the size of the moon should be. 2 of them wanted it smaller to be more realistic. The other 2 wanted it larger to be more cinematic.</p>
-<p>This went on a bit and I suggested to make the size of the moon changeable in the game. This way they could decide in their own time and let me know the conclusion. Since I was working on the sniper rifle, I made it so that the moon toggled through 3 sizes (small, medium, large) as the player sniped it.</p>
-<p>The artists never got back to me so I just left it in. It was still there in SA.</p>
-<p>~ Obbe Vermeij</p>
-</blockquote>
-<p>Everything you see in a videogame, must be loaded. From the hard drive, to the RAM / graphics card's VRAM and then to your screen. And if the game is huge, it can't be all loaded at once. There needs to be a mechanism that knows when to load something and when to unload it, according to your location in the map. As you move around, specially to such an open-world and huge game, this mechanism must do this job and it must done it well.</p>
-<p>GTA Trilogy was ahead of it's time, and to make this streaming mechanism work well, they did lot of tricks.</p>
-<blockquote>
-<p>For example, from GTA III until GTA San Andreas, the game could manage up to seven different car models around the player simultaneously due to the lack of RAM memory in that era. This meant that during intense situations, like when the police were chasing you and the game had to load police cars and helicopters, the number of pedestrian cars loaded decreased, often to just one or two.</p>
-<p>For instance; if the player has a 6 star wanted level, the game would load the fbi car and the helicopter.</p>
-<p>There may still be police cars and swat vans around from when the player had a lower wanted level.</p>
-<p>If there are any injured pedestrians, the game had to load the ambulance.</p>
-<p>Before you know it, the game only has 1 or 2 models left for regular civilian cars.</p>
-<p>Even without the wanted level, the game was often forced to load certain car models.</p>
-<p>~ Obbe Vermeij</p>
-</blockquote>
-<p>As a cherry on top, all those things had to be loaded using a slow CD-ROM, as this was the storage medium in many consoles at the time. And CDs are not only slow, but they have another problem as well : if the thing you want to load, exists on a point before the current point the CD is on the CD reader, you need to wait for the CD to re-spin. Now, imagine doing this for many things. To address this, they grouped related data together.</p>
-<blockquote>
-<p>They meticulously arranged data on the CD, ensuring that elements closely linked in the 3D game world were also physically close on the CD for simultaneous reading, and
-in problematic areas, they fine-tuned details, such as creating inclines or increasing air resistance, to slow down vehicle movement subtly (without the player realizing the reasons behind it).</p>
-<p>~ Obbe Vermeij</p>
-</blockquote>
-<blockquote>
-<p>The hardest technical challenge to solve during the development of gta3 was the streaming. Streaming involves loading and un-loading models as the player moves over the map. The streaming was coded by Adam Fowler.</p>
-<p>When we started out with gta3 the hope was that the entire map would fit in memory. The map would simply be loaded at the start of the game.</p>
-<p>Memory was limited on the PS2 and the artists were forced to reduce the texture sizes and to re-use textures everywhere. This resulted in the city looking bland. They eventually asked Adam whether he could develop a streaming system.</p>
-<p>The idea of streaming is to load the map only around the player. As the player moves, the models for nearby models are loaded from the CD into memory and buildings that are now far away are removed.</p>
-<p>Streaming is also used for vehicle models, pedestrian models, sound effects, music and scripts but the map posed the greatest difficulty as this involved more data than everything else combined.</p>
-<p>Unfortunately the CD was quite slow in loading the models. The loading speed depends on the location of the models on the CD (the track). Models that are close together are loaded quickly but models that are far away are slow. (This is because the CD needs to accelerate/decelerate as the head moves to a different track). This is causing a lot of the sounds coming from the CD drive when playing gta.</p>
-<p>Adam spent a lot of time ingenuously moving the models around on the CD. The idea was to place models close together in the CD if they were also close together in the world.</p>
-<p>Even after all these optimizations, streaming was still not fast enough. You can literally think of it as a race between the player travelling and the streaming loading the models. At times the player would be too fast and the world just wasn't there yet. These problems seemed to get worse with older CDs.</p>
-<p>If we couldn't speed the streaming up any further, we had no option but to slow the player down.</p>
-<p>In Portland (first island in gta3) there used to be a big strip running all along the island. This was a worst case scenario. The player could go fast and there were loads of buildings to load. The streaming couldn't cope here. Eventually the artists had to change the layout and basically put a building on top of the strip. The player had to go around which would slow him down allowing the streaming to catch up.</p>
-<p>Over time we identified other areas where the streaming was not coping and we would set up zones here. Within these zones we increased the drag (air resistance) on the vehicles a little. Maybe 5 or 10%. It was hardly noticeable but it helped.</p>
-<p>~ Obbe Vermeij</p>
-</blockquote>
-<p>Cheats were heavily optimized as well. To make it hard to find the cheats, instead of storing them as strings (which would result to be easy to find by searching in the binary), they used a number for each of them. If the sum of the pressed keys, matched the number of the cheat, the cheat was activated.</p>
-<blockquote>
-<p>The cheats in the trilogy were activated by simply typing a sequence of characters.</p>
-<p>On PC the sequence would be something like</p>
-<p>ILOVESCOTLAND to make it rain or</p>
-<p>GUNSGUNSGUNS to give the player loads of weapons.</p>
-<p>The game remembers the last 20 or so keypresses and every time a new key is pressed, these keypresses are compared with the cheats. If there is a match, the cheat will activate.</p>
-<p>The straightforward way of doing this would be to compare the string "ILOVESCOTLAND" with the string of keypresses. This approach would mean that the strings for the cheats would be in memory as readable text. Any hacker could easily find the cheats and they would all be discovered on the day of release.</p>
-<p>This is why I used 'hash codes' to store the cheats. A hash code is a number that is calculated from a string. As an example; a simple hash algorithm could add up the ASCII values of each character of the string.</p>
-<p>The hash code for ILOVESCOTLAND would be 983.</p>
-<p>For GUNSGUNSGUNS it would be 951.</p>
-<p>This is just an example. The actual Hash algorithm used is more complicated.</p>
-<p>The game would also calculate the Hash code for the last 20 or so keypresses and compare the numbers.</p>
-<p>The good news is that it is harder to hack the cheat because the code only stores the number (ie 983) and not the full string (ILOVESCOTLAND). This part worked because the cheats were not hacked. (They were eventually discovered by people trying random input until a cheat happened)</p>
-<p>The bad news is that different strings can result in the same hash code.</p>
-<p>This is why initially when cheats were discovered people found random strings (ie HDLMAAXOPK) and not the string I had set up (ie ILOVESCOTLAND)</p>
-<p>This also meant the cheats triggered more often than I had planned. This caused cheats to sometimes happen unintentionally. This has actually happened during peoples' speed runs. These speed runs had to be aborted as the rules are clear. No cheats.</p>
-<p>~ Obbe Vermeij</p>
-</blockquote>
-<p>The weather, on the other hand, wasnt optimized at all. It was just a fixed look-up table, that according to time, there was a weather value.</p>
-<blockquote>
-<p>Every in-game hour, the next weather type is picked from a table. The table is 40 (or maybe 34, can't quite remember) entries long. If it is raining now, it will be raining again in 40 in-game hours.</p>
-<p>The visual effects for the weather type will transition over the hour.</p>
-<p>For instance:</p>
-<p>At 2:00 it would be 100% sunny.</p>
-<p>At 2:15 it would be 75% sunny and 25% overcast</p>
-<p>At 2:30 it would be 50/50</p>
-<p>etc</p>
-<p>The table frequently has the same weather type for several hours so the weather isn't always in-flux.</p>
-<p>There are script commands to override the weather type. This allows the level designers to force the weather type for a particular mission or cut-scene.</p>
-<p>~ Obbe Vermeij</p>
-</blockquote>
-<p>It's nice reading how all those things were made !</p>
-<p>I hope Obbe will come up with many more details.</p>
+            <title><![CDATA[When is a program good ? Reverse engineering HOU’s compiler]]></title>
+            <link>https://blog.simplecode.gr/posts/when-is-a-program-good-reverse-engineering-hous-compiler/</link>
+            <guid isPermaLink="false">https://blog.simplecode.gr/posts/when-is-a-program-good-reverse-engineering-hous-compiler/</guid>
+            <pubDate>Tue, 10 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[When is a program good ? Reverse engineering HOU’s compiler]]></description>
+            <content:encoded><![CDATA[<p>At the university I’m attending, Hellenic Open University, they have developed, years ago, a custom programming language and a custom compiler for it. The language is ok, feels a bit like Pascal and the commands are all in Greek. For example:</p>
+<pre><code>ΑΛΓΟΡΙΘΜΟΣ ΔΟΚΙΜΗ
+	ΔΕΔΟΜΕΝΑ x:INTEGER;
+ΑΡΧΗ
+	ΤΥΠΩΣΕ ("PLEASE ENTER A NUMBER: ", EOLN);
+	ΔΙΑΒΑΣΕ (x);
+	ΤΥΠΩΣΕ ("YOU GAVE: ", x, EOLN)
+ΤΕΛΟΣ
+</code></pre>
+<p>The compiler on the other hand… is one of the worst compilers I’ve used ever. It’s very buggy and it’s also having millions of encoding problems which originate from the fact that it expects files to be in Windows-1253 encoding while most editors nowadays use UTF-8. It’s a compiler you can use, but it doesn’t fit its purpose. So it’s bad.</p>
+<p>What I mean by this is that there is a way to use this compiler: use Notepad++ and constantly check if your encoding is Windows-1253; workaround the compiler’s bugs by writing your code with the same logic but a bit differently. All this makes coding in that language and using this compiler harder than coding in C, which is touted later and is considered harder… oh sweet summer child, if you only knew (!!! 😂 !!!).</p>
+<p>But the purpose of this compiler was to be introducing and easy, so this compiler has failed its purpose for good. And it’s not only me who will say this. Aristotle argued that something is good when it fulfills its “τέλος” (purpose or function), so there are good chances Aristotle would consider this compiler “bad”.</p>
+<p>As a cherry on top, this compiler doesn’t work on Linux. So it’s trash.</p>
+<hr />
+<p>It was clear that something needed to be done with this compiler.</p>
+<p>I managed to get this compiler to work on Linux after lots of tweaking with the “wine” compatibility tool and because I didn’t want anyone else to go through all this, I made a public repository with a ready solution. You can find everything here:
+<a href="https://github.com/rept0id/hou-compiler-linux/">https://github.com/rept0id/hou-compiler-linux/</a></p>
+<p>This “wine” solution makes using this compiler on Linux not only possible but actually better than it is on other platforms. This is because before it runs the compiler and the produced executable through wine, it also encodes the provided file from UTF-8 to Windows-1253.</p>
+<p>This way, you write with a sane person’s tools, you know, the average editor of the simple layman out there that uses UTF-8, and then another file with the same content but Windows-1253 gets created and provided to the compiler. But you don’t care about the other file as it’s just a middle step. You write UTF-8.
+Now you can focus on your code instead of the encodings.</p>
+<hr />
+<p>This solution mentioned above is “good” (by Aristotle) but it’s not “perfect” (by me, even though Aristotle’s opinion matters more). Because something with this compiler and wine bugs, if you try to print Greek characters through your program it will display them wrong (as a workaround, use Greek with Latin characters, Greeklish, or just English).</p>
+<p>Such a thing is very annoying for a compiler and whole concept meant to work with Greek. This actually still makes the program “not good” by Aristotle. This must be fixed as well, else the solution is not perfect. I believe there are 2 ways to fix this: one is to keep fuck-around-find-out with Wine and the second is to reverse engineer this compiler totally and make a better one. Guess which one I find more fun!</p>
+<hr />
+<p>First step into reverse engineering was to throw this compiler into a classic .NET reverse engineering tool, like .NET Reflector and the newer DotPeek, because only those ones I knew from a friend.</p>
+<p>Actually, .NET is the best case of reverse engineering a program because the code that you write in C#, VB, F# or whatever, gets transposed into bytecode for “Common Language Runtime” which is considered easier to reverse engineer than raw binary machine code.</p>
+<p>Those tools, if the code is not “obfuscated” against them, will give you a very good result. This bytecode thing makes me consider all those languages to be in the same basket as Java; even though they don’t claim that they run inside a VM, they aaalmost do something that could be labeled as similar.</p>
+<p>Turns out this compiler is not a .NET program and I couldn’t get something out of using those tools.</p>
+<p>Next step was to guess better what this program was made with. I ran</p>
+<pre><code>strings ./pli10.exe
+</code></pre>
+<p>in a Linux terminal and saw a little bit the result. I saw many “GCC” (filtered with <code>strings ./pli10.exe | grep "GCC"</code>), and made a conclusion that this may be a C/C++ program, since GCC is a C compiler.</p>
+<p>I can’t be 100% sure as this compiler uses tdm-gcc to generate the machine code, so maybe it’s written in something different than C/C++ and it just calls the GCC compiler.</p>
+<p>So I had to do what any programmer that likes math would have done and say the poem:
+“let’s assume this program is C/C++” and continue based on this.</p>
+<p>I didn’t know any good C/C++ disassembler so ChatGPT and Google were my friends and I found that actually there are out there 2 very good ones:</p>
+<ul>
+<li>Ghidra, made by NSA</li>
+<li>Interactive Disassembler (IDA), made by Ilfak Guilfanov</li>
+</ul>
+<p>I managed to get Ghidra and disassemble the compiler back to code. But still, I wasn’t able yet to find many things. Not yet.</p>
+<p>By the way, Ghidra can disassemble other languages too like Go and Rust as far as I’ve read.</p>
+<hr />
+<p>Still, the journey doesn’t end here, as I’ve already found a line that is very interesting:</p>
+<pre><code>system("chcp 1253 &gt; nul");
+</code></pre>
+<p>Maybe this program could work much better if this legacy Windows-1253 encoding wasn’t enforced.</p>
+<hr />
+<p>UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.</p>
+<p><a href="https://github.com/rept0id/hou-compiler-linux/">https://github.com/rept0id/hou-compiler-linux/</a></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -171,20 +127,21 @@ In documents, you are more free as you write whatever you want for each specific
 </table>
 <p>And this is how storing indocuments(or text files) would look like:</p>
 <p>One document for Irina:</p>
-<p>Name="Irina"
+<pre><code>Name="Irina"
 Gender="Female"
-Cat="Luluka"</p>
+Cat="Luluka"
+</code></pre>
 <p>And another one document for Rantouan:</p>
-<p>Name="Rantouan"
+<pre><code>Name="Rantouan"
 Gender="Male"
-Turtle="Galopoula"</p>
+Turtle="Galopoula"
+</code></pre>
 <p>Note how easy it is to add extra information, related and unique to each person, like the cats and turtles above with a document database and how rigid it is with a tabular one. Tabular databases have the advantage that if your data are all going to have the same structure, then you get a huge performance advantage. Document databases are more performant when your data are unstructured.</p>
 <p>Key-value pairs mean that you store your data in a structure where it’s a pair of key (names) and values, like in the document examples above: <code>Pet=Luluka</code>. We mention this because when you store data as documents, there are many other ways to store them as well, for example, XML <code>&lt;Pet&gt;Luluka&lt;/Pet&gt;</code> or JSON <code>{“Pet” : “Luluka”}</code>.</p>
 <p>Finally, indexing means that not only data are stored, but notes on how to access them easily for the system are being kept. Indexing is very important in order for a database to be fast.
 Imagine it like in the phone-book, where there is a small bookmark where names with “A” start, names with “B” start, etc. Another example is to imagine a very huge book that you just want to find something in, and usually on the first pages, there is an “index” page, where the first page of each chapter is being referenced, so you don’t have to search the whole book page by page.</p>
 <p>Today, a software engineer would probably use Redis or MongoDB as a key-value document database. It’s very interesting to know that for all of the above things, NDB was one of the first -most probably even the first- databases to be capable of.</p>
 <p>This gem of a database was hidden inside Plan 9, and it was mostly used for managing networks – but not only. Most of the modern operating systems still use a plain file without database supporting mechanism – it sounds logical to take more care of the network, if someone would think of Plan 9’s distributed nature.</p>
-<p>Below, feel free to read the manual of NDB from “Plan9 : The Programmer’s Manual Volume 1, 4th Edition (2002) (Computer Science Research Center, Bell Laboratories, Lucent Technologies)” :</p>
 ]]></content:encoded>
         </item>
         <item>
@@ -196,21 +153,27 @@ Imagine it like in the phone-book, where there is a small bookmark where names w
             <content:encoded><![CDATA[<p>If you wish to make an apple pie from scratch, you must first invent the universe.</p>
 <p>In the 1930s, Alonzo Church introduced Lambda calculus. It is a formal system for expressing mathematical logic and computations using functions. Long before computations were performed by machines, they were done by humans, and Lambda calculus helped formalize these processes in written form.</p>
 <p>Lambda calculus looks like this:</p>
-<p>λx.x<em>2 // function that takes input xx and returns x</em>2λx.λy.x^2+y^2 // function that takes input x,y and returns the sum of them in power of 2</p>
+<pre><code>λx.x*2 // function that takes input xx and returns x*2
+
+λx.λy.x^2+y^2 // function that takes input x,y and returns the sum of them in power of 2
+</code></pre>
 <p>In the 1940s, Steve Russell, Timothy P. Hart and Mike Levin specified Lisp, a programming language based on the concepts of Lamda calculus. In 1970s, MIT created Scheme, a lisp dialect.</p>
 <p>Scheme looks like this :</p>
-<p>(display "Hello, World!")
-(newline)</p>
+<pre><code>(display "Hello, World!")
+(newline)
+</code></pre>
 <p>In 1987, Self was created by David Ungar, Randall Smith, Stanford University, Sun Microsystems, as a dialect of Smalltalk. Smalltalk created on 1969 at Xerox PARC by Learning Research Group (LRG) scientists, including Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Diana Merry, and Scott Wallace.</p>
 <p>Self looks like this :</p>
-<p>"Hello, World!" println.</p>
+<pre><code>"Hello, World!" println.
+</code></pre>
 <p>In the early 1990s, Sun Microsystems began developing Java. This language was created by them because none of the existing languages were capable of solving their problems. After a lot of experimentation with the dominant language at the time, C++, they created and tested an extension of C++ called C++++, which much they didn’t finish and later became C# by Microsoft. Based on their experiments, they created Java.</p>
 <p>Java looks like this :</p>
-<p>public class HelloWorld {
-public static void main(String[] args) {
-System.out.println("Hello, World!");
+<pre><code>public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
 }
-}</p>
+</code></pre>
 <p>Note that Java has a C language-style syntax. C is a very good, probably the best, and very old language still used today for hard tasks like writing operating systems. It’s very fast but hard to write.</p>
 <p>In 1995, Netscape hired Brendan Eich to implement the Scheme language in the browser. Instead of doing that, he created a new language, combiningJava‘s syntax (essentially C), most of theScheme (for nearly everything), andSelf‘s prototype (for easy data structure and no classes in contrast to Java). Essentially, he incorporated anything from famous languages at the time that made developers’ lives easier and blended them all together.</p>
 <p>The result was the language that we all love, Javascript.</p>
@@ -234,15 +197,15 @@ System.out.println("Hello, World!");
   echo 0 | sudo tee /sys/class/leds/input2::capslock/brightness; # Caps Lock's LED fake off
 </code></pre>
 <p>(remember to set it back to as it was !)</p>
-<p>Now, Plan9, seeing the networked future that we live in coming, they wanted to take this concept to the next level. They wanted to take the "everything is a file" concept to the next level and each computer to be able to share those files through network.
-By doing this, you could be literally be able to :</p>
+<p>Now, Plan9, seeing the networked future that we live in coming, they wanted to take this concept to the next level. They wanted to take the "everything is a file" concept to the next level and each computer to be able to share those files through network.</p>
+<p>By doing this, you could be literally be able to :</p>
 <ul>
 <li>share your computing resources, your computing power, through network</li>
 <li>share your hard disk over network</li>
-<li>share your screen over network
-Without using any additional software that mimics this functionality. It would had been native.
-For exaple, you want to share your screen with your friend ? You wouldn't need to use a program for this, you could just share your GPU with him. Or even, think of those services nowdays that you rent a GPU online and they give you access to a remote desktop to play there games... again, you wouldn't even had to connect to a remote desktop, you could just attach the remote GPU to your computer, again, natively.</li>
+<li>share your screen over network</li>
 </ul>
+<p>Without using any additional software that mimics this functionality. It would had been native.</p>
+<p>For exaple, you want to share your screen with your friend ? You wouldn't need to use a program for this, you could just share your GPU with him. Or even, think of those services nowdays that you rent a GPU online and they give you access to a remote desktop to play there games... again, you wouldn't even had to connect to a remote desktop, you could just attach the remote GPU to your computer, again, natively.</p>
 <p>The question is, why such an innovative idea didn't became the norm ? Specially today, the posibilities could had been amazing. It could had been literally an software abstraction of Von Neumann architecture that would make you forget about Von Neumann architecture. With such innovation, we would had... flying cars at 2025 for sure, or maybe we wouldn't, but I wouldn't be thinking if my PC will be able to play GTA6 without renting... a remote, different than mine PC on the cloud... I would be able to play and have my local setup at the same time.</p>
 <p>The reason is simple: It wasn't simple. It wasn't flexible. Going from Unix to Plan9 was like going from bike to spaceship. Every program had to be rewriten and follow a different style, far away than what we're used to. There wasn't even a compatibility layer to address this.</p>
 <p>Even if Plan9 didn't made it, I'm sure that this next step will take place in the future of operating systems, but it will not be a revolution, as Plan9 wanted to be, but a reform.</p>
@@ -252,10 +215,253 @@ For exaple, you want to share your screen with your friend ? You wouldn't need t
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Hello World !]]></title>
+            <link>https://blog.simplecode.gr/posts/hello-world/</link>
+            <guid isPermaLink="false">https://blog.simplecode.gr/posts/hello-world/</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is a hello world article.]]></description>
+            <content:encoded><![CDATA[<p>Hello world !</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[WebSockets Reversed Ping of Death]]></title>
+            <link>https://blog.simplecode.gr/posts/websockets-reversed-ping-of-death/</link>
+            <guid isPermaLink="false">https://blog.simplecode.gr/posts/websockets-reversed-ping-of-death/</guid>
+            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[WebSockets Reversed Ping of Death]]></description>
+            <content:encoded><![CDATA[<p><strong>Warning:</strong> The following action may cause a visitor’s browser or even their computer to crash. This information is provided for educational purposes only. Use it responsibly.</p>
+<p>I do not encourage or condone the misuse of this knowledge, and I disclaim any responsibility for any damage, disruption, or unintended consequences resulting from its use. Proceed at your own risk.</p>
+<hr />
+<p>One of the first things someone learns in martial arts is that when you hold someone, that someone holds you too. If, for example, that someone falls on purpose while you’re holding them tightly, chances are you might fall too.</p>
+<p>Even though there isn’t a special name for this idea, it can be found in Aiki martial arts principle, where the main point is that the opponent’s energy becomes a tool in your hands if you redirect it wisely.</p>
+<p>When you write a program that handles WebSocket connections, one of the main security concerns is preventing a client from flooding you with messages or pings with bad intentions.</p>
+<p>But what if I told you that, on the other side, no browser checks if someone attacks with abnormal load of WebSocket messages or pings in bad faith — and just ends up crashing?</p>
+<hr />
+<p>You can easily test this yourself:</p>
+<ol>
+<li>
+<p>Bookmark this page first, so you can return after a crash.</p>
+</li>
+<li>
+<p>Write a Go program that opens a WebSocket connection and continuously sends pings in a highly repetitive loop:</p>
+</li>
+</ol>
+<pre><code>// main.go
+package main
+
+import (
+    "log"
+    "github.com/gorilla/websocket"
+)
+
+func main() {
+    url := "ws://localhost:3001"
+    conn, _, err := websocket.DefaultDialer.Dial(url, nil)
+    if err != nil {
+        log.Fatal("Error connecting to WebSocket:", err)
+    }
+    defer conn.Close()
+
+    for {
+        err := conn.WriteMessage(websocket.PingMessage, nil)
+        if err != nil {
+            log.Println("Error sending ping:", err)
+            return
+        }
+    }
+}
+</code></pre>
+<ol>
+<li>Write an HTML page that connects to this WebSocket connection:</li>
+</ol>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;title&gt;WebSocket Reversed Ping of Death&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;WebSocket Reversed Ping of Death&lt;/h1&gt;
+
+    &lt;script&gt;
+        const socket = new WebSocket("ws://localhost:3001/ws");
+
+        socket.onerror = (error) =&gt; {
+            console.error("WebSocket error:", error);
+        };
+
+        socket.onopen = () =&gt; {
+            console.log("WebSocket connected.");
+        };
+
+        socket.onclose = () =&gt; {
+            console.log("WebSocket closed.");
+        };
+
+        socket.onmessage = (event) =&gt; {
+            console.log("WebSocket received:", event.data);
+        };
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ol>
+<li>Run the Go program:</li>
+</ol>
+<pre><code>go mod init main
+go mod tidy
+go run main.go
+</code></pre>
+<ol>
+<li>Start a simple HTTP server to serve <code>index.html</code>:
+(If port 3002 is not available, pick another one, e.g., 3003…)</li>
+</ol>
+<pre><code>python3 -m http.server 3002
+</code></pre>
+<ol>
+<li>Open the page in your browser. For example:
+(If port 3002 was not available, use the other port you picked)</li>
+</ol>
+<pre><code>http://localhost:3002
+</code></pre>
+<hr />
+<p>Of course, the reason I’m writing these lines is not to enable script kiddies to annoy others, but to highlight a problem and propose a solution. Just to clarify, I am publishing this article only after having contacted major browser developers and submitted bug reports to ensure better client-side security checks for everyone.</p>
+<p>Until all browsers implement a check, you can take care of yourself, by:</p>
+<ul>
+<li>If visiting a site crashed your computer, be aware that it’s possible and that it may be just this method described above used. Don’t panic and don’t believe everything.</li>
+<li>If you develop an application that depends on a third-party WebSocket, then make sure that you really trust the provider of it.</li>
+</ul>
+<hr />
+<p>It’s the browsers that need to protect you from such a problem since the WebSocket API of them (which is kind of the same across all of them) doesn’t expose you the pings. This means that even if you write code that may find abnormal load of messages — good, perfect — but… you will never be able to see an abnormal load of pings, as you don’t get them at all like they don’t exist.</p>
+<p>Using a custom proxy made to bypass and check the connection could be a real solution, as a proxy being a whole program, freed from the limitations of browsers, could detect abnormal loads of everything, including pings and kill the connection if needed.</p>
+<p>I don’t provide the code to such a thing because this is simply opening other problems like what if someone abuses your proxy, so it’s a solution that needs to be implemented carefully and maybe customized.</p>
+<hr />
+<p>Back to browsers, it’s worth noting that there are actually two other ways to have a WebSocket connection that claim to try to solve such problems. Well, they don’t talk exactly about the problem above (especially with the ping case), but they talk about almost the same and they call it <strong>“backpressure”</strong>. From Mozilla Developer Network:</p>
+<blockquote>
+<p><strong>Backpressure</strong>
+An important concept in streams is backpressure — this is the process by which a single stream or a pipe chain regulates the speed of reading/writing. When a stream later in the chain is still busy and isn't yet ready to accept more chunks, it sends a signal backwards through the chain to tell earlier transform streams (or the original source) to slow down delivery so that you don't end up with a bottleneck anywhere.</p>
+</blockquote>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#backpressure">https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#backpressure</a></p>
+<p>Those two other ways are <strong>WebTransport API</strong> and <strong>Streams API</strong>. Both are great but very fresh, in contrast to the WebSocket API which has been around for more than a decade. They are so fresh that the first is not supported by Safari and the second is not supported by Firefox. And even the browsers that support one or the other do so only in very recent versions (and experimentally, I would guess).</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></title>
+            <link>https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/</link>
+            <guid isPermaLink="false">https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/</guid>
+            <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></description>
+            <content:encoded><![CDATA[<p>On the 4th of June 2024, we mark 28 years since the tragic failure of Ariane flight V88.</p>
+<p>Ariane 5 rocket was designed to carry massive payloads -up to 21,000 kg- into the cosmos, following in the footsteps of its predecessor, the Ariane 4.</p>
+<p>The Ariane 4 had its own success story, with a smaller payload capacity of 10,500 kg, thanks in part to its reliable software. This software, made up of intricate lines of code, was meant to guide the rocket flawlessly through space. When it came time for the Ariane 5 to take flight, engineers saw no reason to reinvent the wheel, so they incorporated much of the same code.</p>
+<p>But on June 4, 1996, at the Guiana Space Centre, located on an overseas region of France in South America, during what was supposed to be a routine launch, disaster struck. Just thirty-six seconds into the flight, a tiny flaw in the code caused set off a chain reaction, halting the inertial navigation system, surrendering the rocket to intense aerodynamic forces. Consequently, the rocket veered 90 degrees off course, invoking the self-destruct mechanism leading to a massive explosion.</p>
+<p><a href="https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899">https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899</a></p>
+<p><strong>Thankfully, no humans were harmed</strong> as the rocket was carrying a constellation of four European Space Agency research satellites, the “Cluster“.</p>
+<p>The failure line of code was the last line below, written in ADA :</p>
+<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+
+if L_M_BV_32 &gt; 32767 then
+	P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
+elseif L_M_BV_32 &lt; -32768 then
+	P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
+else
+	P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
+end if;
+
+P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) *G_M_INFO_DERIVE(T_ALG.E_BH));
+</code></pre>
+<p>The error was an overflow of memory limit set for the variable <code>T_ALG.E_BH</code>.</p>
+<p>Both variables T_ALG.E_BV and T_ALG.E_BH represents the velocity of the rocket.T_ALG.E_BVdoes it for vertical velocity (thus ends in “V”) and T_ALG.E_BH for horizontal (thus ends in “H”).</p>
+<p>Since those two variables were signed 16-bit type, that meant that they could hold from number -32768 until 32767. It’s just how things are for this type of variables. Any attempt to store a smaller or greater number would result in a memory overflow and a crash, like the ones that happen to your personal computer as well from time to time.</p>
+<p>In the code, we can easily see that an overflow case is correctly managed for variable <code>T_ALG.E_BV</code> from the line if L_M_BV_32 &gt; 32767 then until end if; below it. All that happens there actually is that :</p>
+<ul>
+<li>if the value to be assigned toT_ALG.E_BVis smaller than -32768, it would take -32768 (or <code>16#7FFF#</code> in hexadecimal numbering system)</li>
+<li>if the value to be assigned toT_ALG.E_BVis greater than 32767, it would take 32767 (or <code>16#8000#</code> in hexadecimal numbering system)</li>
+</ul>
+<p>So simple !</p>
+<p>All great for <code>T_ALG.E_BV</code> but for <code>T_ALG.E_BH</code> things were different : it’s completely on it’s own luck.</p>
+<p>It was the bigger scale of Ariane 5, compared to Ariane 4, that resulted in that number stored directly on <code>T_ALG.E_BH</code> actually to reach a value greated than 32767, revealing this tiny mistake of not handling that case for this variable as well by… a huge explosion.</p>
+<p>Following the accident, they resolved the issue quite simply removing the scandalous line and by copying &amp; pasting the same code for <code>T_ALG.E_BV</code> to do the same thing for <code>T_ALG.E_BH</code> as well.</p>
+<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+if L_M_BV_32 &gt; 32767 then
+ P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
+elseif L_M_BV_32 &lt; -32768 then
+ P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
+else
+ P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
+end if;
+
+L_M_BH_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+if L_M_BH_32 &gt; 32767 then
+ P_M_DERIVE(T_ALG.E_BH) := 16#7FFF#;
+elseif L_M_BH_32 &lt; -32768 then
+ P_M_DERIVE(T_ALG.E_BH) := 16#8000#;
+else
+ P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BH_32));
+end if;
+</code></pre>
+<p>The Ariane Flight V88 is a great example of how memory safety is a field with lot of work that needs to be done.</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways]]></title>
+            <link>https://blog.simplecode.gr/posts/when-boeing-737-ng-screens-went-blank-during-landings-on-perfectly-horizontal-runways/</link>
+            <guid isPermaLink="false">https://blog.simplecode.gr/posts/when-boeing-737-ng-screens-went-blank-during-landings-on-perfectly-horizontal-runways/</guid>
+            <pubDate>Sat, 07 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways]]></description>
+            <content:encoded><![CDATA[<p>The pilots of the new Boeing 737-NG, around 2019-2020, encountered a particularly vexing issue: all six display units would go blank during landings at certain airports, including:</p>
+<ul>
+<li>La Mina, La Guajira, Colombia</li>
+<li>Barrow, Alaska, USA</li>
+<li>Pine Bluffs, Wyoming, USA</li>
+<li>Wayne County, Ohio, USA</li>
+<li>Chippewa County, Michigan, USA</li>
+<li>Cavern City, New Mexico, USA</li>
+<li>Cheddi Jagan, Georgetown, Guyana</li>
+</ul>
+<p>Since the Boeing codebase is closed-source, the exact cause of the issue remains unknown. We only know the nature of the bug, the timeframe in which it occurred, and that it has since been resolved. Thus, we can only speculate about the details.</p>
+<p>…So, let our imaginations take flight !…</p>
+<p>First of all, let’s consider the airports themselves. These locations form our sample space.</p>
+<p>If we examine the airports on maps, we will find a common factor: each of these airports has at least one perfectly horizontal runway!</p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/11.2342/-72.4913">La Mina, La Guajira, Colombia</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=14/71.2856/-156.7695">Barrow, Alaska, USA</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/41.1507/-104.1349">Pine Bluffs, Wyoming, USA</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/40.8744/-81.8877">Wayne County, Ohio, USA</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/46.2548/-84.4747">Chippewa County, Michigan, USA</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/32.3422/-104.2601">Cavern City, New Mexico, USA</a>
+(a horizontal runway is located in the middle of the map)</p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/6.4988/-58.2571">Cheddi Jagan, Georgetown, Guyana</a>
+(a horizontal runway is located in the middle of the map)</p>
+<p>If all the aforementioned airports have a runway that is perfectly horizontal—meaning it forms a 270 or 90-degree angle, depending on the approach direction—then we can hypothesize about the issue by identifying mathematical functions :</p>
+<pre><code>( f ) where ( f(x) = 0 ) for ( x = 270° ) or ( x = 90° )
+</code></pre>
+<p>One such function is the very simple : <code>f(x) = 1 / cos(x)</code></p>
+<p>That, because :</p>
+<pre><code>cos(270°) = 0
+
+cos(90°) = 0
+</code></pre>
+<p>So, we end up with :</p>
+<pre><code>f(270°) = 1 / cos(270°) = 1/0
+
+f(90°) = 1 / cos(90°) = 1/0
+</code></pre>
+<p>And division by 0 is impossible.</p>
+<p>In this scenario, the Boeing 737-NG’s software may have crashed, causing the screens to turn off on these perfectly horizontal runways. However, we don’t truly know the reason, and the above is merely one of many possible assumptions we can make using our imagination and the given context.</p>
+<p>Below is the U.S.A. Federal Aviation Administration’s record of the bug:</p>
+<p>The FAA received reports earlier this year of three incidents of display electronic unit (DEU) software errors on Model 737 NG airplanes flying into runway PABR in Barrow, Alaska. All six display units (DUs) blanked with a selected instrument approach to a runway with a 270-degree true heading, and all six DUs stayed blank until a different runway was selected <a href="https://www.federalregister.gov/documents/2019/12/27/2019-27966/airworthiness-directives-the-boeing-company-airplanes?ref=blog.simplecode.gr">(source)</a>.</p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Time is infinite, but a computer’s memory isn’t]]></title>
             <link>https://blog.simplecode.gr/posts/time-is-infinite-but-a-computers-memory-isnt/</link>
             <guid isPermaLink="false">https://blog.simplecode.gr/posts/time-is-infinite-but-a-computers-memory-isnt/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Time is infinite, but a computer’s memory isn’t]]></description>
             <content:encoded><![CDATA[<p>In low-level coding, we usually have to specify the length of a variable. We have many types, including int32 and int64, which represent numbers in binary, using 32 bits or 64 bits, respectively.</p>
 <p>The int32, of number 4 for example, looks like this:</p>
@@ -421,71 +627,10 @@ An int32 has 32 bits and can store values from -2147483648 to 2147483647 (if it�
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></title>
-            <link>https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/</link>
-            <guid isPermaLink="false">https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></description>
-            <content:encoded><![CDATA[<p>On the 4th of June 2024, we mark 28 years since the tragic failure of Ariane flight V88.</p>
-<p>Ariane 5 rocket was designed to carry massive payloads -up to 21,000 kg- into the cosmos, following in the footsteps of its predecessor, the Ariane 4.</p>
-<p>The Ariane 4 had its own success story, with a smaller payload capacity of 10,500 kg, thanks in part to its reliable software. This software, made up of intricate lines of code, was meant to guide the rocket flawlessly through space. When it came time for the Ariane 5 to take flight, engineers saw no reason to reinvent the wheel, so they incorporated much of the same code.</p>
-<p>But on June 4, 1996, at the Guiana Space Centre, located on an overseas region of France in South America, during what was supposed to be a routine launch, disaster struck. Just thirty-six seconds into the flight, a tiny flaw in the code caused set off a chain reaction, halting the inertial navigation system, surrendering the rocket to intense aerodynamic forces. Consequently, the rocket veered 90 degrees off course, invoking the self-destruct mechanism leading to a massive explosion.</p>
-<p><a href="https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899">https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899</a></p>
-<p><strong>Thankfully, no humans were harmed</strong> as the rocket was carrying a constellation of four European Space Agency research satellites, the “Cluster“.</p>
-<p>The failure line of code was the last line below, written in ADA :</p>
-<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
-
-
-if L_M_BV_32 &gt; 32767 then
-	P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
-elseif L_M_BV_32 &lt; -32768 then
-	P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
-else
-	P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
-end if;
-
-P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) *G_M_INFO_DERIVE(T_ALG.E_BH));
-</code></pre>
-<p>The error was an overflow of memory limit set for the variable <code>T_ALG.E_BH</code>.</p>
-<p>Both variables T_ALG.E_BV and T_ALG.E_BH represents the velocity of the rocket.T_ALG.E_BVdoes it for vertical velocity (thus ends in “V”) and T_ALG.E_BH for horizontal (thus ends in “H”).</p>
-<p>Since those two variables were signed 16-bit type, that meant that they could hold from number -32768 until 32767. It’s just how things are for this type of variables. Any attempt to store a smaller or greater number would result in a memory overflow and a crash, like the ones that happen to your personal computer as well from time to time.</p>
-<p>In the code, we can easily see that an overflow case is correctly managed for variable <code>T_ALG.E_BV</code> from the line if L_M_BV_32 &gt; 32767 then until end if; below it. All that happens there actually is that :</p>
-<ul>
-<li>if the value to be assigned toT_ALG.E_BVis smaller than -32768, it would take -32768 (or <code>16#7FFF#</code> in hexadecimal numbering system)</li>
-<li>if the value to be assigned toT_ALG.E_BVis greater than 32767, it would take 32767 (or <code>16#8000#</code> in hexadecimal numbering system)</li>
-</ul>
-<p>So simple !</p>
-<p>All great for <code>T_ALG.E_BV</code> but for <code>T_ALG.E_BH</code> things were different : it’s completely on it’s own luck.</p>
-<p>It was the bigger scale of Ariane 5, compared to Ariane 4, that resulted in that number stored directly on <code>T_ALG.E_BH</code> actually to reach a value greated than 32767, revealing this tiny mistake of not handling that case for this variable as well by… a huge explosion.</p>
-<p>Following the accident, they resolved the issue quite simply removing the scandalous line and by copying &amp; pasting the same code for <code>T_ALG.E_BV</code> to do the same thing for <code>T_ALG.E_BH</code> as well.</p>
-<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
-
-if L_M_BV_32 &gt; 32767 then
- P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
-elseif L_M_BV_32 &lt; -32768 then
- P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
-else
- P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
-end if;
-
-L_M_BH_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
-
-if L_M_BH_32 &gt; 32767 then
- P_M_DERIVE(T_ALG.E_BH) := 16#7FFF#;
-elseif L_M_BH_32 &lt; -32768 then
- P_M_DERIVE(T_ALG.E_BH) := 16#8000#;
-else
- P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BH_32));
-end if;
-</code></pre>
-<p>The Ariane Flight V88 is a great example of how memory safety is a field with lot of work that needs to be done.</p>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[Hamming Numbers]]></title>
             <link>https://blog.simplecode.gr/posts/hamming-numbers/</link>
             <guid isPermaLink="false">https://blog.simplecode.gr/posts/hamming-numbers/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <pubDate>Thu, 05 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Hamming Numbers]]></description>
             <content:encoded><![CDATA[<p>Hamming numbers, or ugly numbers, or smooth numbers, is a sequence of numbers that they can be produced by:</p>
 <pre><code>2^x * 3^y * 5^z
@@ -554,125 +699,10 @@ Time taken to factorize 51200001: 1.013663ms
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways]]></title>
-            <link>https://blog.simplecode.gr/posts/when-boeing-737-ng-screens-went-blank-during-landings-on-perfectly-horizontal-runways/</link>
-            <guid isPermaLink="false">https://blog.simplecode.gr/posts/when-boeing-737-ng-screens-went-blank-during-landings-on-perfectly-horizontal-runways/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways]]></description>
-            <content:encoded><![CDATA[<p>The pilots of the new Boeing 737-NG, around 2019-2020, encountered a particularly vexing issue: all six display units would go blank during landings at certain airports, including:</p>
-<ul>
-<li>La Mina, La Guajira, Colombia</li>
-<li>Barrow, Alaska, USA</li>
-<li>Pine Bluffs, Wyoming, USA</li>
-<li>Wayne County, Ohio, USA</li>
-<li>Chippewa County, Michigan, USA</li>
-<li>Cavern City, New Mexico, USA</li>
-<li>Cheddi Jagan, Georgetown, Guyana</li>
-</ul>
-<p>Since the Boeing codebase is closed-source, the exact cause of the issue remains unknown. We only know the nature of the bug, the timeframe in which it occurred, and that it has since been resolved. Thus, we can only speculate about the details.</p>
-<p>…So, let our imaginations take flight !…</p>
-<p>First of all, let’s consider the airports themselves. These locations form our sample space.</p>
-<p>If we examine the airports on maps, we will find a common factor: each of these airports has at least one perfectly horizontal runway!</p>
-<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/11.2342/-72.4913">La Mina, La Guajira, Colombia</a></p>
-<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=14/71.2856/-156.7695">Barrow, Alaska, USA</a></p>
-<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/41.1507/-104.1349">Pine Bluffs, Wyoming, USA</a></p>
-<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/40.8744/-81.8877">Wayne County, Ohio, USA</a></p>
-<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/46.2548/-84.4747">Chippewa County, Michigan, USA</a></p>
-<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/32.3422/-104.2601">Cavern City, New Mexico, USA</a>
-(a horizontal runway is located in the middle of the map)</p>
-<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/6.4988/-58.2571">Cheddi Jagan, Georgetown, Guyana</a>
-(a horizontal runway is located in the middle of the map)</p>
-<p>If all the aforementioned airports have a runway that is perfectly horizontal—meaning it forms a 270 or 90-degree angle, depending on the approach direction—then we can hypothesize about the issue by identifying mathematical functions :</p>
-<pre><code>( f ) where ( f(x) = 0 ) for ( x = 270° ) or ( x = 90° )
-</code></pre>
-<p>One such function is the very simple : <code>f(x) = 1 / cos(x)</code></p>
-<p>That, because :</p>
-<pre><code>cos(270°) = 0
-
-cos(90°) = 0
-</code></pre>
-<p>So, we end up with :</p>
-<pre><code>f(270°) = 1 / cos(270°) = 1/0
-
-f(90°) = 1 / cos(90°) = 1/0
-</code></pre>
-<p>And division by 0 is impossible.</p>
-<p>In this scenario, the Boeing 737-NG’s software may have crashed, causing the screens to turn off on these perfectly horizontal runways. However, we don’t truly know the reason, and the above is merely one of many possible assumptions we can make using our imagination and the given context.</p>
-<p>Below is the U.S.A. Federal Aviation Administration’s record of the bug:</p>
-<p>The FAA received reports earlier this year of three incidents of display electronic unit (DEU) software errors on Model 737 NG airplanes flying into runway PABR in Barrow, Alaska. All six display units (DUs) blanked with a selected instrument approach to a runway with a 270-degree true heading, and all six DUs stayed blank until a different runway was selected <a href="https://www.federalregister.gov/documents/2019/12/27/2019-27966/airworthiness-directives-the-boeing-company-airplanes?ref=blog.simplecode.gr">(source)</a>.</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Hello World !]]></title>
-            <link>https://blog.simplecode.gr/posts/hello-world/</link>
-            <guid isPermaLink="false">https://blog.simplecode.gr/posts/hello-world/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is a hello world article.]]></description>
-            <content:encoded><![CDATA[<p>Hello world !</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[When is a program good ? Reverse engineering HOU’s compiler]]></title>
-            <link>https://blog.simplecode.gr/posts/when-is-a-program-good-reverse-engineering-hous-compiler/</link>
-            <guid isPermaLink="false">https://blog.simplecode.gr/posts/when-is-a-program-good-reverse-engineering-hous-compiler/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[When is a program good ? Reverse engineering HOU’s compiler]]></description>
-            <content:encoded><![CDATA[<p>At the university I’m attending, Hellenic Open University, they have developed, years ago, a custom programming language and a custom compiler for it. The language is ok, feels a bit like Pascal and the commands are all in Greek. For example:</p>
-<pre><code>ΑΛΓΟΡΙΘΜΟΣ ΔΟΚΙΜΗ
-	ΔΕΔΟΜΕΝΑ x:INTEGER;
-ΑΡΧΗ
-	ΤΥΠΩΣΕ ("PLEASE ENTER A NUMBER: ", EOLN);
-	ΔΙΑΒΑΣΕ (x);
-	ΤΥΠΩΣΕ ("YOU GAVE: ", x, EOLN)
-ΤΕΛΟΣ
-</code></pre>
-<p>The compiler on the other hand… is one of the worst compilers I’ve used ever. It’s very buggy and it’s also having millions of encoding problems which originate from the fact that it expects files to be in Windows-1253 encoding while most editors nowadays use UTF-8. It’s a compiler you can use, but it doesn’t fit its purpose. So it’s bad.</p>
-<p>What I mean by this is that there is a way to use this compiler: use Notepad++ and constantly check if your encoding is Windows-1253; workaround the compiler’s bugs by writing your code with the same logic but a bit differently. All this makes coding in that language and using this compiler harder than coding in C, which is touted later and is considered harder… oh sweet summer child, if you only knew (!!! 😂 !!!).</p>
-<p>But the purpose of this compiler was to be introducing and easy, so this compiler has failed its purpose for good. And it’s not only me who will say this. Aristotle argued that something is good when it fulfills its “τέλος” (purpose or function), so there are good chances Aristotle would consider this compiler “bad”.</p>
-<p>As a cherry on top, this compiler doesn’t work on Linux. So it’s trash.</p>
-<hr />
-<p>It was clear that something needed to be done with this compiler.</p>
-<p>I managed to get this compiler to work on Linux after lots of tweaking with the “wine” compatibility tool and because I didn’t want anyone else to go through all this, I made a public repository with a ready solution. You can find everything here:
-<a href="https://github.com/rept0id/hou-compiler-linux/">https://github.com/rept0id/hou-compiler-linux/</a></p>
-<p>This “wine” solution makes using this compiler on Linux not only possible but actually better than it is on other platforms. This is because before it runs the compiler and the produced executable through wine, it also encodes the provided file from UTF-8 to Windows-1253.</p>
-<p>This way, you write with a sane person’s tools, you know, the average editor of the simple layman out there that uses UTF-8, and then another file with the same content but Windows-1253 gets created and provided to the compiler. But you don’t care about the other file as it’s just a middle step. You write UTF-8.
-Now you can focus on your code instead of the encodings.</p>
-<hr />
-<p>This solution mentioned above is “good” (by Aristotle) but it’s not “perfect” (by me, even though Aristotle’s opinion matters more). Because something with this compiler and wine bugs, if you try to print Greek characters through your program it will display them wrong (as a workaround, use Greek with Latin characters, Greeklish, or just English).</p>
-<p>Such a thing is very annoying for a compiler and whole concept meant to work with Greek. This actually still makes the program “not good” by Aristotle. This must be fixed as well, else the solution is not perfect. I believe there are 2 ways to fix this: one is to keep fuck-around-find-out with Wine and the second is to reverse engineer this compiler totally and make a better one. Guess which one I find more fun!</p>
-<hr />
-<p>First step into reverse engineering was to throw this compiler into a classic .NET reverse engineering tool, like .NET Reflector and the newer DotPeek, because only those ones I knew from a friend.</p>
-<p>Actually, .NET is the best case of reverse engineering a program because the code that you write in C#, VB, F# or whatever, gets transposed into bytecode for “Common Language Runtime” which is considered easier to reverse engineer than raw binary machine code.</p>
-<p>Those tools, if the code is not “obfuscated” against them, will give you a very good result. This bytecode thing makes me consider all those languages to be in the same basket as Java; even though they don’t claim that they run inside a VM, they aaalmost do something that could be labeled as similar.</p>
-<p>Turns out this compiler is not a .NET program and I couldn’t get something out of using those tools.</p>
-<hr />
-<p>Next step was to guess better what this program was made with. I ran</p>
-<pre><code>strings ./pli10.exe
-</code></pre>
-<p>in a Linux terminal and saw a little bit the result. I saw many “GCC” (filtered with <code>strings ./pli10.exe | grep "GCC"</code>), and made a conclusion that this may be a C/C++ program, since GCC is a C compiler.</p>
-<p>I can’t be 100% sure as this compiler uses tdm-gcc to generate the machine code, so maybe it’s written in something different than C/C++ and it just calls the GCC compiler.</p>
-<p>So I had to do what any programmer that likes math would have done and say the poem:
-“let’s assume this program is C/C++” and continue based on this.</p>
-<hr />
-<p>I didn’t know any good C/C++ disassembler so ChatGPT and Google were my friends and I found that actually there are out there 2 very good ones:</p>
-<ul>
-<li>Ghidra, made by NSA</li>
-<li>Interactive Disassembler (IDA), made by Ilfak Guilfanov</li>
-</ul>
-<p>I managed to get Ghidra and disassemble the compiler back to code. But still, I wasn’t able yet to find many things. Not yet.</p>
-<p>By the way, Ghidra can disassemble other languages too like Go and Rust as far as I’ve read.</p>
-<hr />
-<p>Still, the journey doesn’t end here, as I’ve already found a line that is very interesting:</p>
-<pre><code>system("chcp 1253 &gt; nul");
-</code></pre>
-<p>Maybe this program could work much better if this legacy Windows-1253 encoding wasn’t enforced.</p>
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root]]></title>
             <link>https://blog.simplecode.gr/posts/the-14-lines-of-code-that-revolutionized-3d-graphics-fast-inverse-square-root/</link>
             <guid isPermaLink="false">https://blog.simplecode.gr/posts/the-14-lines-of-code-that-revolutionized-3d-graphics-fast-inverse-square-root/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+            <pubDate>Wed, 04 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root]]></description>
             <content:encoded><![CDATA[<p>For a computer, a three-dimensional space is a collection of triangles. In older 3D video games, this was noticeable and everything seemed a bit triangular. This was because, in order to accommodate older hardware, they had to reduce the number of triangles. Nowadays, there are more triangles, so there is more detail and things don’t seem triangular in modern video games – but deep inside, they still are.</p>
 <p>Usually, computers treat media as pixels. An image is nothing but a collection of pixels. However, in 3D graphics, it’s more efficient to treat everything as triangles. With triangles, you can manipulate their angles and adjust shapes as someone moves within a 3D space.</p>
@@ -926,129 +956,105 @@ This trick is called “type punning”.</p>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[WebSockets Reversed Ping of Death]]></title>
-            <link>https://blog.simplecode.gr/posts/websockets-reversed-ping-of-death/</link>
-            <guid isPermaLink="false">https://blog.simplecode.gr/posts/websockets-reversed-ping-of-death/</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[WebSockets Reversed Ping of Death]]></description>
-            <content:encoded><![CDATA[<p><strong>Warning:</strong> The following action may cause a visitor’s browser or even their computer to crash. This information is provided for educational purposes only. Use it responsibly.</p>
-<p>I do not encourage or condone the misuse of this knowledge, and I disclaim any responsibility for any damage, disruption, or unintended consequences resulting from its use. Proceed at your own risk.</p>
-<hr />
-<p>One of the first things someone learns in martial arts is that when you hold someone, that someone holds you too. If, for example, that someone falls on purpose while you’re holding them tightly, chances are you might fall too.</p>
-<p>Even though there isn’t a special name for this idea, it can be found in Aiki martial arts principle, where the main point is that the opponent’s energy becomes a tool in your hands if you redirect it wisely.</p>
-<p>When you write a program that handles WebSocket connections, one of the main security concerns is preventing a client from flooding you with messages or pings with bad intentions.</p>
-<p>But what if I told you that, on the other side, no browser checks if someone attacks with abnormal load of WebSocket messages or pings in bad faith — and just ends up crashing?</p>
-<hr />
-<p>You can easily test this yourself:</p>
-<ol>
-<li>
-<p>Bookmark this page first, so you can return after a crash.</p>
-</li>
-<li>
-<p>Write a Go program that opens a WebSocket connection and continuously sends pings in a highly repetitive loop:</p>
-</li>
-</ol>
-<pre><code>// main.go
-package main
-
-import (
-    "log"
-    "github.com/gorilla/websocket"
-)
-
-func main() {
-    url := "ws://localhost:3001"
-    conn, _, err := websocket.DefaultDialer.Dial(url, nil)
-    if err != nil {
-        log.Fatal("Error connecting to WebSocket:", err)
-    }
-    defer conn.Close()
-
-    for {
-        err := conn.WriteMessage(websocket.PingMessage, nil)
-        if err != nil {
-            log.Println("Error sending ping:", err)
-            return
-        }
-    }
-}
-</code></pre>
-<ol>
-<li>Write an HTML page that connects to this WebSocket connection:</li>
-</ol>
-<pre><code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8" /&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
-    &lt;title&gt;WebSocket Reversed Ping of Death&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;WebSocket Reversed Ping of Death&lt;/h1&gt;
-
-    &lt;script&gt;
-        const socket = new WebSocket("ws://localhost:3001/ws");
-
-        socket.onerror = (error) =&gt; {
-            console.error("WebSocket error:", error);
-        };
-
-        socket.onopen = () =&gt; {
-            console.log("WebSocket connected.");
-        };
-
-        socket.onclose = () =&gt; {
-            console.log("WebSocket closed.");
-        };
-
-        socket.onmessage = (event) =&gt; {
-            console.log("WebSocket received:", event.data);
-        };
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<ol>
-<li>Run the Go program:</li>
-</ol>
-<pre><code>go mod init main
-go mod tidy
-go run main.go
-</code></pre>
-<ol>
-<li>Start a simple HTTP server to serve <code>index.html</code>:
-(If port 3002 is not available, pick another one, e.g., 3003…)</li>
-</ol>
-<pre><code>python3 -m http.server 3002
-</code></pre>
-<ol>
-<li>Open the page in your browser. For example:
-(If port 3002 was not available, use the other port you picked)</li>
-</ol>
-<pre><code>http://localhost:3002
-</code></pre>
-<hr />
-<p>Of course, the reason I’m writing these lines is not to enable script kiddies to annoy others, but to highlight a problem and propose a solution. Just to clarify, I am publishing this article only after having contacted major browser developers and submitted bug reports to ensure better client-side security checks for everyone.</p>
-<p>Until all browsers implement a check, you can take care of yourself, by:</p>
-<ul>
-<li>If visiting a site crashed your computer, be aware that it’s possible and that it may be just this method described above used. Don’t panic and don’t believe everything.</li>
-<li>If you develop an application that depends on a third-party WebSocket, then make sure that you really trust the provider of it.</li>
-</ul>
-<hr />
-<p>It’s the browsers that need to protect you from such a problem since the WebSocket API of them (which is kind of the same across all of them) doesn’t expose you the pings. This means that even if you write code that may find abnormal load of messages — good, perfect — but… you will never be able to see an abnormal load of pings, as you don’t get them at all like they don’t exist.</p>
-<p>Using a custom proxy made to bypass and check the connection could be a real solution, as a proxy being a whole program, freed from the limitations of browsers, could detect abnormal loads of everything, including pings and kill the connection if needed.</p>
-<p>I don’t provide the code to such a thing because this is simply opening other problems like what if someone abuses your proxy, so it’s a solution that needs to be implemented carefully and maybe customized.</p>
-<hr />
-<p>Back to browsers, it’s worth noting that there are actually two other ways to have a WebSocket connection that claim to try to solve such problems. Well, they don’t talk exactly about the problem above (especially with the ping case), but they talk about almost the same and they call it <strong>“backpressure”</strong>. From Mozilla Developer Network:</p>
+            <title><![CDATA[Making of the Grand Theft Auto Trilogy]]></title>
+            <link>https://blog.simplecode.gr/posts/making-of-the-grand-theft-auto-trilogy/</link>
+            <guid isPermaLink="false">https://blog.simplecode.gr/posts/making-of-the-grand-theft-auto-trilogy/</guid>
+            <pubDate>Tue, 03 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Making of the Grand Theft Auto Trilogy]]></description>
+            <content:encoded><![CDATA[<p>I was lucky enough to read all the posts of Obbe Vermeij at the blog "Insider Rockstar North", before he had to take it down.</p>
+<p>Obbe Vermeij was a developer working at Rockstar North game studio, during the GTA Trilogy era (III, Vice City, San Andreas...).</p>
+<p>For computer games, the GTA Trilogy is a reference point, as it was one of the first game series offering such an open-world experience, that you could travel around and do whatever, without limitations.</p>
+<p>Obbe seems to have been one of the key people who contributed to this freedom with his mindset, even while there were considerations of minimizing this freedom to make the game less heavy.</p>
 <blockquote>
-<p><strong>Backpressure</strong>
-An important concept in streams is backpressure — this is the process by which a single stream or a pipe chain regulates the speed of reading/writing. When a stream later in the chain is still busy and isn't yet ready to accept more chunks, it sends a signal backwards through the chain to tell earlier transform streams (or the original source) to slow down delivery so that you don't end up with a bottleneck anywhere.</p>
+<p>Gta1 had 3 cities and we wanted to do the same.</p>
+<p>There was one particular meeting that I still have nightmares about. In R*N we would usually make the big game decisions with 5 people. We had a meeting where 3 people wanted the cities to be on different maps. This would save memory as the models for the skylines of the cities wouldn't need to be in memory at the same time. Gta1 had 3 cities on different maps. The player would take planes/buses/trains to travel between maps.</p>
+<p>I wanted the cities to be on the same map as it is important to be able to drive between cities. Even if this meant we'd have to find some memory elsewhere. The 5th guy wasn't there that day. I wasn't able to convince the others. It was super frustrating as it seemed we were about to make a massive mistake.</p>
+<p>The following day we had another meeting. The 5th guy agreed with me and was much more persuasive than me. He talked them round and the cities ended up on the same map. Disaster averted.
+Obbe Vermeij</p>
+<p>The 3 cities with the country side in between, almost killed the map artists. gtaIII and Vice had maps of 4x4km and even then there was loads of water. The SA map was 6x6 and densily packed.</p>
+<p>~ Obbe Vermeij</p>
 </blockquote>
-<p>Those two other ways are <strong>WebTransport API</strong> and <strong>Streams API</strong>. Both are great but very fresh, in contrast to the WebSocket API which has been around for more than a decade. They are so fresh that the first is not supported by Safari and the second is not supported by Firefox. And even the browsers that support one or the other do so only in very recent versions (and experimentally, I would guess).</p>
-<hr />
-<p>[Reference]
-<a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#backpressure">https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#backpressure</a></p>
+<p>It was precisely this freedom that everyone, including myself, relished in the game.</p>
+<p>Developers and game artists found inspiration in this as well.</p>
+<blockquote>
+<p>We took the code from Vice City as the foundation for SA. Many things were improved but no structural improvements were needed.</p>
+<p>R*NY organized another 'research' trip. They hired a bunch of town cars and we drove between Vegas, LA and San Fransisco. The artists took pictures. It was loads of fun.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<blockquote>
+<p>The artists gave me a texture for the moon in III. I placed the moon in the sky, made sure it was visible at night and that it was a reasonable size.</p>
+<p>A few days later 4 artists were at my desk asking me to change the size of the moon.</p>
+<p>"No problem" I said.</p>
+<p>It turned out they couldn't decide what the size of the moon should be. 2 of them wanted it smaller to be more realistic. The other 2 wanted it larger to be more cinematic.</p>
+<p>This went on a bit and I suggested to make the size of the moon changeable in the game. This way they could decide in their own time and let me know the conclusion. Since I was working on the sniper rifle, I made it so that the moon toggled through 3 sizes (small, medium, large) as the player sniped it.</p>
+<p>The artists never got back to me so I just left it in. It was still there in SA.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>Everything you see in a videogame, must be loaded. From the hard drive, to the RAM / graphics card's VRAM and then to your screen. And if the game is huge, it can't be all loaded at once. There needs to be a mechanism that knows when to load something and when to unload it, according to your location in the map. As you move around, specially to such an open-world and huge game, this mechanism must do this job and it must done it well.</p>
+<p>GTA Trilogy was ahead of it's time, and to make this streaming mechanism work well, they did lot of tricks.</p>
+<blockquote>
+<p>For example, from GTA III until GTA San Andreas, the game could manage up to seven different car models around the player simultaneously due to the lack of RAM memory in that era. This meant that during intense situations, like when the police were chasing you and the game had to load police cars and helicopters, the number of pedestrian cars loaded decreased, often to just one or two.</p>
+<p>For instance; if the player has a 6 star wanted level, the game would load the fbi car and the helicopter.</p>
+<p>There may still be police cars and swat vans around from when the player had a lower wanted level.</p>
+<p>If there are any injured pedestrians, the game had to load the ambulance.</p>
+<p>Before you know it, the game only has 1 or 2 models left for regular civilian cars.</p>
+<p>Even without the wanted level, the game was often forced to load certain car models.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>As a cherry on top, all those things had to be loaded using a slow CD-ROM, as this was the storage medium in many consoles at the time. And CDs are not only slow, but they have another problem as well : if the thing you want to load, exists on a point before the current point the CD is on the CD reader, you need to wait for the CD to re-spin. Now, imagine doing this for many things. To address this, they grouped related data together.</p>
+<blockquote>
+<p>They meticulously arranged data on the CD, ensuring that elements closely linked in the 3D game world were also physically close on the CD for simultaneous reading, and
+in problematic areas, they fine-tuned details, such as creating inclines or increasing air resistance, to slow down vehicle movement subtly (without the player realizing the reasons behind it).</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<blockquote>
+<p>The hardest technical challenge to solve during the development of gta3 was the streaming. Streaming involves loading and un-loading models as the player moves over the map. The streaming was coded by Adam Fowler.</p>
+<p>When we started out with gta3 the hope was that the entire map would fit in memory. The map would simply be loaded at the start of the game.</p>
+<p>Memory was limited on the PS2 and the artists were forced to reduce the texture sizes and to re-use textures everywhere. This resulted in the city looking bland. They eventually asked Adam whether he could develop a streaming system.</p>
+<p>The idea of streaming is to load the map only around the player. As the player moves, the models for nearby models are loaded from the CD into memory and buildings that are now far away are removed.</p>
+<p>Streaming is also used for vehicle models, pedestrian models, sound effects, music and scripts but the map posed the greatest difficulty as this involved more data than everything else combined.</p>
+<p>Unfortunately the CD was quite slow in loading the models. The loading speed depends on the location of the models on the CD (the track). Models that are close together are loaded quickly but models that are far away are slow. (This is because the CD needs to accelerate/decelerate as the head moves to a different track). This is causing a lot of the sounds coming from the CD drive when playing gta.</p>
+<p>Adam spent a lot of time ingenuously moving the models around on the CD. The idea was to place models close together in the CD if they were also close together in the world.</p>
+<p>Even after all these optimizations, streaming was still not fast enough. You can literally think of it as a race between the player travelling and the streaming loading the models. At times the player would be too fast and the world just wasn't there yet. These problems seemed to get worse with older CDs.</p>
+<p>If we couldn't speed the streaming up any further, we had no option but to slow the player down.</p>
+<p>In Portland (first island in gta3) there used to be a big strip running all along the island. This was a worst case scenario. The player could go fast and there were loads of buildings to load. The streaming couldn't cope here. Eventually the artists had to change the layout and basically put a building on top of the strip. The player had to go around which would slow him down allowing the streaming to catch up.</p>
+<p>Over time we identified other areas where the streaming was not coping and we would set up zones here. Within these zones we increased the drag (air resistance) on the vehicles a little. Maybe 5 or 10%. It was hardly noticeable but it helped.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>Cheats were heavily optimized as well. To make it hard to find the cheats, instead of storing them as strings (which would result to be easy to find by searching in the binary), they used a number for each of them. If the sum of the pressed keys, matched the number of the cheat, the cheat was activated.</p>
+<blockquote>
+<p>The cheats in the trilogy were activated by simply typing a sequence of characters.</p>
+<p>On PC the sequence would be something like</p>
+<p>ILOVESCOTLAND to make it rain or</p>
+<p>GUNSGUNSGUNS to give the player loads of weapons.</p>
+<p>The game remembers the last 20 or so keypresses and every time a new key is pressed, these keypresses are compared with the cheats. If there is a match, the cheat will activate.</p>
+<p>The straightforward way of doing this would be to compare the string "ILOVESCOTLAND" with the string of keypresses. This approach would mean that the strings for the cheats would be in memory as readable text. Any hacker could easily find the cheats and they would all be discovered on the day of release.</p>
+<p>This is why I used 'hash codes' to store the cheats. A hash code is a number that is calculated from a string. As an example; a simple hash algorithm could add up the ASCII values of each character of the string.</p>
+<p>The hash code for ILOVESCOTLAND would be 983.</p>
+<p>For GUNSGUNSGUNS it would be 951.</p>
+<p>This is just an example. The actual Hash algorithm used is more complicated.</p>
+<p>The game would also calculate the Hash code for the last 20 or so keypresses and compare the numbers.</p>
+<p>The good news is that it is harder to hack the cheat because the code only stores the number (ie 983) and not the full string (ILOVESCOTLAND). This part worked because the cheats were not hacked. (They were eventually discovered by people trying random input until a cheat happened)</p>
+<p>The bad news is that different strings can result in the same hash code.</p>
+<p>This is why initially when cheats were discovered people found random strings (ie HDLMAAXOPK) and not the string I had set up (ie ILOVESCOTLAND)</p>
+<p>This also meant the cheats triggered more often than I had planned. This caused cheats to sometimes happen unintentionally. This has actually happened during peoples' speed runs. These speed runs had to be aborted as the rules are clear. No cheats.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>The weather, on the other hand, wasnt optimized at all. It was just a fixed look-up table, that according to time, there was a weather value.</p>
+<blockquote>
+<p>Every in-game hour, the next weather type is picked from a table. The table is 40 (or maybe 34, can't quite remember) entries long. If it is raining now, it will be raining again in 40 in-game hours.</p>
+<p>The visual effects for the weather type will transition over the hour.</p>
+<p>For instance:</p>
+<p>At 2:00 it would be 100% sunny.</p>
+<p>At 2:15 it would be 75% sunny and 25% overcast</p>
+<p>At 2:30 it would be 50/50</p>
+<p>etc</p>
+<p>The table frequently has the same weather type for several hours so the weather isn't always in-flux.</p>
+<p>There are script commands to override the weather type. This allows the level designers to force the weather type for a particular mission or cut-scene.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>It's nice reading how all those things were made !</p>
+<p>I hope Obbe will come up with many more details.</p>
 ]]></content:encoded>
         </item>
     </channel>

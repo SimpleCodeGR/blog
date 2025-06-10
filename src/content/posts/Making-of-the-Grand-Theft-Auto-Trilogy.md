@@ -1,6 +1,6 @@
 ---
 title: Making of the Grand Theft Auto Trilogy
-published: 2025-06-09
+published: 2025-06-03
 draft: false
 lang: en
 description: Making of the Grand Theft Auto Trilogy

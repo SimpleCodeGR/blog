@@ -1,6 +1,6 @@
 ---
 title: “Because I care about you” - Eliza, The First Chat Bot
-published: 2025-06-09
+published: 2025-06-10
 draft: false
 lang: en
 description: “Because I care about you” - Eliza, The First Chat Bot
@@ -19,4 +19,4 @@ Eliza operated by utilizing an extensive set of pre-programmed responses. Upon r
 
 This early program can be viewed as a rudimentary form of natural language processing, akin to contemporary systems like ChatGPT, but with a much much more simpler data set, since ChatGPT have scrapped the whole today’s internet. A more fitting analogy might be Microsoft Word’s Clippy, which similarly provided predetermined responses based on user input.
 
-You can chat with Eliza here : https://web.njit.edu/~ronkowit/eliza.html
+You can chat with Eliza here : (https://web.njit.edu/~ronkowit/eliza.html)[https://web.njit.edu/~ronkowit/eliza.html]

@@ -1,6 +1,6 @@
 ---
 title: The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root
-published: 2025-06-09
+published: 2025-06-04
 draft: false
 lang: en
 description: The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root

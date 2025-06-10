@@ -1,6 +1,6 @@
 ---
 title: When is a program good ? Reverse engineering HOU’s compiler
-published: 2025-06-09
+published: 2025-06-10
 draft: false
 lang: en
 description: When is a program good ? Reverse engineering HOU’s compiler
@@ -55,8 +55,6 @@ Those tools, if the code is not “obfuscated” against them, will give you a v
 
 Turns out this compiler is not a .NET program and I couldn’t get something out of using those tools.
 
----
-
 Next step was to guess better what this program was made with. I ran
 
 ```bash
@@ -69,8 +67,6 @@ I can’t be 100% sure as this compiler uses tdm-gcc to generate the machine cod
 
 So I had to do what any programmer that likes math would have done and say the poem:
 “let’s assume this program is C/C++” and continue based on this.
-
----
 
 I didn’t know any good C/C++ disassembler so ChatGPT and Google were my friends and I found that actually there are out there 2 very good ones:
 
@@ -90,3 +86,9 @@ system("chcp 1253 > nul");
 ```
 
 Maybe this program could work much better if this legacy Windows-1253 encoding wasn’t enforced.
+
+---
+
+UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.
+
+[https://github.com/rept0id/hou-compiler-linux/](https://github.com/rept0id/hou-compiler-linux/)

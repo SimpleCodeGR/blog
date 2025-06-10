@@ -12,31 +12,40 @@ If you wish to make an apple pie from scratch, you must first invent the univers
 In the 1930s, Alonzo Church introduced Lambda calculus. It is a formal system for expressing mathematical logic and computations using functions. Long before computations were performed by machines, they were done by humans, and Lambda calculus helped formalize these processes in written form.
 
 Lambda calculus looks like this:
+```
+λx.x*2 // function that takes input xx and returns x*2
 
-λx.x*2 // function that takes input xx and returns x*2λx.λy.x^2+y^2 // function that takes input x,y and returns the sum of them in power of 2
+λx.λy.x^2+y^2 // function that takes input x,y and returns the sum of them in power of 2
+```
 
 In the 1940s, Steve Russell, Timothy P. Hart and Mike Levin specified Lisp, a programming language based on the concepts of Lamda calculus. In 1970s, MIT created Scheme, a lisp dialect.
 
 Scheme looks like this :
 
+```
 (display "Hello, World!")
 (newline)
+```
 
 In 1987, Self was created by David Ungar, Randall Smith, Stanford University, Sun Microsystems, as a dialect of Smalltalk. Smalltalk created on 1969 at Xerox PARC by Learning Research Group (LRG) scientists, including Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Diana Merry, and Scott Wallace.
 
 Self looks like this :
 
+```
 "Hello, World!" println.
+```
 
 In the early 1990s, Sun Microsystems began developing Java. This language was created by them because none of the existing languages were capable of solving their problems. After a lot of experimentation with the dominant language at the time, C++, they created and tested an extension of C++ called C++++, which much they didn’t finish and later became C# by Microsoft. Based on their experiments, they created Java.
 
 Java looks like this :
 
+```
 public class HelloWorld {
-public static void main(String[] args) {
-System.out.println("Hello, World!");
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
 }
-}
+```
 
 Note that Java has a C language-style syntax. C is a very good, probably the best, and very old language still used today for hard tasks like writing operating systems. It’s very fast but hard to write.
 

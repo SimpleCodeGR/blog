@@ -21,11 +21,15 @@ In Unix, "everything is a file", which means that even parts of hardware from yo
 (remember to set it back to as it was !)
 
 Now, Plan9, seeing the networked future that we live in coming, they wanted to take this concept to the next level. They wanted to take the "everything is a file" concept to the next level and each computer to be able to share those files through network.
+
 By doing this, you could be literally be able to :
+
  - share your computing resources, your computing power, through network
  - share your hard disk over network
  - share your screen over network
+ 
 Without using any additional software that mimics this functionality. It would had been native.
+
 For exaple, you want to share your screen with your friend ? You wouldn't need to use a program for this, you could just share your GPU with him. Or even, think of those services nowdays that you rent a GPU online and they give you access to a remote desktop to play there games... again, you wouldn't even had to connect to a remote desktop, you could just attach the remote GPU to your computer, again, natively.
 
 The question is, why such an innovative idea didn't became the norm ? Specially today, the posibilities could had been amazing. It could had been literally an software abstraction of Von Neumann architecture that would make you forget about Von Neumann architecture. With such innovation, we would had... flying cars at 2025 for sure, or maybe we wouldn't, but I wouldn't be thinking if my PC will be able to play GTA6 without renting... a remote, different than mine PC on the cloud... I would be able to play and have my local setup at the same time.

@@ -19,24 +19,27 @@ In documents, you are more free as you write whatever you want for each specific
 
 This is how a tabular database (or an Excel) would look like:
 
-Id | Name | Gender | Cat | Turtle |
----|----------|--------|--------|-----------|
-0 | Irina | Female | Luluka | |
-1 | Rantouan | Male | | Galopoula |
+| Id | Name | Gender | Cat | Turtle |
+| --- | --- | --- | --- | --- |
+| 0 | Irina | Female | Luluka | |
+| 1 | Rantouan | Male | | Galopoula |
 
 And this is how storing indocuments(or text files) would look like:
 
 One document for Irina:
 
+```
 Name="Irina"
 Gender="Female"
 Cat="Luluka"
+```
 
 And another one document for Rantouan:
-
+```
 Name="Rantouan"
 Gender="Male"
 Turtle="Galopoula"
+```
 
 Note how easy it is to add extra information, related and unique to each person, like the cats and turtles above with a document database and how rigid it is with a tabular one. Tabular databases have the advantage that if your data are all going to have the same structure, then you get a huge performance advantage. Document databases are more performant when your data are unstructured.
 
@@ -48,5 +51,3 @@ Imagine it like in the phone-book, where there is a small bookmark where names w
 Today, a software engineer would probably use Redis or MongoDB as a key-value document database. It’s very interesting to know that for all of the above things, NDB was one of the first -most probably even the first- databases to be capable of.
 
 This gem of a database was hidden inside Plan 9, and it was mostly used for managing networks – but not only. Most of the modern operating systems still use a plain file without database supporting mechanism – it sounds logical to take more care of the network, if someone would think of Plan 9’s distributed nature.
-
-Below, feel free to read the manual of NDB from “Plan9 : The Programmer’s Manual Volume 1, 4th Edition (2002) (Computer Science Research Center, Bell Laboratories, Lucent Technologies)” :
