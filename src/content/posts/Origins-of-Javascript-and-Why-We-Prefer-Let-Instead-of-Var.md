@@ -9,6 +9,8 @@ tags: []
 
 If you wish to make an apple pie from scratch, you must first invent the universe.
 
+---
+
 In the 1930s, Alonzo Church introduced Lambda calculus. It is a formal system for expressing mathematical logic and computations using functions. Long before computations were performed by machines, they were done by humans, and Lambda calculus helped formalize these processes in written form.
 
 Lambda calculus looks like this:

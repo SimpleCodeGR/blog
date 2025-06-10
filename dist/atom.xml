@@ -3,7 +3,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.simplecode.gr</id>
     <title>Simplecode Blog</title>
-    <updated>2025-06-10T16:09:36.704Z</updated>
+    <updated>2025-06-10T16:19:31.705Z</updated>
     <generator>Astro-Theme-Retypeset with Feed for Node.js</generator>
     <author>
         <name>Simplecode</name>
@@ -13,19 +13,100 @@
     <link rel="self" href="https://blog.simplecode.gr/atom.xml"/>
     <rights>Copyright © 2025 Simplecode</rights>
     <entry>
-        <title type="html"><![CDATA[“Because I care about you” - Eliza, The First Chat Bot]]></title>
-        <id>https://blog.simplecode.gr/posts/because-i-care-about-you-eliza-the-first-chat-bot/</id>
-        <link href="https://blog.simplecode.gr/posts/because-i-care-about-you-eliza-the-first-chat-bot/"/>
+        <title type="html"><![CDATA[Plan 9 - The Utopian OS and Lessons in Inflexible Architecture]]></title>
+        <id>https://blog.simplecode.gr/posts/plan-9-the-utopian-os-and-lessons-in-inflexible-architecture/</id>
+        <link href="https://blog.simplecode.gr/posts/plan-9-the-utopian-os-and-lessons-in-inflexible-architecture/"/>
         <updated>2025-06-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[“Because I care about you” - Eliza, The First Chat Bot]]></summary>
-        <content type="html"><![CDATA[<p>[...]
-Input : "And why do you ask that?"
-Response : "Because I care about you."</p>
-<p>These lines mark one of the earliest recorded human-machine interactions in history.</p>
-<p>The program responsible for this exchange was Eliza, developed in 1967 at MIT by Joseph Weizenbaum, as the pioneering chat bot aimed at simulating conversations with a human. Written in MAD-SLIP, Eliza operated with a core component that would then call upon various LISP-like scripts – LISP being one of the precursor languages to modern-day JavaScript. Each script simulated a different persona, with the most renowned being “DOCTOR,” which mimicked interactions with a therapist adhering to the Rogerian psychotherapy approach.</p>
-<p>Eliza operated by utilizing an extensive set of pre-programmed responses. Upon receiving input, it would sift through these responses to find the most relevant and appropriate one, often modifying it slightly, according to the input, before outputting it.</p>
-<p>This early program can be viewed as a rudimentary form of natural language processing, akin to contemporary systems like ChatGPT, but with a much much more simpler data set, since ChatGPT have scrapped the whole today’s internet. A more fitting analogy might be Microsoft Word’s Clippy, which similarly provided predetermined responses based on user input.</p>
-<p>You can chat with Eliza here : (https://web.njit.edu/~ronkowit/eliza.html)[https://web.njit.edu/~ronkowit/eliza.html]</p>
+        <summary type="html"><![CDATA[Plan 9 - The Utopian OS]]></summary>
+        <content type="html"><![CDATA[<p>The biggest art in software design is to know when to be flexible and when not to. I believe it's such a wonderful art, that none accomplish to master it.</p>
+<p>A great example of lack of flexibility is Plan9. Plan9, was the successor of Unix, made from the same team, at the same place, Bell Labs.</p>
+<p>In Unix, "everything is a file", which means that even parts of hardware from your computer are binded to a file existing under <code>/dev</code> (from "devices") and you can alter their state, read, delete from those devices, just by playing with their co-related file. I will give an example from Linux, which is a more modern successor of Unix and has more cool things, as right now, writing this, I'm able to manipulate my "Caps Lock" LED from my keyboard, without really changing to caps lock, simply by setting the value of the co-related file to 1 (for on) or 0 (for off) :</p>
+<pre><code>  echo 1 | sudo tee /sys/class/leds/input2::capslock/brightness; # Caps Lock's LED fake on
+  sleep 2;
+  echo 0 | sudo tee /sys/class/leds/input2::capslock/brightness; # Caps Lock's LED fake off
+</code></pre>
+<p>(remember to set it back to as it was !)</p>
+<p>Now, Plan9, seeing the networked future that we live in coming, they wanted to take this concept to the next level. They wanted to take the "everything is a file" concept to the next level and each computer to be able to share those files through network.</p>
+<p>By doing this, you could be literally be able to :</p>
+<ul>
+<li>share your computing resources, your computing power, through network</li>
+<li>share your hard disk over network</li>
+<li>share your screen over network</li>
+</ul>
+<p>Without using any additional software that mimics this functionality. It would had been native.</p>
+<p>For exaple, you want to share your screen with your friend ? You wouldn't need to use a program for this, you could just share your GPU with him. Or even, think of those services nowdays that you rent a GPU online and they give you access to a remote desktop to play there games... again, you wouldn't even had to connect to a remote desktop, you could just attach the remote GPU to your computer, again, natively.</p>
+<p>The question is, why such an innovative idea didn't became the norm ? Specially today, the posibilities could had been amazing. It could had been literally an software abstraction of Von Neumann architecture that would make you forget about Von Neumann architecture. With such innovation, we would had... flying cars at 2025 for sure, or maybe we wouldn't, but I wouldn't be thinking if my PC will be able to play GTA6 without renting... a remote, different than mine PC on the cloud... I would be able to play and have my local setup at the same time.</p>
+<p>The reason is simple: It wasn't simple. It wasn't flexible. Going from Unix to Plan9 was like going from bike to spaceship. Every program had to be rewriten and follow a different style, far away than what we're used to. There wasn't even a compatibility layer to address this.</p>
+<p>Even if Plan9 didn't made it, I'm sure that this next step will take place in the future of operating systems, but it will not be a revolution, as Plan9 wanted to be, but a reform.</p>
+<p>From Plan9, Go came out, well not as Go but as Alef and later Limbo (from successor of Plan9, Inferno) and from them Go came out. Go was made from people working on Plan9. Those languages tried to handle memory in a distributed context that you are not sure where things are not needed anymore and also they focused a lot on concurrency, again a distrubuted context thing - specially back then, without multi-core CPUs.</p>
+<p>Also, Linux is abstracting more and more the hardware, as in the given example with my keyboard LEDs at the beggining, which makes me feel positive to believe that the time that I will be able to mount a remote graphics card as it's part of my PC, instead of logging in to a remote desktop session, is not that far away.</p>
+<p>Our computers are getting more and more connected, so Plan9 didn't made it -because of not being simple and flexible- but it's concept did !</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-10T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></title>
+        <id>https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/</id>
+        <link href="https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/"/>
+        <updated>2025-06-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></summary>
+        <content type="html"><![CDATA[<p>On the 4th of June 2024, we mark 28 years since the tragic failure of Ariane flight V88.</p>
+<p>Ariane 5 rocket was designed to carry massive payloads -up to 21,000 kg- into the cosmos, following in the footsteps of its predecessor, the Ariane 4.</p>
+<p>The Ariane 4 had its own success story, with a smaller payload capacity of 10,500 kg, thanks in part to its reliable software. This software, made up of intricate lines of code, was meant to guide the rocket flawlessly through space. When it came time for the Ariane 5 to take flight, engineers saw no reason to reinvent the wheel, so they incorporated much of the same code.</p>
+<p>But on June 4, 1996, at the Guiana Space Centre, located on an overseas region of France in South America, during what was supposed to be a routine launch, disaster struck. Just thirty-six seconds into the flight, a tiny flaw in the code caused set off a chain reaction, halting the inertial navigation system, surrendering the rocket to intense aerodynamic forces. Consequently, the rocket veered 90 degrees off course, invoking the self-destruct mechanism leading to a massive explosion.</p>
+<p><a href="https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899">https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899</a></p>
+<p><strong>Thankfully, no humans were harmed</strong> as the rocket was carrying a constellation of four European Space Agency research satellites, the “Cluster“.</p>
+<p>The failure line of code was the last line below, written in ADA :</p>
+<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+
+if L_M_BV_32 &gt; 32767 then
+	P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
+elseif L_M_BV_32 &lt; -32768 then
+	P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
+else
+	P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
+end if;
+
+P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) *G_M_INFO_DERIVE(T_ALG.E_BH));
+</code></pre>
+<p>The error was an overflow of memory limit set for the variable <code>T_ALG.E_BH</code>.</p>
+<p>Both variables T_ALG.E_BV and T_ALG.E_BH represents the velocity of the rocket.T_ALG.E_BVdoes it for vertical velocity (thus ends in “V”) and T_ALG.E_BH for horizontal (thus ends in “H”).</p>
+<p>Since those two variables were signed 16-bit type, that meant that they could hold from number -32768 until 32767. It’s just how things are for this type of variables. Any attempt to store a smaller or greater number would result in a memory overflow and a crash, like the ones that happen to your personal computer as well from time to time.</p>
+<p>In the code, we can easily see that an overflow case is correctly managed for variable <code>T_ALG.E_BV</code> from the line if L_M_BV_32 &gt; 32767 then until end if; below it. All that happens there actually is that :</p>
+<ul>
+<li>if the value to be assigned toT_ALG.E_BVis smaller than -32768, it would take -32768 (or <code>16#7FFF#</code> in hexadecimal numbering system)</li>
+<li>if the value to be assigned toT_ALG.E_BVis greater than 32767, it would take 32767 (or <code>16#8000#</code> in hexadecimal numbering system)</li>
+</ul>
+<p>So simple !</p>
+<p>All great for <code>T_ALG.E_BV</code> but for <code>T_ALG.E_BH</code> things were different : it’s completely on it’s own luck.</p>
+<p>It was the bigger scale of Ariane 5, compared to Ariane 4, that resulted in that number stored directly on <code>T_ALG.E_BH</code> actually to reach a value greated than 32767, revealing this tiny mistake of not handling that case for this variable as well by… a huge explosion.</p>
+<p>Following the accident, they resolved the issue quite simply removing the scandalous line and by copying &amp; pasting the same code for <code>T_ALG.E_BV</code> to do the same thing for <code>T_ALG.E_BH</code> as well.</p>
+<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+if L_M_BV_32 &gt; 32767 then
+ P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
+elseif L_M_BV_32 &lt; -32768 then
+ P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
+else
+ P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
+end if;
+
+L_M_BH_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+if L_M_BH_32 &gt; 32767 then
+ P_M_DERIVE(T_ALG.E_BH) := 16#7FFF#;
+elseif L_M_BH_32 &lt; -32768 then
+ P_M_DERIVE(T_ALG.E_BH) := 16#8000#;
+else
+ P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BH_32));
+end if;
+</code></pre>
+<p>The Ariane Flight V88 is a great example of how memory safety is a field with lot of work that needs to be done.</p>
 ]]></content>
         <author>
             <name>Simplecode</name>
@@ -97,168 +178,10 @@ Now you can focus on your code instead of the encodings.</p>
         <published>2025-06-10T00:00:00.000Z</published>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Origins of Key-Value Document Databases - NDB, the Hidden Gem from Plan 9]]></title>
-        <id>https://blog.simplecode.gr/posts/origins-of-key-value-document-databases-ndb-the-hidden-gem-from-plan-9/</id>
-        <link href="https://blog.simplecode.gr/posts/origins-of-key-value-document-databases-ndb-the-hidden-gem-from-plan-9/"/>
-        <updated>2025-06-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Origins of Key-Value Document Databases - NDB, the Hidden Gem from Plan 9]]></summary>
-        <content type="html"><![CDATA[<p>Plan 9 was a utopian operating system that failed. It’s vision was to make distributed computing an everyday thing by treating everything as a file. And when we say everything, we mean everything, so even the hardware of each computer – allowing you to share that hardware with other machines easily. Even though this sounds technically impossible, it is very possible, and Plan 9 actually made it real! The main reason behind its failure was that this came at the cost of flexibility. In order to do that trick that it promised, Plan 9 asked the whole world to change, while it was already too late, since computer science had already started to get standardized at the time of release.</p>
-<p>There is a dedicated post about Plan 9, “Plan 9: The Utopian OS and Lessons in Inflexible Architecture“, which you most probably have already read.</p>
-<p>Today, we are going to unveil a very hidden gem within that operating system, which was an internal database called “NDB”, which stands for “Network Database”. “NDB” was one of the first databases that stored data as documents, treating them as key-value pairs, and not only that, indexing them! All of those features are going to be explained below.</p>
-<p>Storing data as documents means that, in contrast to tabular databases, your data don’t have to have a structure.
-In contrast, the more commonly used tabular databases are like Excel files; you have to somehow have a structure on what you write: you have columns with their titles and rows with the related data.
-In documents, you are more free as you write whatever you want for each specific document, more like text files.</p>
-<p>This is how a tabular database (or an Excel) would look like:</p>
-<table>
-<thead>
-<tr>
-<th>Id</th>
-<th>Name</th>
-<th>Gender</th>
-<th>Cat</th>
-<th>Turtle</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>Irina</td>
-<td>Female</td>
-<td>Luluka</td>
-<td></td>
-</tr>
-<tr>
-<td>1</td>
-<td>Rantouan</td>
-<td>Male</td>
-<td></td>
-<td>Galopoula</td>
-</tr>
-</tbody>
-</table>
-<p>And this is how storing indocuments(or text files) would look like:</p>
-<p>One document for Irina:</p>
-<pre><code>Name="Irina"
-Gender="Female"
-Cat="Luluka"
-</code></pre>
-<p>And another one document for Rantouan:</p>
-<pre><code>Name="Rantouan"
-Gender="Male"
-Turtle="Galopoula"
-</code></pre>
-<p>Note how easy it is to add extra information, related and unique to each person, like the cats and turtles above with a document database and how rigid it is with a tabular one. Tabular databases have the advantage that if your data are all going to have the same structure, then you get a huge performance advantage. Document databases are more performant when your data are unstructured.</p>
-<p>Key-value pairs mean that you store your data in a structure where it’s a pair of key (names) and values, like in the document examples above: <code>Pet=Luluka</code>. We mention this because when you store data as documents, there are many other ways to store them as well, for example, XML <code>&lt;Pet&gt;Luluka&lt;/Pet&gt;</code> or JSON <code>{“Pet” : “Luluka”}</code>.</p>
-<p>Finally, indexing means that not only data are stored, but notes on how to access them easily for the system are being kept. Indexing is very important in order for a database to be fast.
-Imagine it like in the phone-book, where there is a small bookmark where names with “A” start, names with “B” start, etc. Another example is to imagine a very huge book that you just want to find something in, and usually on the first pages, there is an “index” page, where the first page of each chapter is being referenced, so you don’t have to search the whole book page by page.</p>
-<p>Today, a software engineer would probably use Redis or MongoDB as a key-value document database. It’s very interesting to know that for all of the above things, NDB was one of the first -most probably even the first- databases to be capable of.</p>
-<p>This gem of a database was hidden inside Plan 9, and it was mostly used for managing networks – but not only. Most of the modern operating systems still use a plain file without database supporting mechanism – it sounds logical to take more care of the network, if someone would think of Plan 9’s distributed nature.</p>
-]]></content>
-        <author>
-            <name>Simplecode</name>
-            <uri>https://blog.simplecode.gr</uri>
-        </author>
-        <published>2025-06-09T00:00:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Origins of Javascript and Why We Prefer “Let” Instead of “Var”]]></title>
-        <id>https://blog.simplecode.gr/posts/origins-of-javascript-and-why-we-prefer-let-instead-of-var/</id>
-        <link href="https://blog.simplecode.gr/posts/origins-of-javascript-and-why-we-prefer-let-instead-of-var/"/>
-        <updated>2025-06-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Origins of Javascript and Why We Prefer “Let” Instead of “Var”]]></summary>
-        <content type="html"><![CDATA[<p>If you wish to make an apple pie from scratch, you must first invent the universe.</p>
-<p>In the 1930s, Alonzo Church introduced Lambda calculus. It is a formal system for expressing mathematical logic and computations using functions. Long before computations were performed by machines, they were done by humans, and Lambda calculus helped formalize these processes in written form.</p>
-<p>Lambda calculus looks like this:</p>
-<pre><code>λx.x*2 // function that takes input xx and returns x*2
-
-λx.λy.x^2+y^2 // function that takes input x,y and returns the sum of them in power of 2
-</code></pre>
-<p>In the 1940s, Steve Russell, Timothy P. Hart and Mike Levin specified Lisp, a programming language based on the concepts of Lamda calculus. In 1970s, MIT created Scheme, a lisp dialect.</p>
-<p>Scheme looks like this :</p>
-<pre><code>(display "Hello, World!")
-(newline)
-</code></pre>
-<p>In 1987, Self was created by David Ungar, Randall Smith, Stanford University, Sun Microsystems, as a dialect of Smalltalk. Smalltalk created on 1969 at Xerox PARC by Learning Research Group (LRG) scientists, including Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Diana Merry, and Scott Wallace.</p>
-<p>Self looks like this :</p>
-<pre><code>"Hello, World!" println.
-</code></pre>
-<p>In the early 1990s, Sun Microsystems began developing Java. This language was created by them because none of the existing languages were capable of solving their problems. After a lot of experimentation with the dominant language at the time, C++, they created and tested an extension of C++ called C++++, which much they didn’t finish and later became C# by Microsoft. Based on their experiments, they created Java.</p>
-<p>Java looks like this :</p>
-<pre><code>public class HelloWorld {
-  public static void main(String[] args) {
-    System.out.println("Hello, World!");
-  }
-}
-</code></pre>
-<p>Note that Java has a C language-style syntax. C is a very good, probably the best, and very old language still used today for hard tasks like writing operating systems. It’s very fast but hard to write.</p>
-<p>In 1995, Netscape hired Brendan Eich to implement the Scheme language in the browser. Instead of doing that, he created a new language, combiningJava‘s syntax (essentially C), most of theScheme (for nearly everything), andSelf‘s prototype (for easy data structure and no classes in contrast to Java). Essentially, he incorporated anything from famous languages at the time that made developers’ lives easier and blended them all together.</p>
-<p>The result was the language that we all love, Javascript.</p>
-<p>It’s worth noting that Self’s prototype had no classes and still had objects, whereas objects in most languages are a byproduct of classes and not an abstract structure solely for holding data. Even though JavaScript later implemented classes, they are not widely used even today, and objects remain an abstract structure for holding data. In other languages, abstract structures that hold data are called differently; for example, in C#, they are called “Struct”.</p>
-<p>Since Brendan Eich created that language we all use in only… 10 days, some things were not finished. One of those things was scope. As Brendan Eich himself said, if he had worked a few more days on the language, he would have fixed scoping better. He didn’t, and that resulted in issues with the scope of variables, such as how a global variable is accessed from functions below or how a variable can be shared across different functions, becoming problematic. It took many years to fix that, as companies were all trying to create their own and only own JavaScript dialect for their browser. For example, Netscape had its own, created by Eich, and then Microsoft had JScript. They were all sabotaging the standardization of the language.</p>
-<p>During the 2000s, JavaScript became increasingly useful in everyday life, and many other companies joined the club. Eventually, they all agreed to standardize JavaScript. The ECMA standard was created, and they fixed the scoping problem by introducing “let” and “const” instead of “var” as new better working ways to define new variables, without removing “var” for backward compatibility reasons. This resulted in much better scoping and a much better Javascript.</p>
-<p>In 2009, Ryan Dahl took Javascript out of the browser and created an executable that allowed you to run JavaScript code on a terminal. This was named Node.js, and nowadays it’s used everywhere to create applications that are built in JavaScript but don’t run in the browser. However, many of those apps, whether they’re desktop apps made with the “Electron” framework or mobile apps made with Cordova, Ionic, React Native, or any other framework, may run on Node but still launch a browser (without visible controls or an address bar) to display a UI with modern graphics. This is because browsers tend to be the most preferable way to run something nowadays.</p>
-]]></content>
-        <author>
-            <name>Simplecode</name>
-            <uri>https://blog.simplecode.gr</uri>
-        </author>
-        <published>2025-06-09T00:00:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Plan 9 - The Utopian OS and Lessons in Inflexible Architecture]]></title>
-        <id>https://blog.simplecode.gr/posts/plan-9-the-utopian-os-and-lessons-in-inflexible-architecture/</id>
-        <link href="https://blog.simplecode.gr/posts/plan-9-the-utopian-os-and-lessons-in-inflexible-architecture/"/>
-        <updated>2025-06-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Plan 9 - The Utopian OS]]></summary>
-        <content type="html"><![CDATA[<p>The biggest art in software design is to know when to be flexible and when not to. I believe it's such a wonderful art, that none accomplish to master it.</p>
-<p>A great example of lack of flexibility is Plan9. Plan9, was the successor of Unix, made from the same team, at the same place, Bell Labs.</p>
-<p>In Unix, "everything is a file", which means that even parts of hardware from your computer are binded to a file existing under <code>/dev</code> (from "devices") and you can alter their state, read, delete from those devices, just by playing with their co-related file. I will give an example from Linux, which is a more modern successor of Unix and has more cool things, as right now, writing this, I'm able to manipulate my "Caps Lock" LED from my keyboard, without really changing to caps lock, simply by setting the value of the co-related file to 1 (for on) or 0 (for off) :</p>
-<pre><code>  echo 1 | sudo tee /sys/class/leds/input2::capslock/brightness; # Caps Lock's LED fake on
-  sleep 2;
-  echo 0 | sudo tee /sys/class/leds/input2::capslock/brightness; # Caps Lock's LED fake off
-</code></pre>
-<p>(remember to set it back to as it was !)</p>
-<p>Now, Plan9, seeing the networked future that we live in coming, they wanted to take this concept to the next level. They wanted to take the "everything is a file" concept to the next level and each computer to be able to share those files through network.</p>
-<p>By doing this, you could be literally be able to :</p>
-<ul>
-<li>share your computing resources, your computing power, through network</li>
-<li>share your hard disk over network</li>
-<li>share your screen over network</li>
-</ul>
-<p>Without using any additional software that mimics this functionality. It would had been native.</p>
-<p>For exaple, you want to share your screen with your friend ? You wouldn't need to use a program for this, you could just share your GPU with him. Or even, think of those services nowdays that you rent a GPU online and they give you access to a remote desktop to play there games... again, you wouldn't even had to connect to a remote desktop, you could just attach the remote GPU to your computer, again, natively.</p>
-<p>The question is, why such an innovative idea didn't became the norm ? Specially today, the posibilities could had been amazing. It could had been literally an software abstraction of Von Neumann architecture that would make you forget about Von Neumann architecture. With such innovation, we would had... flying cars at 2025 for sure, or maybe we wouldn't, but I wouldn't be thinking if my PC will be able to play GTA6 without renting... a remote, different than mine PC on the cloud... I would be able to play and have my local setup at the same time.</p>
-<p>The reason is simple: It wasn't simple. It wasn't flexible. Going from Unix to Plan9 was like going from bike to spaceship. Every program had to be rewriten and follow a different style, far away than what we're used to. There wasn't even a compatibility layer to address this.</p>
-<p>Even if Plan9 didn't made it, I'm sure that this next step will take place in the future of operating systems, but it will not be a revolution, as Plan9 wanted to be, but a reform.</p>
-<p>From Plan9, Go came out, well not as Go but as Alef and later Limbo (from successor of Plan9, Inferno) and from them Go came out. Go was made from people working on Plan9. Those languages tried to handle memory in a distributed context that you are not sure where things are not needed anymore and also they focused a lot on concurrency, again a distrubuted context thing - specially back then, without multi-core CPUs.</p>
-<p>Also, Linux is abstracting more and more the hardware, as in the given example with my keyboard LEDs at the beggining, which makes me feel positive to believe that the time that I will be able to mount a remote graphics card as it's part of my PC, instead of logging in to a remote desktop session, is not that far away.</p>
-<p>Our computers are getting more and more connected, so Plan9 didn't made it -because of not being simple and flexible- but it's concept did !</p>
-]]></content>
-        <author>
-            <name>Simplecode</name>
-            <uri>https://blog.simplecode.gr</uri>
-        </author>
-        <published>2025-06-09T00:00:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello World !]]></title>
-        <id>https://blog.simplecode.gr/posts/hello-world/</id>
-        <link href="https://blog.simplecode.gr/posts/hello-world/"/>
-        <updated>2025-06-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is a hello world article.]]></summary>
-        <content type="html"><![CDATA[<p>Hello world !</p>
-]]></content>
-        <author>
-            <name>Simplecode</name>
-            <uri>https://blog.simplecode.gr</uri>
-        </author>
-        <published>2025-06-09T00:00:00.000Z</published>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[WebSockets Reversed Ping of Death]]></title>
         <id>https://blog.simplecode.gr/posts/websockets-reversed-ping-of-death/</id>
         <link href="https://blog.simplecode.gr/posts/websockets-reversed-ping-of-death/"/>
-        <updated>2025-06-09T00:00:00.000Z</updated>
+        <updated>2025-06-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[WebSockets Reversed Ping of Death]]></summary>
         <content type="html"><![CDATA[<p><strong>Warning:</strong> The following action may cause a visitor’s browser or even their computer to crash. This information is provided for educational purposes only. Use it responsibly.</p>
 <p>I do not encourage or condone the misuse of this knowledge, and I disclaim any responsibility for any damage, disruption, or unintended consequences resulting from its use. Proceed at your own risk.</p>
@@ -381,73 +304,52 @@ An important concept in streams is backpressure — this is the process by which
             <name>Simplecode</name>
             <uri>https://blog.simplecode.gr</uri>
         </author>
-        <published>2025-06-09T00:00:00.000Z</published>
+        <published>2025-06-10T00:00:00.000Z</published>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></title>
-        <id>https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/</id>
-        <link href="https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/"/>
-        <updated>2025-06-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></summary>
-        <content type="html"><![CDATA[<p>On the 4th of June 2024, we mark 28 years since the tragic failure of Ariane flight V88.</p>
-<p>Ariane 5 rocket was designed to carry massive payloads -up to 21,000 kg- into the cosmos, following in the footsteps of its predecessor, the Ariane 4.</p>
-<p>The Ariane 4 had its own success story, with a smaller payload capacity of 10,500 kg, thanks in part to its reliable software. This software, made up of intricate lines of code, was meant to guide the rocket flawlessly through space. When it came time for the Ariane 5 to take flight, engineers saw no reason to reinvent the wheel, so they incorporated much of the same code.</p>
-<p>But on June 4, 1996, at the Guiana Space Centre, located on an overseas region of France in South America, during what was supposed to be a routine launch, disaster struck. Just thirty-six seconds into the flight, a tiny flaw in the code caused set off a chain reaction, halting the inertial navigation system, surrendering the rocket to intense aerodynamic forces. Consequently, the rocket veered 90 degrees off course, invoking the self-destruct mechanism leading to a massive explosion.</p>
-<p><a href="https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899">https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899</a></p>
-<p><strong>Thankfully, no humans were harmed</strong> as the rocket was carrying a constellation of four European Space Agency research satellites, the “Cluster“.</p>
-<p>The failure line of code was the last line below, written in ADA :</p>
-<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+        <title type="html"><![CDATA[Origins of Javascript and Why We Prefer “Let” Instead of “Var”]]></title>
+        <id>https://blog.simplecode.gr/posts/origins-of-javascript-and-why-we-prefer-let-instead-of-var/</id>
+        <link href="https://blog.simplecode.gr/posts/origins-of-javascript-and-why-we-prefer-let-instead-of-var/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Origins of Javascript and Why We Prefer “Let” Instead of “Var”]]></summary>
+        <content type="html"><![CDATA[<p>If you wish to make an apple pie from scratch, you must first invent the universe.</p>
+<hr />
+<p>In the 1930s, Alonzo Church introduced Lambda calculus. It is a formal system for expressing mathematical logic and computations using functions. Long before computations were performed by machines, they were done by humans, and Lambda calculus helped formalize these processes in written form.</p>
+<p>Lambda calculus looks like this:</p>
+<pre><code>λx.x*2 // function that takes input xx and returns x*2
 
-
-if L_M_BV_32 &gt; 32767 then
-	P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
-elseif L_M_BV_32 &lt; -32768 then
-	P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
-else
-	P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
-end if;
-
-P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) *G_M_INFO_DERIVE(T_ALG.E_BH));
+λx.λy.x^2+y^2 // function that takes input x,y and returns the sum of them in power of 2
 </code></pre>
-<p>The error was an overflow of memory limit set for the variable <code>T_ALG.E_BH</code>.</p>
-<p>Both variables T_ALG.E_BV and T_ALG.E_BH represents the velocity of the rocket.T_ALG.E_BVdoes it for vertical velocity (thus ends in “V”) and T_ALG.E_BH for horizontal (thus ends in “H”).</p>
-<p>Since those two variables were signed 16-bit type, that meant that they could hold from number -32768 until 32767. It’s just how things are for this type of variables. Any attempt to store a smaller or greater number would result in a memory overflow and a crash, like the ones that happen to your personal computer as well from time to time.</p>
-<p>In the code, we can easily see that an overflow case is correctly managed for variable <code>T_ALG.E_BV</code> from the line if L_M_BV_32 &gt; 32767 then until end if; below it. All that happens there actually is that :</p>
-<ul>
-<li>if the value to be assigned toT_ALG.E_BVis smaller than -32768, it would take -32768 (or <code>16#7FFF#</code> in hexadecimal numbering system)</li>
-<li>if the value to be assigned toT_ALG.E_BVis greater than 32767, it would take 32767 (or <code>16#8000#</code> in hexadecimal numbering system)</li>
-</ul>
-<p>So simple !</p>
-<p>All great for <code>T_ALG.E_BV</code> but for <code>T_ALG.E_BH</code> things were different : it’s completely on it’s own luck.</p>
-<p>It was the bigger scale of Ariane 5, compared to Ariane 4, that resulted in that number stored directly on <code>T_ALG.E_BH</code> actually to reach a value greated than 32767, revealing this tiny mistake of not handling that case for this variable as well by… a huge explosion.</p>
-<p>Following the accident, they resolved the issue quite simply removing the scandalous line and by copying &amp; pasting the same code for <code>T_ALG.E_BV</code> to do the same thing for <code>T_ALG.E_BH</code> as well.</p>
-<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
-
-if L_M_BV_32 &gt; 32767 then
- P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
-elseif L_M_BV_32 &lt; -32768 then
- P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
-else
- P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
-end if;
-
-L_M_BH_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
-
-if L_M_BH_32 &gt; 32767 then
- P_M_DERIVE(T_ALG.E_BH) := 16#7FFF#;
-elseif L_M_BH_32 &lt; -32768 then
- P_M_DERIVE(T_ALG.E_BH) := 16#8000#;
-else
- P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BH_32));
-end if;
+<p>In the 1940s, Steve Russell, Timothy P. Hart and Mike Levin specified Lisp, a programming language based on the concepts of Lamda calculus. In 1970s, MIT created Scheme, a lisp dialect.</p>
+<p>Scheme looks like this :</p>
+<pre><code>(display "Hello, World!")
+(newline)
 </code></pre>
-<p>The Ariane Flight V88 is a great example of how memory safety is a field with lot of work that needs to be done.</p>
+<p>In 1987, Self was created by David Ungar, Randall Smith, Stanford University, Sun Microsystems, as a dialect of Smalltalk. Smalltalk created on 1969 at Xerox PARC by Learning Research Group (LRG) scientists, including Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Diana Merry, and Scott Wallace.</p>
+<p>Self looks like this :</p>
+<pre><code>"Hello, World!" println.
+</code></pre>
+<p>In the early 1990s, Sun Microsystems began developing Java. This language was created by them because none of the existing languages were capable of solving their problems. After a lot of experimentation with the dominant language at the time, C++, they created and tested an extension of C++ called C++++, which much they didn’t finish and later became C# by Microsoft. Based on their experiments, they created Java.</p>
+<p>Java looks like this :</p>
+<pre><code>public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}
+</code></pre>
+<p>Note that Java has a C language-style syntax. C is a very good, probably the best, and very old language still used today for hard tasks like writing operating systems. It’s very fast but hard to write.</p>
+<p>In 1995, Netscape hired Brendan Eich to implement the Scheme language in the browser. Instead of doing that, he created a new language, combiningJava‘s syntax (essentially C), most of theScheme (for nearly everything), andSelf‘s prototype (for easy data structure and no classes in contrast to Java). Essentially, he incorporated anything from famous languages at the time that made developers’ lives easier and blended them all together.</p>
+<p>The result was the language that we all love, Javascript.</p>
+<p>It’s worth noting that Self’s prototype had no classes and still had objects, whereas objects in most languages are a byproduct of classes and not an abstract structure solely for holding data. Even though JavaScript later implemented classes, they are not widely used even today, and objects remain an abstract structure for holding data. In other languages, abstract structures that hold data are called differently; for example, in C#, they are called “Struct”.</p>
+<p>Since Brendan Eich created that language we all use in only… 10 days, some things were not finished. One of those things was scope. As Brendan Eich himself said, if he had worked a few more days on the language, he would have fixed scoping better. He didn’t, and that resulted in issues with the scope of variables, such as how a global variable is accessed from functions below or how a variable can be shared across different functions, becoming problematic. It took many years to fix that, as companies were all trying to create their own and only own JavaScript dialect for their browser. For example, Netscape had its own, created by Eich, and then Microsoft had JScript. They were all sabotaging the standardization of the language.</p>
+<p>During the 2000s, JavaScript became increasingly useful in everyday life, and many other companies joined the club. Eventually, they all agreed to standardize JavaScript. The ECMA standard was created, and they fixed the scoping problem by introducing “let” and “const” instead of “var” as new better working ways to define new variables, without removing “var” for backward compatibility reasons. This resulted in much better scoping and a much better Javascript.</p>
+<p>In 2009, Ryan Dahl took Javascript out of the browser and created an executable that allowed you to run JavaScript code on a terminal. This was named Node.js, and nowadays it’s used everywhere to create applications that are built in JavaScript but don’t run in the browser. However, many of those apps, whether they’re desktop apps made with the “Electron” framework or mobile apps made with Cordova, Ionic, React Native, or any other framework, may run on Node but still launch a browser (without visible controls or an address bar) to display a UI with modern graphics. This is because browsers tend to be the most preferable way to run something nowadays.</p>
 ]]></content>
         <author>
             <name>Simplecode</name>
             <uri>https://blog.simplecode.gr</uri>
         </author>
-        <published>2025-06-08T00:00:00.000Z</published>
+        <published>2025-06-09T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways]]></title>
@@ -502,6 +404,27 @@ f(90°) = 1 / cos(90°) = 1/0
             <uri>https://blog.simplecode.gr</uri>
         </author>
         <published>2025-06-07T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[“Because I care about you” - Eliza, The First Chat Bot]]></title>
+        <id>https://blog.simplecode.gr/posts/because-i-care-about-you-eliza-the-first-chat-bot/</id>
+        <link href="https://blog.simplecode.gr/posts/because-i-care-about-you-eliza-the-first-chat-bot/"/>
+        <updated>2025-06-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[“Because I care about you” - Eliza, The First Chat Bot]]></summary>
+        <content type="html"><![CDATA[<p>[...]
+Input : "And why do you ask that?"
+Response : "Because I care about you."</p>
+<p>These lines mark one of the earliest recorded human-machine interactions in history.</p>
+<p>The program responsible for this exchange was Eliza, developed in 1967 at MIT by Joseph Weizenbaum, as the pioneering chat bot aimed at simulating conversations with a human. Written in MAD-SLIP, Eliza operated with a core component that would then call upon various LISP-like scripts – LISP being one of the precursor languages to modern-day JavaScript. Each script simulated a different persona, with the most renowned being “DOCTOR,” which mimicked interactions with a therapist adhering to the Rogerian psychotherapy approach.</p>
+<p>Eliza operated by utilizing an extensive set of pre-programmed responses. Upon receiving input, it would sift through these responses to find the most relevant and appropriate one, often modifying it slightly, according to the input, before outputting it.</p>
+<p>This early program can be viewed as a rudimentary form of natural language processing, akin to contemporary systems like ChatGPT, but with a much much more simpler data set, since ChatGPT have scrapped the whole today’s internet. A more fitting analogy might be Microsoft Word’s Clippy, which similarly provided predetermined responses based on user input.</p>
+<p>You can chat with Eliza here : (https://web.njit.edu/~ronkowit/eliza.html)[https://web.njit.edu/~ronkowit/eliza.html]</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-06T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Time is infinite, but a computer’s memory isn’t]]></title>
@@ -758,7 +681,7 @@ Time taken to factorize 51200001: 1.013663ms
         <title type="html"><![CDATA[The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root]]></title>
         <id>https://blog.simplecode.gr/posts/the-14-lines-of-code-that-revolutionized-3d-graphics-fast-inverse-square-root/</id>
         <link href="https://blog.simplecode.gr/posts/the-14-lines-of-code-that-revolutionized-3d-graphics-fast-inverse-square-root/"/>
-        <updated>2025-06-04T00:00:00.000Z</updated>
+        <updated>2025-06-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root]]></summary>
         <content type="html"><![CDATA[<p>For a computer, a three-dimensional space is a collection of triangles. In older 3D video games, this was noticeable and everything seemed a bit triangular. This was because, in order to accommodate older hardware, they had to reduce the number of triangles. Nowadays, there are more triangles, so there is more detail and things don’t seem triangular in modern video games – but deep inside, they still are.</p>
 <p>Usually, computers treat media as pixels. An image is nothing but a collection of pixels. However, in 3D graphics, it’s more efficient to treat everything as triangles. With triangles, you can manipulate their angles and adjust shapes as someone moves within a 3D space.</p>
@@ -1009,6 +932,70 @@ This trick is called “type punning”.</p>
 <p>The 3D world you see on my machine could differ slightly from the one you see on yours, due to minute details in our hardware.</p>
 <p>This has opened the door to a technique called “Canvas fingerprinting“ for potentially identifying users from the same machine even if they use different login credentials. Websites can render an invisible animation, calculate a unique identifier (hash) based on the rendering process, and compare these hashes across visits. If the hashes match, it suggests a high likelihood that the same machine is involved.</p>
 <p>Of course, the fast inverse square root instruction isn’t the only one that can cause variations in rendering; it’s just one example. Here’s the rendering from my machine on. It shows a uniqueness score of 2.83%, which is quite high. You can check your web fingerprint too on <a href="https://amiunique.org">amiunique.org</a>.</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-05T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Origins of Key-Value Document Databases - NDB, the Hidden Gem from Plan 9]]></title>
+        <id>https://blog.simplecode.gr/posts/origins-of-key-value-document-databases-ndb-the-hidden-gem-from-plan-9/</id>
+        <link href="https://blog.simplecode.gr/posts/origins-of-key-value-document-databases-ndb-the-hidden-gem-from-plan-9/"/>
+        <updated>2025-06-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Origins of Key-Value Document Databases - NDB, the Hidden Gem from Plan 9]]></summary>
+        <content type="html"><![CDATA[<p>Plan 9 was a utopian operating system that failed. It’s vision was to make distributed computing an everyday thing by treating everything as a file. And when we say everything, we mean everything, so even the hardware of each computer – allowing you to share that hardware with other machines easily. Even though this sounds technically impossible, it is very possible, and Plan 9 actually made it real! The main reason behind its failure was that this came at the cost of flexibility. In order to do that trick that it promised, Plan 9 asked the whole world to change, while it was already too late, since computer science had already started to get standardized at the time of release.</p>
+<p>There is a dedicated post about Plan 9, “Plan 9: The Utopian OS and Lessons in Inflexible Architecture“, which you most probably have already read.</p>
+<p>Today, we are going to unveil a very hidden gem within that operating system, which was an internal database called “NDB”, which stands for “Network Database”. “NDB” was one of the first databases that stored data as documents, treating them as key-value pairs, and not only that, indexing them! All of those features are going to be explained below.</p>
+<p>Storing data as documents means that, in contrast to tabular databases, your data don’t have to have a structure.
+In contrast, the more commonly used tabular databases are like Excel files; you have to somehow have a structure on what you write: you have columns with their titles and rows with the related data.
+In documents, you are more free as you write whatever you want for each specific document, more like text files.</p>
+<p>This is how a tabular database (or an Excel) would look like:</p>
+<table>
+<thead>
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Gender</th>
+<th>Cat</th>
+<th>Turtle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Irina</td>
+<td>Female</td>
+<td>Luluka</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Rantouan</td>
+<td>Male</td>
+<td></td>
+<td>Galopoula</td>
+</tr>
+</tbody>
+</table>
+<p>And this is how storing indocuments(or text files) would look like:</p>
+<p>One document for Irina:</p>
+<pre><code>Name="Irina"
+Gender="Female"
+Cat="Luluka"
+</code></pre>
+<p>And another one document for Rantouan:</p>
+<pre><code>Name="Rantouan"
+Gender="Male"
+Turtle="Galopoula"
+</code></pre>
+<p>Note how easy it is to add extra information, related and unique to each person, like the cats and turtles above with a document database and how rigid it is with a tabular one. Tabular databases have the advantage that if your data are all going to have the same structure, then you get a huge performance advantage. Document databases are more performant when your data are unstructured.</p>
+<p>Key-value pairs mean that you store your data in a structure where it’s a pair of key (names) and values, like in the document examples above: <code>Pet=Luluka</code>. We mention this because when you store data as documents, there are many other ways to store them as well, for example, XML <code>&lt;Pet&gt;Luluka&lt;/Pet&gt;</code> or JSON <code>{“Pet” : “Luluka”}</code>.</p>
+<p>Finally, indexing means that not only data are stored, but notes on how to access them easily for the system are being kept. Indexing is very important in order for a database to be fast.
+Imagine it like in the phone-book, where there is a small bookmark where names with “A” start, names with “B” start, etc. Another example is to imagine a very huge book that you just want to find something in, and usually on the first pages, there is an “index” page, where the first page of each chapter is being referenced, so you don’t have to search the whole book page by page.</p>
+<p>Today, a software engineer would probably use Redis or MongoDB as a key-value document database. It’s very interesting to know that for all of the above things, NDB was one of the first -most probably even the first- databases to be capable of.</p>
+<p>This gem of a database was hidden inside Plan 9, and it was mostly used for managing networks – but not only. Most of the modern operating systems still use a plain file without database supporting mechanism – it sounds logical to take more care of the network, if someone would think of Plan 9’s distributed nature.</p>
 ]]></content>
         <author>
             <name>Simplecode</name>

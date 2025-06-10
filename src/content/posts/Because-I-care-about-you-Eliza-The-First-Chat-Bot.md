@@ -1,6 +1,6 @@
 ---
 title: “Because I care about you” - Eliza, The First Chat Bot
-published: 2025-06-10
+published: 2025-06-06
 draft: false
 lang: en
 description: “Because I care about you” - Eliza, The First Chat Bot
