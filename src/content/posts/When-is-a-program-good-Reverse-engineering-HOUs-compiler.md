@@ -7,6 +7,10 @@ description: When is a program good ? Reverse engineering HOU’s compiler
 tags: []
 ---
 
+> UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.
+> 
+> [https://github.com/rept0id/hou-compiler-linux/](https://github.com/rept0id/hou-compiler-linux/)
+
 At the university I’m attending, Hellenic Open University, they have developed, years ago, a custom programming language and a custom compiler for it. The language is ok, feels a bit like Pascal and the commands are all in Greek. For example:
 
 ```plaintext
@@ -44,6 +48,8 @@ Now you can focus on your code instead of the encodings.
 This solution mentioned above is “good” (by Aristotle) but it’s not “perfect” (by me, even though Aristotle’s opinion matters more). Because something with this compiler and wine bugs, if you try to print Greek characters through your program it will display them wrong (as a workaround, use Greek with Latin characters, Greeklish, or just English).
 
 Such a thing is very annoying for a compiler and whole concept meant to work with Greek. This actually still makes the program “not good” by Aristotle. This must be fixed as well, else the solution is not perfect. I believe there are 2 ways to fix this: one is to keep fuck-around-find-out with Wine and the second is to reverse engineer this compiler totally and make a better one. Guess which one I find more fun!
+
+> UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.
 
 ---
 
@@ -89,6 +95,6 @@ Maybe this program could work much better if this legacy Windows-1253 encoding w
 
 ---
 
-UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.
-
-[https://github.com/rept0id/hou-compiler-linux/](https://github.com/rept0id/hou-compiler-linux/)
+> UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.
+> 
+> [https://github.com/rept0id/hou-compiler-linux/](https://github.com/rept0id/hou-compiler-linux/)
