@@ -3,7 +3,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.simplecode.gr</id>
     <title>Simplecode Blog</title>
-    <updated>2025-06-10T16:19:31.705Z</updated>
+    <updated>2025-06-11T08:23:59.554Z</updated>
     <generator>Astro-Theme-Retypeset with Feed for Node.js</generator>
     <author>
         <name>Simplecode</name>
@@ -120,7 +120,11 @@ end if;
         <link href="https://blog.simplecode.gr/posts/when-is-a-program-good-reverse-engineering-hous-compiler/"/>
         <updated>2025-06-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[When is a program good ? Reverse engineering HOU’s compiler]]></summary>
-        <content type="html"><![CDATA[<p>At the university I’m attending, Hellenic Open University, they have developed, years ago, a custom programming language and a custom compiler for it. The language is ok, feels a bit like Pascal and the commands are all in Greek. For example:</p>
+        <content type="html"><![CDATA[<blockquote>
+<p>UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.</p>
+<p><a href="https://github.com/rept0id/hou-compiler-linux/">https://github.com/rept0id/hou-compiler-linux/</a></p>
+</blockquote>
+<p>At the university I’m attending, Hellenic Open University, they have developed, years ago, a custom programming language and a custom compiler for it. The language is ok, feels a bit like Pascal and the commands are all in Greek. For example:</p>
 <pre><code>ΑΛΓΟΡΙΘΜΟΣ ΔΟΚΙΜΗ
 	ΔΕΔΟΜΕΝΑ x:INTEGER;
 ΑΡΧΗ
@@ -143,6 +147,9 @@ Now you can focus on your code instead of the encodings.</p>
 <hr />
 <p>This solution mentioned above is “good” (by Aristotle) but it’s not “perfect” (by me, even though Aristotle’s opinion matters more). Because something with this compiler and wine bugs, if you try to print Greek characters through your program it will display them wrong (as a workaround, use Greek with Latin characters, Greeklish, or just English).</p>
 <p>Such a thing is very annoying for a compiler and whole concept meant to work with Greek. This actually still makes the program “not good” by Aristotle. This must be fixed as well, else the solution is not perfect. I believe there are 2 ways to fix this: one is to keep fuck-around-find-out with Wine and the second is to reverse engineer this compiler totally and make a better one. Guess which one I find more fun!</p>
+<blockquote>
+<p>UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.</p>
+</blockquote>
 <hr />
 <p>First step into reverse engineering was to throw this compiler into a classic .NET reverse engineering tool, like .NET Reflector and the newer DotPeek, because only those ones I knew from a friend.</p>
 <p>Actually, .NET is the best case of reverse engineering a program because the code that you write in C#, VB, F# or whatever, gets transposed into bytecode for “Common Language Runtime” which is considered easier to reverse engineer than raw binary machine code.</p>
@@ -168,8 +175,10 @@ Now you can focus on your code instead of the encodings.</p>
 </code></pre>
 <p>Maybe this program could work much better if this legacy Windows-1253 encoding wasn’t enforced.</p>
 <hr />
+<blockquote>
 <p>UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.</p>
 <p><a href="https://github.com/rept0id/hou-compiler-linux/">https://github.com/rept0id/hou-compiler-linux/</a></p>
+</blockquote>
 ]]></content>
         <author>
             <name>Simplecode</name>
@@ -418,7 +427,8 @@ Response : "Because I care about you."</p>
 <p>The program responsible for this exchange was Eliza, developed in 1967 at MIT by Joseph Weizenbaum, as the pioneering chat bot aimed at simulating conversations with a human. Written in MAD-SLIP, Eliza operated with a core component that would then call upon various LISP-like scripts – LISP being one of the precursor languages to modern-day JavaScript. Each script simulated a different persona, with the most renowned being “DOCTOR,” which mimicked interactions with a therapist adhering to the Rogerian psychotherapy approach.</p>
 <p>Eliza operated by utilizing an extensive set of pre-programmed responses. Upon receiving input, it would sift through these responses to find the most relevant and appropriate one, often modifying it slightly, according to the input, before outputting it.</p>
 <p>This early program can be viewed as a rudimentary form of natural language processing, akin to contemporary systems like ChatGPT, but with a much much more simpler data set, since ChatGPT have scrapped the whole today’s internet. A more fitting analogy might be Microsoft Word’s Clippy, which similarly provided predetermined responses based on user input.</p>
-<p>You can chat with Eliza here : (https://web.njit.edu/~ronkowit/eliza.html)[https://web.njit.edu/~ronkowit/eliza.html]</p>
+<p>You can chat with Eliza here :</p>
+<p><a href="https://web.njit.edu/~ronkowit/eliza.html">https://web.njit.edu/~ronkowit/eliza.html</a></p>
 ]]></content>
         <author>
             <name>Simplecode</name>
@@ -599,83 +609,6 @@ An int32 has 32 bits and can store values from -2147483648 to 2147483647 (if it�
             <uri>https://blog.simplecode.gr</uri>
         </author>
         <published>2025-06-06T00:00:00.000Z</published>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hamming Numbers]]></title>
-        <id>https://blog.simplecode.gr/posts/hamming-numbers/</id>
-        <link href="https://blog.simplecode.gr/posts/hamming-numbers/"/>
-        <updated>2025-06-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hamming Numbers]]></summary>
-        <content type="html"><![CDATA[<p>Hamming numbers, or ugly numbers, or smooth numbers, is a sequence of numbers that they can be produced by:</p>
-<pre><code>2^x * 3^y * 5^z
-</code></pre>
-<p>Where x, y, z &gt;= 0</p>
-<p>For example:</p>
-<ul>
-<li>2, is a hamming number, since: 2^1 + 3^0 + 5^0 = 2.</li>
-<li>25, is a hamming number, since: 2^0 + 3^0 + 5^2 = 25.</li>
-</ul>
-<p>It is a sequence that follows a predictable, controllable pattern of incrementation due to their specific structure. It looks like that:</p>
-<pre><code>1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 27, 30, 32, 36, …
-</code></pre>
-<p>They origin from punched card readers.</p>
-<p>In 1950, Richard W. Hamming was working on Bell Labs (home of Unix and many other great inventions), where he got frustrated of the errors of the punched card reader. Soon, he started working on several error-correcting codes, most notably the Hamming(7,4) code which is used in many aspects of today's life. A fruit of his labour was the Hamming sequence — or hamming numbers.</p>
-<p>Famous they became by Edsger W. Dijkstra, an honorable computer scientist (famous for Dijkstra’s algorithm).
-In his book <em>Discipline of Programming</em>, on the 17th chapter, named <em>AN EXERCISE ATTRIBUTED TO R.W. HAMMING</em>, Dijkstra travels across the beauty of hamming numbers.
-This made hamming numbers a hot topic in academia.</p>
-<p>The beauty of those numbers is that they consist of the multiplication of 2, 3, and 5 raised to some powers (2^x * 3^y * 5^z). This means they are very easy to factor, simple to manipulate, and portable.</p>
-<p>Factoring a number is when you split it down to other numbers, which if you multiply them, you get that number. For example factoring 100 can look like this:</p>
-<pre><code>100 / 2 = 50, no remainder, prime factors: [2]
-50 / 2 = 25, no remainder, prime factors: [2, 2]
-25 / 2 = 12.5, has remainder, we try next number
-25 / 3 = 8.33, same
-25 / 4 = 6.25, same
-25 / 5 = 5, no remainder, prime factors: [2, 2, 5]
-5 / 2 = 2.5, has remainder, we try next number
-5 / 3 = 1.66, same
-5 / 4 = 1.25, same
-5 / 5 = 1, no remainder, prime factors: [2, 2, 5, 5]
-We reached 1 so we stop
-</code></pre>
-<p>And indeed 2 * 2 * 5 * 5 = 100.</p>
-<p>If a number can’t be factored, then it’s a prime number. It can be divided only by 1 and itself.</p>
-<p>100 is a hamming number as well, since we can symbolize it as, based on the above, 2^2 * 3^0 * 5^2.</p>
-<p>And if factorizing a number like 100 to 2 * 2 * 5 * 5 or 2^2 * 3^0 * 5^2 seems like making our lives harder, think that the same we can do for numbers like 262440000000, which is 2^9 * 3^8 * 5^7. It’s now much easier to transmit over a bad network “9, 8, 7” than this huge number.</p>
-<p>At this point, we can call hamming numbers as “easy to factor numbers”, because they consist only of 3 prime numbers: 2, 3, 5.
-There are numbers that can’t be constructed of the numbers 2, 3 and 5 and they require other prime numbers as well, like 7: those are not hamming numbers and are harder to factor as well.</p>
-<p>Hamming numbers, are “easy to divide numbers” as well. Being built only from small prime factors (2, 3, and 5), they are more likely to be divisible by a range of commonly needed factors than a completely random number.</p>
-<p>Many algorithms rely on factoring to reduce complexity. Providing numbers that are easy to factor, reduces complexity even more and can play a crucial role into making things faster or even possible.</p>
-<p>Using Hamming numbers doesn’t do the factorization, but guarantees that the factorization or de-factorization will be easy and fast. It also provides more easily divisible numbers, compared to using random numbers.</p>
-<hr />
-<h3>Metrics</h3>
-<p>The difference is crazy. Thanks to the code provided to this Git, which provides Go functions to:</p>
-<ul>
-<li>find if x is a hamming number</li>
-<li>find next hamming number after x</li>
-<li>generate a list of hamming numbers of length n</li>
-<li>factorize a given number x (util)</li>
-<li>measure the time a function took to execute (high-order, util)</li>
-</ul>
-<p><a href="https://github.com/rept0id/hamming-numbers">https://github.com/rept0id/hamming-numbers</a></p>
-<p>We can see the difference in time it takes to factorize a hamming number and a not-hamming number.</p>
-<ul>
-<li>51200000 is a hamming number.</li>
-<li>51200001 is NOT a hamming number.</li>
-<li>µs is microseconds</li>
-<li>ms is milliseconds (1000µs)</li>
-</ul>
-<p>The result for my machine (AMD A4-5300, but any CPU would behave similarly) are:</p>
-<pre><code>go build
-./hamming
-Time taken to factorize 51200000: 38.255µs
-Time taken to factorize 51200001: 1.013663ms
-</code></pre>
-]]></content>
-        <author>
-            <name>Simplecode</name>
-            <uri>https://blog.simplecode.gr</uri>
-        </author>
-        <published>2025-06-05T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root]]></title>
@@ -932,6 +865,83 @@ This trick is called “type punning”.</p>
 <p>The 3D world you see on my machine could differ slightly from the one you see on yours, due to minute details in our hardware.</p>
 <p>This has opened the door to a technique called “Canvas fingerprinting“ for potentially identifying users from the same machine even if they use different login credentials. Websites can render an invisible animation, calculate a unique identifier (hash) based on the rendering process, and compare these hashes across visits. If the hashes match, it suggests a high likelihood that the same machine is involved.</p>
 <p>Of course, the fast inverse square root instruction isn’t the only one that can cause variations in rendering; it’s just one example. Here’s the rendering from my machine on. It shows a uniqueness score of 2.83%, which is quite high. You can check your web fingerprint too on <a href="https://amiunique.org">amiunique.org</a>.</p>
+]]></content>
+        <author>
+            <name>Simplecode</name>
+            <uri>https://blog.simplecode.gr</uri>
+        </author>
+        <published>2025-06-05T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hamming Numbers]]></title>
+        <id>https://blog.simplecode.gr/posts/hamming-numbers/</id>
+        <link href="https://blog.simplecode.gr/posts/hamming-numbers/"/>
+        <updated>2025-06-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hamming Numbers]]></summary>
+        <content type="html"><![CDATA[<p>Hamming numbers, or ugly numbers, or smooth numbers, is a sequence of numbers that they can be produced by:</p>
+<pre><code>2^x * 3^y * 5^z
+</code></pre>
+<p>Where x, y, z &gt;= 0</p>
+<p>For example:</p>
+<ul>
+<li>2, is a hamming number, since: 2^1 + 3^0 + 5^0 = 2.</li>
+<li>25, is a hamming number, since: 2^0 + 3^0 + 5^2 = 25.</li>
+</ul>
+<p>It is a sequence that follows a predictable, controllable pattern of incrementation due to their specific structure. It looks like that:</p>
+<pre><code>1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 27, 30, 32, 36, …
+</code></pre>
+<p>They origin from punched card readers.</p>
+<p>In 1950, Richard W. Hamming was working on Bell Labs (home of Unix and many other great inventions), where he got frustrated of the errors of the punched card reader. Soon, he started working on several error-correcting codes, most notably the Hamming(7,4) code which is used in many aspects of today's life. A fruit of his labour was the Hamming sequence — or hamming numbers.</p>
+<p>Famous they became by Edsger W. Dijkstra, an honorable computer scientist (famous for Dijkstra’s algorithm).
+In his book <em>Discipline of Programming</em>, on the 17th chapter, named <em>AN EXERCISE ATTRIBUTED TO R.W. HAMMING</em>, Dijkstra travels across the beauty of hamming numbers.
+This made hamming numbers a hot topic in academia.</p>
+<p>The beauty of those numbers is that they consist of the multiplication of 2, 3, and 5 raised to some powers (2^x * 3^y * 5^z). This means they are very easy to factor, simple to manipulate, and portable.</p>
+<p>Factoring a number is when you split it down to other numbers, which if you multiply them, you get that number. For example factoring 100 can look like this:</p>
+<pre><code>100 / 2 = 50, no remainder, prime factors: [2]
+50 / 2 = 25, no remainder, prime factors: [2, 2]
+25 / 2 = 12.5, has remainder, we try next number
+25 / 3 = 8.33, same
+25 / 4 = 6.25, same
+25 / 5 = 5, no remainder, prime factors: [2, 2, 5]
+5 / 2 = 2.5, has remainder, we try next number
+5 / 3 = 1.66, same
+5 / 4 = 1.25, same
+5 / 5 = 1, no remainder, prime factors: [2, 2, 5, 5]
+We reached 1 so we stop
+</code></pre>
+<p>And indeed 2 * 2 * 5 * 5 = 100.</p>
+<p>If a number can’t be factored, then it’s a prime number. It can be divided only by 1 and itself.</p>
+<p>100 is a hamming number as well, since we can symbolize it as, based on the above, 2^2 * 3^0 * 5^2.</p>
+<p>And if factorizing a number like 100 to 2 * 2 * 5 * 5 or 2^2 * 3^0 * 5^2 seems like making our lives harder, think that the same we can do for numbers like 262440000000, which is 2^9 * 3^8 * 5^7. It’s now much easier to transmit over a bad network “9, 8, 7” than this huge number.</p>
+<p>At this point, we can call hamming numbers as “easy to factor numbers”, because they consist only of 3 prime numbers: 2, 3, 5.
+There are numbers that can’t be constructed of the numbers 2, 3 and 5 and they require other prime numbers as well, like 7: those are not hamming numbers and are harder to factor as well.</p>
+<p>Hamming numbers, are “easy to divide numbers” as well. Being built only from small prime factors (2, 3, and 5), they are more likely to be divisible by a range of commonly needed factors than a completely random number.</p>
+<p>Many algorithms rely on factoring to reduce complexity. Providing numbers that are easy to factor, reduces complexity even more and can play a crucial role into making things faster or even possible.</p>
+<p>Using Hamming numbers doesn’t do the factorization, but guarantees that the factorization or de-factorization will be easy and fast. It also provides more easily divisible numbers, compared to using random numbers.</p>
+<hr />
+<h3>Metrics</h3>
+<p>The difference is crazy. Thanks to the code provided to this Git, which provides Go functions to:</p>
+<ul>
+<li>find if x is a hamming number</li>
+<li>find next hamming number after x</li>
+<li>generate a list of hamming numbers of length n</li>
+<li>factorize a given number x (util)</li>
+<li>measure the time a function took to execute (high-order, util)</li>
+</ul>
+<p><a href="https://github.com/rept0id/hamming-numbers">https://github.com/rept0id/hamming-numbers</a></p>
+<p>We can see the difference in time it takes to factorize a hamming number and a not-hamming number.</p>
+<ul>
+<li>51200000 is a hamming number.</li>
+<li>51200001 is NOT a hamming number.</li>
+<li>µs is microseconds</li>
+<li>ms is milliseconds (1000µs)</li>
+</ul>
+<p>The result for my machine (AMD A4-5300, but any CPU would behave similarly) are:</p>
+<pre><code>go build
+./hamming
+Time taken to factorize 51200000: 38.255µs
+Time taken to factorize 51200001: 1.013663ms
+</code></pre>
 ]]></content>
         <author>
             <name>Simplecode</name>
