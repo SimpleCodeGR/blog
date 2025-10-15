@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ] # Change this to your default branch if needed
+    branches: [ "master", "main" ] # Change this to your default branch if needed
 
 jobs:
   build:
