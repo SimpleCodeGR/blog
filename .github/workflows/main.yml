@@ -1,26 +1,31 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ "master", "main" ] # Change this to your default branch if needed
+ push:
+  branches: [ "master", "main" ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   
+   - name: Use Node.js LTS
+     uses: actions/setup-node@v4
+     with:
+      node-version: 'lts/*'
 
-    steps:
-      - uses: actions/checkout@v4
+   - name: Install pnp (Needed by Astro)
+     run: npm i -g pnpm
 
-      - name: Use Node.js LTS
-        uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*' # Automatically uses the latest LTS version
+   - name: Install dependencies
+     run: pnpm install
 
-      - name: Install pnp as needed by Astro
-        run: npm i -g pnpm
+   - name: Build project
+     run: pnpm run build
 
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build project
-        run: pnpm run build
+   - name: Upload dist folder
+     uses: actions/upload-artifact@v3
+     with:
+      name: astro-dist
+      path: dist/
