@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways
-tags: []
+tags: ["Aerospace", "Math"]
 ---
 
 The pilots of the new Boeing 737-NG, around 2019-2020, encountered a particularly vexing issue: all six display units would go blank during landings at certain airports, including:

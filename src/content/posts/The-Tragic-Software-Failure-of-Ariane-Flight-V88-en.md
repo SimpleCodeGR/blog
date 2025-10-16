@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: The Tragic Software Failure of Ariane Flight V88
-tags: []
+tags: ["Aerospace", "History"]
 ---
 
 On the 4th of June 2024, we mark 28 years since the tragic failure of Ariane flight V88.

@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Making of the Grand Theft Auto Trilogy
-tags: []
+tags: ["Games", "History"]
 ---
 
 I was lucky enough to read all the posts of Obbe Vermeij at the blog "Insider Rockstar North", before he had to take it down. 

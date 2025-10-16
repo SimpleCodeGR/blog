@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: The 14 lines of code that revolutionized 3D graphics - Fast Inverse Square Root
-tags: []
+tags: ["Algorithms", "Programming Languages: Assembly"]
 ---
 
 For a computer, a three-dimensional space is a collection of triangles. In older 3D video games, this was noticeable and everything seemed a bit triangular. This was because, in order to accommodate older hardware, they had to reduce the number of triangles. Nowadays, there are more triangles, so there is more detail and things don’t seem triangular in modern video games – but deep inside, they still are.

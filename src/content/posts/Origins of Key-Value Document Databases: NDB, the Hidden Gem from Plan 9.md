@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Origins of Key-Value Document Databases - NDB, the Hidden Gem from Plan 9
-tags: []
+tags: ["Databases", "History"]
 ---
 
 Plan 9 was a utopian operating system that failed. It’s vision was to make distributed computing an everyday thing by treating everything as a file. And when we say everything, we mean everything, so even the hardware of each computer – allowing you to share that hardware with other machines easily. Even though this sounds technically impossible, it is very possible, and Plan 9 actually made it real! The main reason behind its failure was that this came at the cost of flexibility. In order to do that trick that it promised, Plan 9 asked the whole world to change, while it was already too late, since computer science had already started to get standardized at the time of release.

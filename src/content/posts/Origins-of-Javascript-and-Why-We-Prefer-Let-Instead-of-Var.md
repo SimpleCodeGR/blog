@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Origins of Javascript and Why We Prefer “Let” Instead of “Var”
-tags: []
+tags: ["Programming Languages", "History", "Programming Languages: JS"]
 ---
 
 If you wish to make an apple pie from scratch, you must first invent the universe.

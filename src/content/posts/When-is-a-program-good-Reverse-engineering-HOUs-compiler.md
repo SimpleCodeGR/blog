@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: When is a program good ? Reverse engineering HOU’s compiler
-tags: []
+tags: ["Compilers", "Reverse Engineering", "Linux", "Wine (software)"]
 ---
 
 > UPDATE: The Linux port of the compiler now works even with printing Greek characters. Everything works now, basically.

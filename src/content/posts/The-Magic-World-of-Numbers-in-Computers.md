@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: The Magic World of Float Numbers
-tags: []
+tags: ["Data Structures", "History"]
 ---
 
 ## Intro

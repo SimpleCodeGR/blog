@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: “Because I care about you” - Eliza, The First Chat Bot
-tags: []
+tags: ["AI", "History"]
 ---
 
 [...]

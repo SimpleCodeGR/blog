@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: WebSockets Reversed Ping of Death
-tags: []
+tags: ["Hacking", "Web", "Protocols", "Protocols: WebSockets", "Browsers"]
 ---
 
 **Warning:** The following action may cause a visitor’s browser or even their computer to crash. This information is provided for educational purposes only. Use it responsibly.

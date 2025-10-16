@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Plan 9 - The Utopian OS
-tags: []
+tags: ["Operating Systems", "History"]
 ---
 
 The biggest art in software design is to know when to be flexible and when not to. I believe it's such a wonderful art, that none accomplish to master it.

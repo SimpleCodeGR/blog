@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Hamming Numbers
-tags: []
+tags: ["Math", "History"]
 ---
 
 Hamming numbers, or ugly numbers, or smooth numbers, is a sequence of numbers that they can be produced by:

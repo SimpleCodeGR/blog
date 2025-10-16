@@ -5,7 +5,7 @@ customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Time is infinite, but a computer’s memory isn’t
-tags: []
+tags: ["Data Structures"]
 ---
 
 In low-level coding, we usually have to specify the length of a variable. We have many types, including int32 and int64, which represent numbers in binary, using 32 bits or 64 bits, respectively.
