@@ -1,6 +1,7 @@
 ---
 title: The Tragic Software Failure of Ariane Flight V88
 published: 2025-06-10
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: The Tragic Software Failure of Ariane Flight V88

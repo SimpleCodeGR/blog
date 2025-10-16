@@ -1,6 +1,7 @@
 ---
 title: Origins of Javascript and Why We Prefer “Let” Instead of “Var”
 published: 2025-06-09
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Origins of Javascript and Why We Prefer “Let” Instead of “Var”

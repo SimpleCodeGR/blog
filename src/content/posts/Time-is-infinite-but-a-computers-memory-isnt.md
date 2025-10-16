@@ -1,6 +1,7 @@
 ---
 title: Time is infinite, but a computer’s memory isn’t
 published: 2025-06-06
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Time is infinite, but a computer’s memory isn’t

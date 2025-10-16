@@ -8,6 +8,7 @@ const posts = defineCollection({
     // required
     title: z.string(),
     published: z.date(),
+    customPostAuthors: z.array(z.string()).optional().default([]),
     // optional
     description: z.string().optional().default(''),
     updated: z.preprocess(

@@ -1,6 +1,7 @@
 ---
 title: Hamming Numbers
 published: 2025-06-05
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Hamming Numbers

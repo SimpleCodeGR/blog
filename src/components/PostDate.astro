@@ -6,9 +6,10 @@ interface Props {
   date: Date
   updatedDate?: Date
   minutes?: number
+  customPostAuthors?: string[]
 }
 
-const { date, updatedDate, minutes } = Astro.props
+const { date, updatedDate, minutes, customPostAuthors } = Astro.props
 const format = themeConfig.global.dateFormat
 const isPost = isPostPage(Astro.url.pathname)
 const timeSpacingClass = isPost ? 'ml-1.75' : 'ml-1.5'
@@ -70,9 +71,16 @@ function formatDate(date: Date, format: 'YYYY-MM-DD' | 'MM-DD-YYYY' | 'DD-MM-YYY
   </time>
 )}
 
+<!-- customPostAuthors -->
+{(customPostAuthors !== undefined && customPostAuthors.length > 0) && (
+  <span class={timeSpacingClass}>
+    by {Array.isArray(customPostAuthors) ? customPostAuthors.join(', ') : customPostAuthors}
+  </span>
+)}
+
 <!-- reading time -->
 {minutes !== undefined && (
   <span class={timeSpacingClass}>
-    {minutes} min
+    {minutes} min to read
   </span>
 )}

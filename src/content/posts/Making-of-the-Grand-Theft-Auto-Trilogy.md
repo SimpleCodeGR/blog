@@ -1,6 +1,7 @@
 ---
 title: Making of the Grand Theft Auto Trilogy
 published: 2025-06-03
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Making of the Grand Theft Auto Trilogy

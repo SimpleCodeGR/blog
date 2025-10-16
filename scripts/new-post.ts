@@ -31,6 +31,7 @@ const content = `---
 title: ${baseName}
 published: ${today}
 description: ''
+customPostAuthors: []
 updated: ''
 tags:
   - Note

@@ -131,6 +131,7 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post)
         date={post.data.published}
         updatedDate={post.data.updated}
         minutes={remarkPluginFrontmatter.minutes}
+        customPostAuthors={post.data.customPostAuthors}
       />
     </div>
     <!-- TOC -->

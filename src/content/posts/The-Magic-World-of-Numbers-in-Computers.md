@@ -1,6 +1,7 @@
 ---
 title: The Magic World of Float Numbers
 published: 2025-10-15
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: The Magic World of Float Numbers

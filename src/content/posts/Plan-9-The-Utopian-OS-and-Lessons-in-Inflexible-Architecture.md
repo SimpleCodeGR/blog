@@ -1,6 +1,7 @@
 ---
 title: Plan 9 - The Utopian OS and Lessons in Inflexible Architecture
 published: 2025-06-10
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: Plan 9 - The Utopian OS

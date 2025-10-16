@@ -1,6 +1,7 @@
 ---
 title: When is a program good ? Reverse engineering HOU’s compiler
 published: 2025-06-10
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: When is a program good ? Reverse engineering HOU’s compiler

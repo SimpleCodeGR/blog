@@ -1,6 +1,7 @@
 ---
 title: When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways
 published: 2025-06-07
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: When Boeing 737-NG Screens Went Blank During Landings on Perfectly Horizontal Runways

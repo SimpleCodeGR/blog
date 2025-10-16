@@ -1,6 +1,7 @@
 ---
 title: WebSockets Reversed Ping of Death
 published: 2025-06-10
+customPostAuthors: ["Rantouan Achmet"]
 draft: false
 lang: en
 description: WebSockets Reversed Ping of Death
