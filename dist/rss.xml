@@ -5,7 +5,7 @@
         <title>Simplecode Blog</title>
         <link>https://blog.simplecode.gr</link>
         <description></description>
-        <lastBuildDate>Thu, 16 Oct 2025 06:09:44 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Oct 2025 06:17:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Astro-Theme-Retypeset with Feed for Node.js</generator>
         <language>en</language>
@@ -17,23 +17,23 @@
             <guid isPermaLink="false">https://blog.simplecode.gr/posts/the-magic-world-of-numbers-in-computers/</guid>
             <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[The Magic World of Float Numbers]]></description>
-            <content:encoded><![CDATA[<h1>Intro</h1>
+            <content:encoded><![CDATA[<h2>Intro</h2>
 <p>Floats are exciting. We often assume that numerical results from computers are extremely accurate, but that’s frequently not the case. This happens because there are accurate and non-accurate ways to represent numbers. Accurate representations consume more storage, memory, and processing power compared to non-accurate ones. As a result, non-accurate forms - like floats - are often used in places you might not expect.</p>
 <p>In fact, floats are everywhere! It’s actually more common to encounter a float than an accurate number. Many programming languages even default to treating numbers as floats, and special tricks are needed to handle numbers in an accurate form. The proccessing power of supercomputers is usually meassured in FLOPS which is -guess-... "Floating Point Operations Per Second".</p>
 <p>Now that we know this, let’s dive deep into the non-accurate world of floating-point numbers.</p>
 <p>The core idea behind floats is borrowed from scientific notation. For example, the approximate size of an atom in kilometers, ~0.0000000000001, can be represented as 1*10^-13. The first form uses 14 digits, while the second uses only 5.</p>
 <p>The latter is much simpler, but floats add a layer of complexity. First, there isn't just one standard for storing floats - there are many. Thankfully, the most widely accepted standard is IEEE 754, which is the one you'll encounter almost everywhere and the one we'll focus on in this article. After this, IEEE 754 is a bit less straight-forward than scientific notation.</p>
 <hr />
-<h1>IEEE 754</h1>
+<h2>IEEE 754</h2>
 <p>As we said before, there isn't only one standard for storing floats, but many. IEEE 754 is by far the most common. It breaks every floating-point number into three distinct parts, packed into either 32 bits (single-precision) or 64 bits (double-precision):</p>
 <ul>
 <li><strong>Sign Bit (1 bit)</strong>: A single bit that decides whether the number is positive (0) or negative (1).</li>
 <li><strong>Biased Exponent</strong> (8 bits for 32-bit, 11 bits for 64-bit): This isn't just any exponent. It's biased, meaning it's offset by a fixed value to allow for both positive and negative powers of 2. For 32-bit floats, the bias is 127. So, an exponent of 0 is stored as 127, -1 as 126, and 127 as 254. This trick lets the hardware handle negative exponents without needing a sign bit for the exponent itself. The base is 2 because computers works with binary, so in the scientific notation example we saw before would had been 1*2^-43 (2^-43 = 10^-13).</li>
 <li><strong>Mantissa</strong> (23 bits for 32-bit, 52 bits for 64-bit): This stores the significant digits of the number, but the leading 1 is implied and not stored. For example, the binary number 1.0110 is stored as just 0110, saving space but adding complexity.</li>
 </ul>
-<h2>IEEE 754 Example</h2>
+<h3>IEEE 754 Example</h3>
 <p>A nice example would beeing calculating 3.14... in IEEE 754.</p>
-<h3>I. Binary</h3>
+<h4>I. Binary</h4>
 <ul>
 <li>
 <p>3 in binary is <code>11</code></p>
@@ -45,61 +45,59 @@
 <p>3.14 in binary is <code>11.0010101111010111000...</code></p>
 </li>
 </ul>
-<h3>II. Biased Exponent</h3>
-<h4>II.I. Exponent</h4>
+<h4>II. Biased Exponent</h4>
+<h5>II.I. Exponent</h5>
 <p>First, we need to normalize <code>11.0010101111010111000...</code> to the form <code>1.xxx * 2^exponent</code>. Much like converting to scientific notation.</p>
 <p>As with scientific notation, we have to use a little bit our fantasy. The only constraint is that the base of the exponent this time needs to be 2, so we need something like 2^-43 and not 10^-13.</p>
 <p>All we need is to just convert to the <code>1.xxx * 2^exponent</code> form.</p>
 <p>In this case, we will do this simply by doing a binary shift, but this is just an example of our case.</p>
 <p><code>11.0010101111010111000...</code> -&gt; <code>1.10010101111010111000... * 2^1</code></p>
 <p>By converting to <code>1.xxx * 2^exponent</code> form we see that our exponent is 1.</p>
-<h4>II.II. Biased Exponent</h4>
+<h5>II.II. Biased Exponent</h5>
 <p>Our exponent is 1. But don't forget, as we said before, that in IEEE 754 we dont store the exponent, but a bias of the exponent ([...]This isn't just any exponent. It's biased, meaning it's offset by a fixed value to allow for both positive and negative powers of 2.[...]).</p>
 <p>We will assume that we are talking about a 32-bit float, so our bias, based on what is written above, is 127.</p>
 <p>So the number we will store is : the exponent + 127 =&gt; 1 + 127 = 128.</p>
 <p>But we want this in binary. 128 in binary is <code>10000000</code>. That's our "Biased Exponent".</p>
-<h3>III. Split into IEEE 754 Parts</h3>
+<h4>III. Split into IEEE 754 Parts</h4>
 <ul>
 <li>Sign: <code>0</code> (positive)</li>
 <li>Biased Exponent: <code>10000000</code></li>
 <li>Mantissa: Take the first 23 bits after the 1.: <code>10010101111010111000101</code> (truncated to fit)</li>
 </ul>
-<h3>IV. Result</h3>
+<h4>IV. Result</h4>
 <p>Indeed, <code>0 10000000 10010101111010111000101</code> is the IEEE 754 of the number 3.14... You can verify this by using a handy IEEE 754 calculator [1].</p>
 <hr />
-<h1>The (10^100) + 1 − (10^100) Problem</h1>
+<h2>The (10^100) + 1 − (10^100) Problem</h2>
 <p>Open a calculator on an iPad or an iPhone and by switching to scientific mode, try to solve <code>(10^100) + 1 − (10^100)</code>. What you will get as a result is <code>0</code> which is obviously wrong, as the correct answer is <code>1</code>.</p>
 <p>This is a snowball effect caused by the way float-pointing arithmetic works. This tiny <code>+1</code> gets lost into the inaccuracy of float arithmetic when is added to such a big number as <code>10^100</code>.</p>
 <p>Other calculators gets it correct, but this is thanks to relying to more mathematically advanced data structures of representing numbers. [2]</p>
 <p><img src="_images/par-10-power-100-par-plus-1-par-minus-10-power-100-par.jpg" alt="_images/par-10-power-100-par-plus-1-par-minus-10-power-100-par.jpg" /></p>
 <hr />
-<h1>The 0.1 + 0.2 Problem</h1>
+<h2>The 0.1 + 0.2 Problem</h2>
 <p>On your favorite programming language, try to solve the simple <code>0.1+0.2</code>. What you will get is <code>0.30000000000000004</code>. This means that your language treats numbers as floats by default, as almost all languages do.</p>
 <p>This means as well that <code>0.1+0.2 == 0.3</code> is equal to... <code>false</code>.</p>
 <p>That's an interesting thing to know for the next time you will do mathematical operations. If float, take into account the inaccuracy that comes with, and do the proper tricks to ensure the required flexibility, or use a different way of representing your numbers if needed.</p>
 <hr />
-<h1>Inifinity and "Not a Number" (NaN) (IEEE 754)</h1>
+<h2>Inifinity and "Not a Number" (NaN) (IEEE 754)</h2>
 <p>Two very interesting mathematical concepts that are impossible to represent in any other... accurate form of numbers, are infinity and "not a number". A number can be infinite, and a number can be "not a number" temporarily, until it becomes a number, or simply because it's the result of a calculation like division with 0 - instead of error it's better to take "NaN" sometimes.</p>
 <p>So IEEE 754 float numbers comes here to save the day if you need to represent those 2 very important mathematical concepts.</p>
-<h2>Inifinity</h2>
+<h3>Inifinity</h3>
 <p>If you raise all the numbers of the exponent and none of the mantissa, you get infinity ! (<code>0 11111111 00000000000000000000000</code>)</p>
-<h2>"Not a Number" (NaN)</h2>
+<h3>"Not a Number" (NaN)</h3>
 <p>"Not a Number" is a special case of number meant as a placeholder value for a numerical value that it's nit set yet or it was the result of an error, like for example from a division with 0 which is impossible.</p>
 <p>(Talking about NaN, its actually very interesting that JSON, that it's a representation of values in a way that JS works, doesn't support NaN. JS, as many other languahes, treats numbers by default as floats, so it's interesting that JSON doesn't allow a number to be NaN. Instead, NaNs are usually converted to NULLs on most of the times when working with JSON.)</p>
-<h3>"Quiet NaN"</h3>
+<h4>"Quiet NaN"</h4>
 <p>If you raise all the numbers of the exponent and the "most significant bit" of the mantissa (the first or the last, depends on the endianess), you get a "Quiet NaN". This NaN is natural and it doesnt trigger an error. (<code>0 11111111 00000000000000000000001</code> / <code>0 11111111 10000000000000000000000</code>).</p>
-<h3>"Signaling NaN"</h3>
-<ul>
-<li>If you raise all the numbers of the exponent and a bit that's not the "most significant bit" of the mantissa (like, just one in the middle, just to be sure), you get a "Signaling NaN". This NaN triggers an error. (<code>0 11111111 00000000000000000000010</code>).</li>
-</ul>
+<h4>"Signaling NaN"</h4>
+<p>If you raise all the numbers of the exponent and a bit that's not the "most significant bit" of the mantissa (like, just one in the middle, just to be sure), you get a "Signaling NaN". This NaN triggers an error. (<code>0 11111111 00000000000000000000010</code>).</p>
 <hr />
-<h1>Outro</h1>
+<h2>Outro</h2>
 <p>Floats may seem inaccurate, but this inaccuracy allows to handle bigger problems, as with huge numbers or with less hardware.</p>
 <p>Extreme accuracy is not always needed, let alone that it may not even exist in reallity.</p>
 <p>Even if someone is interested only in extreme accuracy, floats are interesting to search about. By studying floats, one can reflect and understand the problem they try to solve and this is working with very big ranges, very unclear sets of numbers. Easily comes out of this the opposite, that a way to achive extreme accuracy, is actually to acknowledge that it's very subjective, so you eventually have  to limit the sets you are working with to something fixed.</p>
 <p>This post was meant to unlock the secret world of float numbers in order for us to use them better.</p>
 <hr />
-<h1>Links</h1>
+<h2>Links</h2>
 <ul>
 <li>[1] "IEEE-754 Floating Point Converter" <a href="https://www.h-schmidt.net/FloatConverter/IEEE754.html">https://www.h-schmidt.net/FloatConverter/IEEE754.html</a></li>
 <li>[2] "A calculator app? Anyone could make that." <a href="https://chadnauseam.com/coding/random/calculator-app">https://chadnauseam.com/coding/random/calculator-app</a></li>
