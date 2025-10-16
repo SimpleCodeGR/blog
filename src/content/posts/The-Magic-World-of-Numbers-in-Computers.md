@@ -137,7 +137,7 @@ If you raise all the numbers of the exponent and a bit that's not the "most sign
 
 ## Outro
 
-Floats may seem inaccurate, but this inaccuracy allows to handle bigger problems, as with huge numbers or with less hardware. 
+Floats may seem inaccurate, but this inaccuracy allows us to handle much larger problems - such as working with extremely large numbers or using less hardware.
 
 Extreme accuracy is not always needed, let alone that it may not even exist in reallity.
 

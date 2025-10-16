@@ -5,7 +5,7 @@
         <title>Simplecode Blog</title>
         <link>https://blog.simplecode.gr</link>
         <description></description>
-        <lastBuildDate>Thu, 16 Oct 2025 09:40:02 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 16 Oct 2025 09:48:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Astro-Theme-Retypeset with Feed for Node.js</generator>
         <language>en</language>
@@ -92,7 +92,7 @@
 <p>If you raise all the numbers of the exponent and a bit that's not the "most significant bit" of the mantissa (like, just one in the middle, just to be sure), you get a "Signaling NaN". This NaN triggers an error. (<code>0 11111111 00000000000000000000010</code>).</p>
 <hr />
 <h2>Outro</h2>
-<p>Floats may seem inaccurate, but this inaccuracy allows to handle bigger problems, as with huge numbers or with less hardware.</p>
+<p>Floats may seem inaccurate, but this inaccuracy allows us to handle much larger problems - such as working with extremely large numbers or using less hardware.</p>
 <p>Extreme accuracy is not always needed, let alone that it may not even exist in reallity.</p>
 <p>Even if someone is interested only in extreme accuracy, floats are interesting to search about. By studying floats, one can reflect and understand the problem they try to solve and this is working with very big ranges, very unclear sets of numbers. Easily comes out of this the opposite, that a way to achive extreme accuracy, is actually to acknowledge that it's very subjective, so you eventually have  to limit the sets you are working with to something fixed.</p>
 <p>This post was meant to unlock the secret world of float numbers in order for us to use them better.</p>
