@@ -25,18 +25,22 @@ The latter is much simpler, but floats add a layer of complexity. First, there i
 
 As we said before, there isn't only one standard for storing floats, but many. IEEE 754 is by far the most common. It breaks every floating-point number into three distinct parts, packed into either 32 bits (single-precision) or 64 bits (double-precision):
 
-- **Sign Bit (1 bit)**: A single bit that decides whether the number is positive (0) or negative (1).
-- **Biased Exponent** (8 bits for 32-bit, 11 bits for 64-bit): This isn't just any exponent. It's biased, meaning it's offset by a fixed value to allow for both positive and negative powers of 2. For 32-bit floats, the bias is 127. So, an exponent of 0 is stored as 127, -1 as 126, and 127 as 254. This trick lets the hardware handle negative exponents without needing a sign bit for the exponent itself. The base is 2 because computers works with binary, so in the scientific notation example we saw before would had been 1*2^-43 (2^-43 = 10^-13).
-- **Mantissa** (23 bits for 32-bit, 52 bits for 64-bit): This stores the significant digits of the number, but the leading 1 is implied and not stored. For example, the binary number 1.0110 is stored as just 0110, saving space but adding complexity.
+- **Sign Bit (1 bit)**: A single bit that decides whether the number is ***positive*** (`0`) or ***negative*** (`1`).
+- **Biased Exponent** (*8 bits for 32-bit, 11 bits for 64-bit*): This isn't just any exponent. It's biased, meaning it's offset by a fixed value to allow for both positive and negative powers of 2. ***For 32-bit floats, the bias is 127***. So, an exponent of 0 is stored as 127, -1 as 126, and 127 as 254. ***For 64-bit floats, the bias is 1023***. This trick lets the hardware handle negative exponents without needing a sign bit for the exponent itself. The base is 2 because computers works with binary, so we need something in the form of `x*2^y`.
+- **Mantissa** (*23 bits for 32-bit, 52 bits for 64-bit*): This stores the significant digits of the number, but the leading 1 is implied and not stored. For example, the binary number `1.0110` is stored as just `0110`, saving space but adding complexity. ***Notice how the mantissa length increases significantly from 23 bits in a 32-bit float to 52 bits in a 64-bit float.***
 
 ### IEEE 754 Example
 
-A nice example would beeing calculating 3.14... in IEEE 754.
+A nice example is to calculate `3.14...` in IEEE 754.
+
+We will assume that we are going to calculate a 32-bit IEEE 754 float. This is important, as based on the above, it changes the bias of the "Biased Exponent" to 127 and the length of the "Mantissa" to 23 bits.
 
 #### I. Binary
 
 - 3 in binary is `11`
 - 0.14... in binary is `0.0010101111010111000...`
+
+=>
 
 - 3.14 in binary is `11.0010101111010111000...`
 
@@ -60,19 +64,23 @@ By converting to `1.xxx * 2^exponent` form we see that our exponent is 1.
 
 Our exponent is 1. But don't forget, as we said before, that in IEEE 754 we dont store the exponent, but a bias of the exponent ([...]This isn't just any exponent. It's biased, meaning it's offset by a fixed value to allow for both positive and negative powers of 2.[...]).
 
-We will assume that we are talking about a 32-bit float, so our bias, based on what is written above, is 127.
+*We assumed that we are talking about a 32-bit float*, so our bias, based on what is written above, is 127.
 
 So the number we will store is : the exponent + 127 => 1 + 127 = 128.
 
 But we want this in binary. 128 in binary is `10000000`. That's our "Biased Exponent".
 
-#### III. Split into IEEE 754 Parts
+#### III. Mantissa
 
-- Sign: `0` (positive)
-- Biased Exponent: `10000000`
-- Mantissa: Take the first 23 bits after the 1.: `10010101111010111000101` (truncated to fit)
+Take the first 23 bits (*because we assumed we are talking about 32-bit float*) after the `1.`, from the binary we found on the step I. : `10010101111010111000101` (truncated to fit). This is out "Mantissa".
 
-#### IV. Result
+#### IV. Split into IEEE 754 Parts
+
+- **Sign**: `0` (positive)
+- **Biased Exponent**: `10000000`
+- **Mantissa**: `10010101111010111000101`
+
+#### V. Result
 
 Indeed, `0 10000000 10010101111010111000101` is the IEEE 754 of the number 3.14... You can verify this by using a handy IEEE 754 calculator [1].
 
