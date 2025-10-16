@@ -3,7 +3,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.simplecode.gr</id>
     <title>Simplecode Blog</title>
-    <updated>2025-10-16T06:37:10.621Z</updated>
+    <updated>2025-10-16T06:39:31.151Z</updated>
     <generator>Astro-Theme-Retypeset with Feed for Node.js</generator>
     <author>
         <name>Simplecode</name>
@@ -58,7 +58,7 @@
 <p>So the number we will store is : the exponent + 127 =&gt; 1 + 127 = 128.</p>
 <p>But we want this in binary. 128 in binary is <code>10000000</code>. That's our "Biased Exponent".</p>
 <h4>III. Mantissa</h4>
-<p>Take the first 23 bits (<em>because we assumed we are talking about 32-bit float</em>) after the <code>1.</code>, from the binary we found on the step I. : <code>10010101111010111000101</code> (truncated to fit). This is out "Mantissa".</p>
+<p>Take the first 23 bits (<em>because we assumed we are talking about 32-bit float</em>) after the <code>1.</code>, from the binary we found on the step I. : <code>10010101111010111000101</code> (truncated to fit). That's our "Mantissa".</p>
 <h4>IV. Split into IEEE 754 Parts</h4>
 <ul>
 <li><strong>Sign</strong>: <code>0</code> (positive)</li>

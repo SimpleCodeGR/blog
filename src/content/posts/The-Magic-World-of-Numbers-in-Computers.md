@@ -72,7 +72,7 @@ But we want this in binary. 128 in binary is `10000000`. That's our "Biased Expo
 
 #### III. Mantissa
 
-Take the first 23 bits (*because we assumed we are talking about 32-bit float*) after the `1.`, from the binary we found on the step I. : `10010101111010111000101` (truncated to fit). This is out "Mantissa".
+Take the first 23 bits (*because we assumed we are talking about 32-bit float*) after the `1.`, from the binary we found on the step I. : `10010101111010111000101` (truncated to fit). That's our "Mantissa".
 
 #### IV. Split into IEEE 754 Parts
 
